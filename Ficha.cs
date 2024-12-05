@@ -9,7 +9,7 @@ namespace FICHA
         public string Name;
         public Faction Faction;
         public int Velocidad;
-        public int Enfriamiennto;
+        public int Enfriamiento;
         public string Hability;
 
 
@@ -21,7 +21,7 @@ namespace FICHA
             this.id = id;
             this.Name = Name;
             this.Velocidad = Velocidad;
-            this.Enfriamiennto = Enfriamiennto;
+            this.Enfriamiento = Enfriamiennto;
             this.Faction = GetEnum(Faction);
             this.Hability = "";
 

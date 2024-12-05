@@ -5,14 +5,19 @@ using System.Data.SqlTypes;
 using Maze_Generator;
 using System.Reflection.Metadata.Ecma335;
 using System.Diagnostics;
+using F1;
 
 public class Program
 {
 
-
     static void Main(string[] args)
     {
-        Maze(10);
+        //Maze(10);
+
+        var first = Fase_1.first;
+        first.Select_Faccion();
+        first.Select_Fichas();
+        
     }
 
 

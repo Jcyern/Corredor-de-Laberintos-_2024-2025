@@ -63,7 +63,7 @@ namespace Base_Datos
                         command.Parameters.Clear();
                         command.Parameters.AddWithValue("@Nombre", item.Name);
                         command.Parameters.AddWithValue("@Velocidad", item.Velocidad);
-                        command.Parameters.AddWithValue("@Enfriamiento", item.Enfriamiennto);
+                        command.Parameters.AddWithValue("@Enfriamiento", item.Enfriamiento);
                         command.Parameters.AddWithValue("@Faccion", item.id);
 
 
@@ -101,7 +101,7 @@ namespace Base_Datos
 
                             fichas.Add(new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString() ?? "", Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"])));
 
-                            Console.WriteLine($"Id: {reader["Id"]}, Nombre: {reader["Nombre"]}, Velocidad: {reader["Velocidad"]}");
+                    
                         }
                     }
                 }
@@ -109,7 +109,7 @@ namespace Base_Datos
                 conection.Close();
             }
 
-            Debug.Print(" se creo una lista de la faccion pasada");
+            //Debug.Print(" se creo una lista de la faccion pasada");
 
             return fichas;
         }
