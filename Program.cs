@@ -8,13 +8,15 @@ using System.Diagnostics;
 using F1;
 using Spectre.Console;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
+using System.Xml.XPath;
 
 public class Program
 {
 
     static void Main(string[] args)
     {
-        Juego game = new Juego();
+        Juego game = new();
         game.Bienvenido();
 
     }
@@ -43,21 +45,24 @@ public class Program
 
 
 
-public class Juego()
+public class Juego
 {
-    public string? usuario;
+    public Player jugador;
 
-
+    public Juego(string name = "")
+    {
+        jugador = new Player("");
+    }
 
     public void Bienvenido()
     {
         System.Console.WriteLine("Bienvenido al Juego de Laberinto ");
         System.Console.WriteLine();
         System.Console.WriteLine("Por Favor ingresa tu nombre ");
-        usuario = Console.ReadLine() ?? "";
+        jugador = new Player(Console.ReadLine() ?? "");
 
 
-        System.Console.WriteLine($"{usuario} necesitamos que escojas una casa con la cual jugar ");
+        System.Console.WriteLine($"{jugador.Usuario} necesitamos que escojas una casa con la cual jugar ");
         System.Console.WriteLine();
 
 
@@ -65,6 +70,10 @@ public class Juego()
 
         //Seleccionando Faccion
         Faccion();
+
+
+        //Seleciona las fichas 
+        Fichas();
 
 
 
@@ -90,11 +99,73 @@ public class Juego()
 
         System.Console.WriteLine($"El valor pasado es {result}");
 
-        Selecciones j1 = new Selecciones();
-        j1.Select_Faccion(result);
+        if (jugador != null)
+        {
+            jugador.Select_Faccion(result);
 
-        if (j1.faction != null)
-            AnsiConsole.Markup($"[{Color.BlueViolet}] Felicidades ha escogido la faccion {j1.faction.id}");
+            if (jugador.faction != null)
+                AnsiConsole.Markup($"[{Color.BlueViolet}] Felicidades ha escogido la faccion {jugador.faction.id} [/]");
+        }
+    }
+
+
+    private void Fichas()
+    {
+        System.Console.WriteLine();
+        AnsiConsole.Markup($"[{Color.BlueViolet}] Llego el momento de eleigir tus fichas , con las cuales jugaras   [/]");
+        AnsiConsole.Markup($"[{Color.BlueViolet}] Escoge 3 fichas minimo para salir a la siguiente fase    [/]");
+
+        while (jugador.fichas.Count < 3)
+        {
+            jugador.Print_Fichas();
+
+            System.Console.WriteLine("Escribe el numero de la ficha q quieras Agregar ");
+
+            int result = 0;
+            while (int.TryParse(Console.ReadLine(), out result) == false)
+            {
+                System.Console.WriteLine("No es un numero lo q pasaste ");
+            }
+            jugador.Add(result);
+        }
+
+        AnsiConsole.Markup($"[{Color.Gold1}] Desea escoger mas fichas   [/]");
+        System.Console.WriteLine(" 1 -- Pasar a la siguiente Fase ");
+        System.Console.WriteLine(" 2 -- Escoger mas Fichas ");
+        switch (Console.ReadLine())
+        {
+            case "1":
+            System.Console.WriteLine("Siguiente Fase");
+            System.Console.WriteLine();
+                break;
+            case "2":
+                jugador.Print_Fichas();
+
+                System.Console.WriteLine("Escribe el numero de la ficha q quieras Agregar ");
+
+                int result = 0;
+                while (int.TryParse(Console.ReadLine(), out result) == false)
+                {
+                    System.Console.WriteLine("No es un numero lo q pasaste ");
+                }
+                jugador.Add(result);
+                break;
+
+
+            default:
+                System.Console.WriteLine("No escribiste ni 1 ni 2");
+                break;
+        }
+
+
+        System.Console.WriteLine("Tus Fichas Escogidas son");
+        int count = 0;
+        foreach (var item in jugador.fichas)
+        {
+            count++;
+            AnsiConsole.Markup($"[{Color.BlueViolet}]  #{count} Nombre: {item.Name} Velocidad: {item.Velocidad} Enfriamineto: {item.Enfriamiento}    [/]");
+            System.Console.WriteLine();
+        }
 
     }
 

@@ -9,17 +9,21 @@ using System.Diagnostics;
 
 namespace F1
 {
-    public class Selecciones
+    public class Player
     {
 
-
+        public string Usuario;
         public Faction? faction;
 
-
-
+        public List<Ficha> fichas = new List<Ficha>();
         private List<Ficha> total_fichas = new List<Ficha>();
 
-        public List<Ficha> fichas = new List<Ficha>();
+
+
+        public Player(string name)
+        {
+            Usuario = name;
+        }
 
         //Seleccionar la Faction 
         public void Select_Faccion(int result)
@@ -50,6 +54,23 @@ namespace F1
         }
 
 
+        public void Print_Fichas()
+        {
+            AnsiConsole.Markup($"[{Color.Cyan2}]Fichas Disponibles : [/]");
+            System.Console.WriteLine();
+            int count = 0;
+            foreach (var item in total_fichas)
+            {
+                count++;
+                AnsiConsole.Markup($"[{Color.BlueViolet}]  #{count} Nombre: {item.Name} Velocidad: {item.Velocidad} Enfriamineto: {item.Enfriamiento}    [/]");
+                System.Console.WriteLine();
+            }
+        }
+
+        public void Add(int n)
+        {
+            fichas.Add(total_fichas[n-1]);
+        }
 
     }
 }
