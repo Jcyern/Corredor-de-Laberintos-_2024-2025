@@ -12,3 +12,6 @@
 /home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/Game_Logic.pdb
 /home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/Game_Logic.genruntimeconfig.cache
 /home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/ref/Game_Logic.dll
+/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/Game_Logic.csproj.AssemblyReference.cache
+/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/Game_Logic.sourcelink.json
+/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /obj/Debug/net8.0/Game_Logic.csproj.CopyComplete

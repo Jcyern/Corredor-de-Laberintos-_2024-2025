@@ -14,14 +14,16 @@ namespace FICHA
 
 
 
-//builder 
-        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction)   
+        //builder 
+        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction)
         {
-            this.Name = Name;
+
             this.id = id;
+            this.Name = Name;
             this.Velocidad = Velocidad;
             this.Enfriamiennto = Enfriamiennto;
             this.Faction = GetEnum(Faction);
+            this.Hability = "";
 
         }
 

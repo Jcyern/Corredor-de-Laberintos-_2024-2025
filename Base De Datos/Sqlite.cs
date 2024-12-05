@@ -41,13 +41,14 @@ namespace Base_Datos
                     command.ExecuteNonQuery();
                 }
                 Debug.Print(" se creo tabla correctamente ");
+                
                 conection.Close();
             }
 
         }
 
 
-        public void Insert(List<Ficha> fichas)
+        private void Insert(List<Ficha> fichas)
         {
             using (var conection = new SqliteConnection(conection_string))
             {
@@ -58,7 +59,7 @@ namespace Base_Datos
                 using (var command = new SqliteCommand(sql, conection))
                 {
                     foreach (var item in fichas)
-                    {
+                    {//Insertando los elementos , lo q hace q en el parametro nombre en la tabla asignale el valor q se le esta pasando
                         command.Parameters.Clear();
                         command.Parameters.AddWithValue("@Nombre", item.Name);
                         command.Parameters.AddWithValue("@Velocidad", item.Velocidad);
@@ -77,7 +78,7 @@ namespace Base_Datos
 
 
 
-
+   //Se le pasa la Faction y te da las fichas disponibles a escoger 
         public List<Ficha> GetFichas(int faccion)
         {
             List<Ficha> fichas = new List<Ficha>();
@@ -97,9 +98,9 @@ namespace Base_Datos
                         while (reader.Read())
                         {
 
-#pragma warning disable CS8604 // Possible null reference argument.
-                            fichas.Add(new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString(), Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"])));
-#pragma warning restore CS8604 // Possible null reference argument.
+
+                            fichas.Add(new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString() ?? "", Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"])));
+
                             Console.WriteLine($"Id: {reader["Id"]}, Nombre: {reader["Nombre"]}, Velocidad: {reader["Velocidad"]}");
                         }
                     }
@@ -116,8 +117,11 @@ namespace Base_Datos
 
 
 
-        public void AgregateFichasToBase()
+        public void Insert_Elements()
         {
+
+
+            //Lista de fichas 
             List<Ficha> fichas = new List<Ficha>
         {
             //Gryffindor
