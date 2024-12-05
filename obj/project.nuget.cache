@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "HEUf14YMs+SMEvzdQVkM7aQSfIGMnsk3RiwkLgC3KVJxYzuylpD+QLovzXuc2Kz5EDxKGpFeepUrfuGgX1akpg==",
+  "dgSpecHash": "gQIkx8j5QkwoVpMoNLQbyym+X6qE/IaKhOmYIHrI0P9qMEaRolhNn/PbtfasDDpKXWuojslbhhp1QNpsyyCmUg==",
   "success": true,
   "projectFilePath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /Game_Logic.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/juanca/.nuget/packages/microsoft.data.sqlite/9.0.0/microsoft.data.sqlite.9.0.0.nupkg.sha512",
+    "/home/juanca/.nuget/packages/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
+    "/home/juanca/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/juanca/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/home/juanca/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/juanca/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/juanca/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }
