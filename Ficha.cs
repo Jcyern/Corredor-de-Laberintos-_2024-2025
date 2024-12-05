@@ -22,34 +22,18 @@ namespace FICHA
             this.Name = Name;
             this.Velocidad = Velocidad;
             this.Enfriamiento = Enfriamiennto;
-            this.Faction = GetEnum(Faction);
+            this.Faction = new Faction(Faction);
             this.Hability = "";
 
         }
 
 
-        public Faction GetEnum(int faction)
-        {
-            switch (faction)
-            {
-                case 1:
-                    return Faction.Gryffindor;
-                case 2:
-                    return Faction.Slytherin;
-                case 3:
-                    return Faction.Ravenclaw;
-                case 4:
-                    return Faction.Hufflepuff;
-                default:
-                    throw new Exception(" El numero pasado no corresponde a ninguna Enum Faction");
-            }
-        }
     }
 
 
     //Definiendo un Enum para los tipos de fichas 
 
-    public enum Faction
+    public enum EnumFaction
     {
         Gryffindor,
 
@@ -58,5 +42,42 @@ namespace FICHA
         Ravenclaw,
 
         Hufflepuff
+    }
+
+    public class Faction
+    {
+        public EnumFaction name;
+        public int id;
+
+
+        public Faction(int n)
+        {
+            switch (n)
+            {
+                case 1:
+                    name = EnumFaction.Gryffindor;
+                    id = 1;
+                    break;
+                case 2:
+                    name = EnumFaction.Slytherin;
+                    id = 2;
+                    break;
+                case 3:
+                    name = EnumFaction.Hufflepuff;
+                    id = 3;
+                    break;
+                case 4:
+                    name = EnumFaction.Ravenclaw;
+                    id = 4;
+                    break;
+                default:
+                    throw new Exception(" El  numero pasado no es valido  con ninguna de las facciones disponibles");
+
+            }
+        }
+
+
+
+
     }
 }

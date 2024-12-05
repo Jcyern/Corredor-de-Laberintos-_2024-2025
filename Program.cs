@@ -6,18 +6,17 @@ using Maze_Generator;
 using System.Reflection.Metadata.Ecma335;
 using System.Diagnostics;
 using F1;
+using Spectre.Console;
+using System.Linq.Expressions;
 
 public class Program
 {
 
     static void Main(string[] args)
     {
-        //Maze(10);
+        Juego game = new Juego();
+        game.Bienvenido();
 
-        var first = Fase_1.first;
-        first.Select_Faccion();
-        first.Select_Fichas();
-        
     }
 
 
@@ -38,6 +37,66 @@ public class Program
         maze.Print();
     }
 
+
+
+}
+
+
+
+public class Juego()
+{
+    public string? usuario;
+
+
+
+    public void Bienvenido()
+    {
+        System.Console.WriteLine("Bienvenido al Juego de Laberinto ");
+        System.Console.WriteLine();
+        System.Console.WriteLine("Por Favor ingresa tu nombre ");
+        usuario = Console.ReadLine() ?? "";
+
+
+        System.Console.WriteLine($"{usuario} necesitamos que escojas una casa con la cual jugar ");
+        System.Console.WriteLine();
+
+
+
+
+        //Seleccionando Faccion
+        Faccion();
+
+
+
+    }
+
+    private void Faccion()
+    {
+        AnsiConsole.Markup($"[yellow]Gryffindor -- 1[/]");
+        System.Console.WriteLine();
+        AnsiConsole.Markup("[green]Slytherin --- 2[/]");
+        System.Console.WriteLine();
+        AnsiConsole.Markup($"[{Color.Gold1}]Hufflepuff -- 3[/]");
+        System.Console.WriteLine();
+        AnsiConsole.Markup("[blue]Ravenclaw --- 4[/]");
+        System.Console.WriteLine();
+        System.Console.WriteLine("Selecciona una faccion , escribiendo el numero correspondiente");
+
+        int result = 0;
+        while (int.TryParse(Console.ReadLine(), out result) == false)
+        {
+            System.Console.WriteLine("El valor pasado no es un numero ");
+        }
+
+        System.Console.WriteLine($"El valor pasado es {result}");
+
+        Selecciones j1 = new Selecciones();
+        j1.Select_Faccion(result);
+
+        if (j1.faction != null)
+            AnsiConsole.Markup($"[{Color.BlueViolet}] Felicidades ha escogido la faccion {j1.faction.id}");
+
+    }
 
 
 }
