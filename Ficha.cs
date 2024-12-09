@@ -13,6 +13,9 @@ namespace FICHA
         public string Hability;
 
 
+        public (int,int)position{get;set;}
+
+
 
         //builder 
         public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction)
@@ -24,6 +27,7 @@ namespace FICHA
             this.Enfriamiento = Enfriamiennto;
             this.Faction = new Faction(Faction);
             this.Hability = "";
+            position = (0,1);
 
         }
 
@@ -41,7 +45,8 @@ namespace FICHA
 
         Ravenclaw,
 
-        Hufflepuff
+        Hufflepuff,
+        None,
     }
 
     public class Faction
@@ -54,6 +59,11 @@ namespace FICHA
         {
             switch (n)
             {
+                case 0:
+                    name = EnumFaction.None;
+                    id = 0;
+                    break;
+
                 case 1:
                     name = EnumFaction.Gryffindor;
                     id = 1;

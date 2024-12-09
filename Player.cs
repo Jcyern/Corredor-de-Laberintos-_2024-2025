@@ -20,15 +20,18 @@ namespace F1
 
 
 
-        public Player(string name)
+        public Player(string name, Faction faction)
         {
             Usuario = name;
+            this.faction = faction;
+
         }
 
         //Seleccionar la Faction 
         public void Select_Faccion(int result)
         {
             faction = new Faction(result);
+            Debug.Print(faction.name.ToString());
 
             System.Console.WriteLine($"La Faction escogida es {faction.id} ");
 
@@ -69,7 +72,7 @@ namespace F1
 
         public void Add(int n)
         {
-            fichas.Add(total_fichas[n-1]);
+            fichas.Add(total_fichas[n - 1]);
         }
 
     }

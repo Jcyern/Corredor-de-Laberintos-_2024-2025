@@ -17,6 +17,47 @@ public class Laberinto
 
     public bool Valido;
 
+    public int GetLength(int n)
+    {
+        if (n < maze.Rank)
+        {
+            return maze.GetLength(n);
+        }
+        else
+        {
+            throw new IndexOutOfRangeException();
+        }
+    }
+
+
+    public Casilla this[int fila, int columna]
+    {
+        get
+        {
+            if (fila < maze.GetLength(0) && fila >= 0 && columna >= 0 && columna < maze.GetLength(1))
+            {
+                return maze[fila, columna];
+            }
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
+        }
+
+        set
+        {
+            if (fila < maze.GetLength(0) && fila >= 0 && columna >= 0 && columna < maze.GetLength(1))
+            {
+                
+                maze[fila, columna] =value ;
+            }
+            else
+            {
+                throw new IndexOutOfRangeException();
+            }
+        }
+    }
+
 
 
     public bool IsValid_Maze()
@@ -28,12 +69,12 @@ public class Laberinto
             visit[item.Item1, item.Item2] = true;
         }
 
-       // creando cola e inicializandola en la entrada (0,1)
+        // creando cola e inicializandola en la entrada (0,1)
         var cola = new Queue<(int, int)>();
         cola.Enqueue((0, 1));
 
 
-       //metodo para verificar si el tablero es valido 
+        //metodo para verificar si el tablero es valido 
         return IsInvalid(visit, (0, 0), cola);
 
     }
@@ -44,7 +85,7 @@ public class Laberinto
         maze = new Casilla[n, n];
         this.obstacles = new HashSet<(int, int)>();
 
-          //inicializando la casillas 
+        //inicializando la casillas 
         for (int i = 0; i < maze.GetLength(0); i++)
         {
             for (int j = 0; j < maze.GetLength(1); j++)
@@ -54,7 +95,7 @@ public class Laberinto
         }
 
 
-       //Para q genere los obstaculos 
+        //Para q genere los obstaculos 
         CreateObstacles();
 
     }
@@ -152,7 +193,7 @@ public class Laberinto
     // Metodo para saber cuando un laberinto es invalido , en este caso cuando se le crean islas
     // osea queda una casilla en true sin acceso rodeada de false 
 
-    private  bool IsInvalid(bool[,] visit, (int, int) actual, Queue<(int, int)> cola)
+    private bool IsInvalid(bool[,] visit, (int, int) actual, Queue<(int, int)> cola)
     {
         if (cola.Count == 0)
         {

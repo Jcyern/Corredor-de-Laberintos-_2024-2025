@@ -3,14 +3,10 @@ namespace Gammepay
 {
     public class Game
     {
-        public  Laberinto maze ;
+        public static  Laberinto maze ;
 
 
 
 
-        public Game(Laberinto maze)
-        {
-            this.maze = maze;
-        }
     }
 }

@@ -10,34 +10,30 @@ using Spectre.Console;
 using System.Linq.Expressions;
 using System.Security.Cryptography;
 using System.Xml.XPath;
+using Gammepay;
 
 public class Program
 {
 
     static void Main(string[] args)
     {
+        Create_base();
         Juego game = new();
         game.Bienvenido();
+
+
+
 
     }
 
 
-    public void Create_base()
+    public static void Create_base()
     {
         SQlite.instancia.CreateTable();
         SQlite.instancia.Insert_Elements();
     }
 
-    public static void Maze(int n)
-    {
-        Laberinto maze = new Laberinto(n);
 
-        while (maze.IsValid_Maze() == false)
-        {
-            maze = new Laberinto(10);
-        }
-        maze.Print();
-    }
 
 
 
@@ -51,7 +47,7 @@ public class Juego
 
     public Juego(string name = "")
     {
-        jugador = new Player("");
+        jugador = new Player("", new Faction(0));
     }
 
     public void Bienvenido()
@@ -59,7 +55,7 @@ public class Juego
         System.Console.WriteLine("Bienvenido al Juego de Laberinto ");
         System.Console.WriteLine();
         System.Console.WriteLine("Por Favor ingresa tu nombre ");
-        jugador = new Player(Console.ReadLine() ?? "");
+        jugador = new Player(Console.ReadLine() ?? "", new Faction(0));
 
 
         System.Console.WriteLine($"{jugador.Usuario} necesitamos que escojas una casa con la cual jugar ");
@@ -75,7 +71,7 @@ public class Juego
         //Seleciona las fichas 
         Fichas();
 
-
+        Generar_Maze(10);
 
     }
 
@@ -135,8 +131,8 @@ public class Juego
         switch (Console.ReadLine())
         {
             case "1":
-            System.Console.WriteLine("Siguiente Fase");
-            System.Console.WriteLine();
+                System.Console.WriteLine("Siguiente Fase");
+                System.Console.WriteLine();
                 break;
             case "2":
                 jugador.Print_Fichas();
@@ -166,8 +162,36 @@ public class Juego
             AnsiConsole.Markup($"[{Color.BlueViolet}]  #{count} Nombre: {item.Name} Velocidad: {item.Velocidad} Enfriamineto: {item.Enfriamiento}    [/]");
             System.Console.WriteLine();
         }
-
     }
+
+
+
+    private void Generar_Maze(int n)
+    {
+        //Generando laberintos validos aleatorios
+        System.Console.WriteLine("///////////////////////////////////////////////////////////");
+        System.Console.WriteLine("/////////////////////Generando laberinto //////////////////");
+        System.Console.WriteLine("///////////////////////////////////////////////////////////");
+        System.Console.WriteLine();
+
+        Laberinto maze = new Laberinto(n);
+
+        while (maze.IsValid_Maze() == false)
+        {
+            maze = new Laberinto(10);
+        }
+
+
+        Game.maze = maze;
+
+        System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
+        System.Console.WriteLine();
+
+        Game.maze.Print();
+    }
+
+
+
 
 
 }
