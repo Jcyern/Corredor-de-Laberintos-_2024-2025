@@ -5,6 +5,7 @@ using System.Runtime.Versioning;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text.RegularExpressions;
+using FICHA;
 using Spectre.Console;
 
 namespace Maze_Generator;
@@ -60,24 +61,7 @@ public class Laberinto
 
 
 
-    public bool IsValid_Maze()
-    {
-        var visit = new bool[maze.GetLength(0), maze.GetLength(0)];
 
-        foreach (var item in obstacles)
-        {
-            visit[item.Item1, item.Item2] = true;
-        }
-
-        // creando cola e inicializandola en la entrada (0,1)
-        var cola = new Queue<(int, int)>();
-        cola.Enqueue((0, 1));
-
-
-        //metodo para verificar si el tablero es valido 
-        return IsInvalid(visit, (0, 0), cola);
-
-    }
 
     //builder 
     public Laberinto(int n)
@@ -100,19 +84,23 @@ public class Laberinto
 
     }
 
-
+#region  Print 
     public void Print()
     {
         for (int i = 0; i < maze.GetLength(0); i++)
         {
             for (int j = 0; j < maze.GetLength(1); j++)
             {
-                if (!maze[i, j].IsPared)
+                if(maze[i,j].j1.Count>0)
+                {
+                    AnsiConsole.Markup($"[{Color.DeepSkyBlue3_1}]{maze[i,j].j1[0].Name[0] }\t[/]");
+                }
+                else if (!maze[i, j].IsPared)
                 {
                     AnsiConsole.Markup($"[green]1 \t[/]");
 
                 }
-                else
+                else if ( maze[i,j].IsPared)
                     AnsiConsole.Markup($"[red]0 \t[/]");
 
 
@@ -121,8 +109,11 @@ public class Laberinto
         }
     }
 
+#endregion
 
 
+
+#region Obstaculos
     //Metodo de agregar paredes al azar
     public void CreateObstacles()
     {
@@ -186,8 +177,29 @@ public class Laberinto
     }
 
 
+#endregion
 
 
+#region   Validacion
+    
+    public bool IsValid_Maze()
+    {
+        var visit = new bool[maze.GetLength(0), maze.GetLength(0)];
+
+        foreach (var item in obstacles)
+        {
+            visit[item.Item1, item.Item2] = true;
+        }
+
+        // creando cola e inicializandola en la entrada (0,1)
+        var cola = new Queue<(int, int)>();
+        cola.Enqueue((0, 1));
+
+
+        //metodo para verificar si el tablero es valido 
+        return IsInvalid(visit, (0, 0), cola);
+
+    }
 
 
     // Metodo para saber cuando un laberinto es invalido , en este caso cuando se le crean islas
@@ -273,10 +285,13 @@ public class Laberinto
 
 
 
+#endregion
+
 
 
 }
 
+#region  Casilla
 
 //Constructor de como representar una casilla en el tablero 
 public class Casilla
@@ -299,4 +314,11 @@ public class Casilla
     }
 
 
+
+    //Fichas q se encuentra en esa casilla 
+    public List<Ficha> j1 = new ();
+    public List<Ficha> j2 = new ();
+
+
 }
+    #endregion

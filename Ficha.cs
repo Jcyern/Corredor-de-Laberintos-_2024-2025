@@ -1,4 +1,5 @@
 using System;
+using Direcciones;
 
 namespace FICHA
 {
@@ -14,6 +15,8 @@ namespace FICHA
 
 
         public (int,int)position{get;set;}
+
+        public Moves move = new Moves();
 
 
 
