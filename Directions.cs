@@ -21,41 +21,69 @@ namespace Direcciones
     {
         private ((int,int),bool) Movement(Direction direccion, Ficha ficha)
         {
-            (int, int)[] moves = new (int, int)[] { (-1, 0), (0, 1), (1, 0), (0, -1) };
+            (int, int)[] moves = new (int, int)[] { (-ficha.Velocidad, 0), (0, ficha.Velocidad), (ficha.Velocidad, 0), (0, -ficha.Velocidad) };
+            (int,int)[]Basic_moves = new (int,int)[]{ (-1,0),(0,1),(1,0),(0,-1)};
             var pos = ficha.position;
             switch (direccion)
             {
                 case Direction.Up:
-                    if (ficha.position.Item1 + moves[0].Item1 >= 0 && ficha.position.Item1 + moves[0].Item1 < Game.maze.GetLength(0) && ficha.position.Item2 + moves[0].Item2 >= 0 && ficha.position.Item2 + moves[0].Item2 < Game.maze.GetLength(1) && Game.maze[ficha.position.Item1 + moves[0].Item1, ficha.position.Item2 + moves[0].Item2].IsPared == false)
+                    if(CheckMove(ficha.position,moves[0]))
                     {
                         return (ficha.position = (pos.Item1 + moves[0].Item1, pos.Item2 + moves[0].Item2),true);
                     }
+                    //verifica si con los basic moves se puede mover , si con el dezplazmiento normal de la ficha no puede 
+                    else if(CheckMove(ficha.position, Basic_moves[0]))
+                    {
+                        return (ficha.position = (pos.Item1 + Basic_moves[0].Item1, pos.Item2 + Basic_moves[0].Item2),true);
+                    }
                     else
-                    {   System.Console.WriteLine("No se Puede mover hay obstaculo");
+                    {   
+                        System.Console.WriteLine("No se Puede mover hay obstaculo");
                         return  (ficha.position,false);
                     }
                 case Direction.Down:
-                    if (ficha.position.Item1 + moves[2].Item1 >= 0 && ficha.position.Item1 + moves[2].Item1 < Game.maze.GetLength(0) && ficha.position.Item2 + moves[2].Item2 >= 0 && ficha.position.Item2 + moves[2].Item2 < Game.maze.GetLength(1) && Game.maze[ficha.position.Item1 + moves[2].Item1, ficha.position.Item2 + moves[2].Item2].IsPared == false)
+                
+                    if(CheckMove(ficha.position,moves[2]))
                     {
                         return (ficha.position = (pos.Item1 + moves[2].Item1, pos.Item2 + moves[2].Item2),true );
+                    }
+
+                    //verifica si con los basic moves se puede mover , si con el dezplazmiento normal de la ficha no puede 
+                    else if(CheckMove(ficha.position,Basic_moves[2]))
+                    {
+                        return (ficha.position = (pos.Item1 + Basic_moves[2].Item1, pos.Item2 + Basic_moves[2].Item2),true);
                     }
                     else
                     {   System.Console.WriteLine("No se Puede mover hay obstaculo");
                         return  (ficha.position,false);
                     }
                 case Direction.Right:
-                    if (ficha.position.Item1 + moves[1].Item1 >= 0 && ficha.position.Item1 + moves[1].Item1 < Game.maze.GetLength(0) && ficha.position.Item2 + moves[1].Item2 >= 0 && ficha.position.Item2 + moves[1].Item2 < Game.maze.GetLength(1) && Game.maze[ficha.position.Item1 + moves[1].Item1, ficha.position.Item2 + moves[1].Item2].IsPared == false)
+
+                    if(CheckMove(ficha.position,moves[1]))
                     {
                         return (ficha.position = (pos.Item1 + moves[1].Item1, pos.Item2 + moves[1].Item2),true);
+                    }
+
+                    //verifica si con los basic moves se puede mover , si con el dezplazmiento normal de la ficha no puede 
+                    else if(CheckMove(ficha.position,Basic_moves[1]))
+                    {
+                        return (ficha.position = (pos.Item1 + Basic_moves[1].Item1, pos.Item2 + Basic_moves[1].Item2),true);
                     }
                     else
                     {   System.Console.WriteLine("No se Puede mover hay obstaculo");
                         return  (ficha.position,false);
                     }
                 case Direction.Left:
-                    if (ficha.position.Item1 + moves[3].Item1 >= 0 && ficha.position.Item1 + moves[3].Item1 < Game.maze.GetLength(0) && ficha.position.Item2 + moves[3].Item2 >= 0 && ficha.position.Item2 + moves[3].Item2 < Game.maze.GetLength(1) && Game.maze[ficha.position.Item1 + moves[3].Item1, ficha.position.Item2 + moves[3].Item2].IsPared == false)
+
+                    if(CheckMove(ficha.position,moves[3]))
                     {
                         return (ficha.position = (pos.Item1 + moves[3].Item1, pos.Item2 + moves[3].Item2),true);
+                    }
+
+                    //verifica si con los basic moves se puede mover , si con el dezplazmiento normal de la ficha no puede 
+                    else if(CheckMove(ficha.position,Basic_moves[3]))
+                    {
+                        return (ficha.position = (pos.Item1 + Basic_moves[3].Item1, pos.Item2 + Basic_moves[3].Item2),true);
                     }
                     else
                     {   System.Console.WriteLine("No se Puede mover hay obstaculo");
@@ -70,7 +98,7 @@ namespace Direcciones
 
 
 
-        public void Movimiento(Ficha ficha , Direction direccion )
+        public bool Movimiento(Ficha ficha , Direction direccion )
         {
             //Acceder al Maze para cambiar la pos en el tablero 
 
@@ -88,8 +116,121 @@ namespace Direcciones
 
                 //y eliminala en la q ya paso 
                 maze[temp.Item1,temp.Item2].j1.Remove(ficha);
+                return true ;
             }
+
+            return false ;
             
         }
+
+
+
+
+
+
+        private bool CheckMove((int,int)pos , (int,int)move)
+        {
+            
+            if ( move.Item1 == 0 )
+            {
+                //va hacia la derecha 
+                if(pos.Item2>=0)
+                {
+                    for(int i = 1; i <= move.Item2; i++)
+                    {
+                        if(pos.Item2+ i>=0 && pos.Item2+i<Game.maze.GetLength(1))
+                        { //si queda dentro de los limites 
+                            if (Game.maze[pos.Item1,pos.Item2+i].IsPared)
+                            {
+                                return false ;
+                            }
+                        }
+                        else
+                        {
+                            return false ;
+                        }
+                    }
+                    return true ;
+                }
+                
+                //va hacia la  izquierda
+                else if(pos.Item2<0)
+                {
+                    for (int i = -1; i >= move.Item2 ; i--)
+                    {
+                        if( pos.Item2+ i >= 0 && pos.Item2+i < Game.maze.GetLength(1))
+                        {
+                            if(Game.maze[pos.Item1 , pos.Item2+i].IsPared)
+                            {
+                                //si hay  pared 
+                                return false ;
+                            }
+                        }
+                        else
+                        {   
+                            //fuera de los limites
+                            return false;
+                        }
+                    }
+                    return true ;
+                }
+            }
+
+            else if ( move.Item2== 0)
+            {
+                //va hacia Abajo
+                if(move.Item1>=0)
+                {
+                    for (int i = 1; i <= move.Item1; i++)
+                    {
+                        if(pos.Item1+1>=0 && pos.Item1<Game.maze.GetLength(0))
+                        {
+                            if ( Game.maze[pos.Item1+i,pos.Item2].IsPared)
+                            {
+                                System.Console.WriteLine("Hay Pared ");
+                                System.Console.WriteLine("Not Valid ");
+                                return false ;
+                            }
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("Fuera de Limite");
+                            System.Console.WriteLine("Not Valid");
+                            return false ;
+                        }
+                    }
+                    return true ;
+                }
+                //arriba 
+                if( move.Item1<0)
+                {
+                    for (int i = -1 ; i >= move.Item1 ; i--)
+                    {
+                        if(pos.Item1+i>=0 && pos.Item1< Game.maze.GetLength(0))
+                        {
+                            if( Game.maze[pos.Item1+i, pos.Item2].IsPared)
+                            {
+                                System.Console.WriteLine("Hay Pared ");
+                                System.Console.WriteLine("Not Valid ");
+                                return false ;
+                            }
+                        }
+                        else
+                        {  
+                            System.Console.WriteLine("Not Valid");
+                            return false;
+                        }
+                    }
+                    return true ;
+                }
+    
+            }
+
+            return false ;
+
+            
+        
+        }
     }
+    
 }

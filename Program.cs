@@ -28,7 +28,7 @@ public class Program
         game.jugador.faction = new Faction(1);
         game.jugador.fichas.Add(  new Ficha(1,"Albus_Dumbledore",3,2,1));
         game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
-        game.jugador.fichas.Add(  new Ficha(1,"Auror",1,0,1));
+        game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
 
         Generar_Maze(10);
         var tablero = Game.maze;
@@ -41,6 +41,7 @@ public class Program
 
 
         tablero.Print();
+        game.Empezar_Dezplazaminetos(game);
 
         }
 
@@ -83,7 +84,7 @@ public class Program
 }
 
 
-
+#region  Game
 public class Juego
 {
     public Player jugador;
@@ -92,6 +93,24 @@ public class Juego
     {
         jugador = new Player("", new Faction(0));
     }
+
+
+    public int IsNumber( string? consola)
+    {  
+            int result = 0;
+            while (int.TryParse(consola, out result) == false)
+            {
+                System.Console.WriteLine("El valor pasado no es un numero ");
+            }
+            return result;
+        
+    }
+
+
+
+
+
+
 #region  Welcome
     public void Bienvenido()
     {
@@ -137,11 +156,7 @@ public class Juego
         System.Console.WriteLine();
         System.Console.WriteLine("Selecciona una faccion , escribiendo el numero correspondiente");
 
-        int result = 0;
-        while (int.TryParse(Console.ReadLine(), out result) == false)
-        {
-            System.Console.WriteLine("El valor pasado no es un numero ");
-        }
+        int result = IsNumber(Console.ReadLine());
 
         System.Console.WriteLine($"El valor pasado es {result}");
 
@@ -156,6 +171,10 @@ public class Juego
 
     #endregion
 
+    
+    
+    
+    
     #region  Select_Fichas
     private void Fichas()
     {
@@ -217,6 +236,11 @@ public class Juego
     }
 
 #endregion
+    
+    
+    
+    
+    
     #region  Generador
     private void Generar_Maze(int n)
     {
@@ -244,13 +268,23 @@ public class Juego
 
     #endregion
 
+
+
+
+
+
+
     #region  Movimientos
     public void Empezar_Dezplazaminetos(Juego game )
         {
+
             System.Console.WriteLine("Presiona Q para seleccionar una ficha para mover");
             System.Console.WriteLine("Escriba Esc para salir ");
+            System.Console.WriteLine();
+
             while ( true )
                 {
+                    
                     ConsoleKeyInfo info = Console.ReadKey(true);
             
                 if( info.Key == ConsoleKey.Q)
@@ -261,14 +295,31 @@ public class Juego
                         count ++;
                         System.Console.WriteLine($"{count}  -- {ficha.Name}");
                     }
+                    System.Console.WriteLine();
+
 
                     int result = 0;
+                    System.Console.WriteLine("Selecciona una ficha poniendo su numero en consola ");
                     while (int.TryParse(Console.ReadLine(), out result) == false)
                         {
                             System.Console.WriteLine("El valor pasado no es un numero ");
                         } 
 
+                    //empezar la movimientos de la ficha
                     Movimiendo(game.jugador.fichas[result-1]);
+                    //despues de hacer todos los desplazamientos se rompe para seguir
+
+                    System.Console.WriteLine("Desea terminar o seguir el juego ");
+                    System.Console.WriteLine("Presione ");
+                    System.Console.WriteLine("1 -- si ");
+                    System.Console.WriteLine("2 -- no "); 
+                    var r = IsNumber(Console.ReadLine());
+
+                    if(r == 2)
+                    break;
+                    
+                    if(r==1)
+                    Empezar_Dezplazaminetos(game);  //vuelve a llamar all metodo 
                 }
 
             else if ( info.Key == ConsoleKey.Escape)
@@ -276,57 +327,106 @@ public class Juego
                 System.Console.WriteLine("you press Escape ");
                 break;
             }
+
+            
         } 
     }
 
 
 
 
-        public static void Movimiendo(Ficha ficha)
+    public static void Movimiendo(Ficha ficha)
     {
         System.Console.WriteLine("Presiona : Esc para salir");
         System.Console.WriteLine(" W arriba ");
         System.Console.WriteLine(" S abajo ");
         System.Console.WriteLine(" A izquierda ");
         System.Console.WriteLine(" D  derecha ");
-    
+        System.Console.WriteLine();
+        AnsiConsole.Markup($"Tienes  [red]{ficha.Enfriamiento }[/]movimientos ");
+        
+        int count = ficha.Enfriamiento;
+        while (count>0)
+        {
             ConsoleKeyInfo info  = Console.ReadKey(true);
-        if ( info.Key == ConsoleKey.Escape)
-        {
-            System.Console.WriteLine("se tecleo escape");
-            System.Console.WriteLine("Teclea otra vez si quierer cerrar ");
+            if ( info.Key == ConsoleKey.Escape)
+            {
+                System.Console.WriteLine("se tecleo escape");
+                System.Console.WriteLine("Teclea otra vez si quierer cerrar ");
+                break;
         
-        }
+            }
 
-        else if ( info.Key == ConsoleKey.W)
-        {
-            ficha.move.Movimiento(ficha,Direcciones.Direction.Up);
-            System.Console.WriteLine("Arriba");
-            Game.maze.Print();
-        }
+            else if ( info.Key == ConsoleKey.W)
+            {
+                var result = ficha.move.Movimiento(ficha,Direcciones.Direction.Up);
+                System.Console.WriteLine("Arriba");
+                if(result)// si es verdadera elmina un movimiento 
+                count -=1;
+                Game.maze.Print();
+                AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                if( count == 0)
+                {   
+                    System.Console.WriteLine();
+                    System.Console.WriteLine("Se acabaron los movimientos ");
+                    break ;
+                }
+            }
 
-        else if( info.Key == ConsoleKey.S)
-        {
-            ficha.move.Movimiento(ficha,Direcciones.Direction.Down);
-            System.Console.WriteLine("Abajo");
-            Game.maze.Print();
+            else if( info.Key == ConsoleKey.S)
+            {
+                var result =ficha.move.Movimiento(ficha,Direcciones.Direction.Down);
+                System.Console.WriteLine("Abajo");
+                if(result)
+                count-=1;
+                Game.maze.Print();
+                AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                if( count == 0)
+                {   
+                    System.Console.WriteLine();
+                    System.Console.WriteLine("Se acabaron los movimientos ");
+                    break ;
+                }
+            }
+            else if( info.Key == ConsoleKey.A)
+            {
+                var result =ficha.move.Movimiento(ficha,Direcciones.Direction.Left);
+                System.Console.WriteLine("Izquierda");
+                if(result)
+                count-=1;
+                Game.maze.Print();
+                AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                if( count == 0)
+                {   
+                    System.Console.WriteLine();
+                    System.Console.WriteLine("Se acabaron los movimientos ");
+                    break ;
+                }
+                
+            }
+            else if ( info.Key == ConsoleKey.D)
+            {
+                var result = ficha.move.Movimiento(ficha,Direcciones.Direction.Right);
+                System.Console.WriteLine("Derecha");
+
+                if(result)
+                count -=1;
+                Game.maze.Print();
+                AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+
+                if( count == 0)
+                {   
+                    System.Console.WriteLine();
+                    System.Console.WriteLine("Se acabaron los movimientos ");
+                    break ;
+                }
+            }
         }
-        else if( info.Key == ConsoleKey.A)
-        {
-            ficha.move.Movimiento(ficha,Direcciones.Direction.Left);
-            System.Console.WriteLine("Izquierda");
-            Game.maze.Print();
-        }
-        else if ( info.Key == ConsoleKey.D)
-        {
-            ficha.move.Movimiento(ficha,Direcciones.Direction.Right);
-            System.Console.WriteLine("Derecha");
-            Game.maze.Print();
-        }
-        
     }
     
 
 #endregion
 
+
+#endregion
 }
