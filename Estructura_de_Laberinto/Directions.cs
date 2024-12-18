@@ -4,6 +4,7 @@ using System.Diagnostics;
 using FICHA;
 using Gammepay;
 using Spectre.Console;
+using Turnos;
 
 namespace Direcciones
 {
@@ -110,9 +111,19 @@ namespace Direcciones
             var result =Movement(direccion,ficha);
 
             if ( result.Item2== true )
-            {   
-                //agregala en la nueva posicion
-                maze[result.Item1.Item1,result.Item1.Item2].j1.Add(ficha);
+            {  
+                 //si la pos es la salida del laberinto 
+                if(   result.Item1.Item1 ==maze.GetLength(0) - 1 && result.Item1.Item2 == maze.GetLength(0) - 2)
+                {
+                    System.Console.WriteLine("va a verificar si es victoria ");
+                    Game.VerifyVictory(Turno.jugador);
+                }
+                
+                else
+                {
+                    //agregala en la nueva posicion
+                    maze[result.Item1.Item1,result.Item1.Item2].j1.Add(ficha);
+                }
 
                 //y eliminala en la q ya paso 
                 maze[temp.Item1,temp.Item2].j1.Remove(ficha);

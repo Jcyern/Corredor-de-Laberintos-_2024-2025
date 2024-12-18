@@ -13,6 +13,7 @@ using System.Xml.XPath;
 using Gammepay;
 using System.Net;
 using Faccion;
+using Turnos;
 
 public class Program
 {
@@ -21,28 +22,28 @@ public class Program
     {
         Create_base();
         Juego game = new();
-        //game.Bienvenido();
+        game.Bienvenido();
 
 
         //Prueba de moviemiento 
         
-        game.jugador.faction = new Faction(1);
-        game.jugador.fichas.Add(  new Ficha(1,"Albus_Dumbledore",3,2,1));
-        game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
-        game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
+        // game.jugador.faction = new Faction(1);
+        // game.jugador.fichas.Add(  new Ficha(1,"Albus_Dumbledore",3,2,1));
+        // game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
+        // game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
 
-        Generar_Maze(10);
-        var tablero = Game.maze;
+        // Generar_Maze(10);
+        // var tablero = Game.maze;
 
-        //inicializando  fichas en la pos 0,1
-        foreach ( var item in game.jugador.fichas)
-        {
-            tablero[0,1].j1.Add(item);
-        }
+        // //inicializando  fichas en la pos 0,1
+        // foreach ( var item in game.jugador.fichas)
+        // {
+        //     tablero[0,1].j1.Add(item);
+        // }
 
 
-        tablero.Print();
-        game.Empezar_Dezplazaminetos(game);
+        // tablero.Print();
+        // game.Empezar_Dezplazaminetos(game);
 
         }
 
@@ -50,11 +51,10 @@ public class Program
     public static void Create_base()
     {
         SQlite.instancia.CreateTable();
-        SQlite.instancia.Insert_Elements();
+        
     }
 
-
-    private static  void Generar_Maze(int n)
+private static  void Generar_Maze(int n)
     {
         //Generando laberintos validos aleatorios
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
@@ -62,7 +62,7 @@ public class Program
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
         System.Console.WriteLine();
 
-        Laberinto maze = new Laberinto(n);
+        Laberinto maze =new Laberinto(n);
 
         while (maze.IsValid_Maze() == false)
         {
@@ -114,29 +114,28 @@ public class Juego
 
 #region  Welcome
     public void Bienvenido()
-    {
+    {   
+        Console.Clear();
         System.Console.WriteLine("Bienvenido al Juego de Laberinto ");
         System.Console.WriteLine();
         System.Console.WriteLine("Por Favor ingresa tu nombre ");
         jugador = new Player(Console.ReadLine() ?? "", new Faction(0));
 
-
+        Console.Clear();
         System.Console.WriteLine($"{jugador.Usuario} necesitamos que escojas una casa con la cual jugar ");
         System.Console.WriteLine();
-
-
-
 
         //Seleccionando Faccion
         Faccion();
 
-
+        Console.Clear();
         //Seleciona las fichas 
         Fichas();
 
+        Console.Clear();
         Generar_Maze(10);
 
-
+        
         Empezar_Dezplazaminetos(this);
 
     }
@@ -245,6 +244,7 @@ public class Juego
     #region  Generador
     private void Generar_Maze(int n)
     {
+        Console.Clear();
         //Generando laberintos validos aleatorios
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
         System.Console.WriteLine("/////////////////////Generando laberinto //////////////////");
@@ -263,8 +263,9 @@ public class Juego
 
         System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
         System.Console.WriteLine();
+        Console.Clear();
 
-        Game.maze.Print();
+        //Game.maze.Print();
     }
 
     #endregion
@@ -278,7 +279,7 @@ public class Juego
     #region  Movimientos
     public void Empezar_Dezplazaminetos(Juego game )
         {
-
+            Game.maze.Print();
             System.Console.WriteLine("Presiona Q para seleccionar una ficha para mover");
             System.Console.WriteLine("Escriba Esc para salir ");
             System.Console.WriteLine();
@@ -308,18 +309,29 @@ public class Juego
 
                     //empezar la movimientos de la ficha
                     Movimiendo(game.jugador.fichas[result-1]);
+
+                    if(Game.winner.Item1) //si se cumple la condicion de victoria , finalizar el juego y dar el ganador 
+                    {
+                        //Llamar al metodo de la victoria 
+                        Game.Victory();
+                        break;
+                    }
+
                     //despues de hacer todos los desplazamientos se rompe para seguir
 
                     System.Console.WriteLine("Desea terminar o seguir el juego ");
                     System.Console.WriteLine("Presione ");
-                    System.Console.WriteLine("1 -- si ");
-                    System.Console.WriteLine("2 -- no "); 
-                    var r = IsNumber(Console.ReadLine());
+                    System.Console.WriteLine("Y --  seguir ");
+                    System.Console.WriteLine("N -- terminar juego "); 
+                    
+                    ConsoleKeyInfo llave  = Console.ReadKey(true );
+                    
 
-                    if(r == 2)
+
+                    if(llave.Key == ConsoleKey.N)
                     break;
                     
-                    if(r==1)
+                    if(llave.Key == ConsoleKey.Y)
                     Empezar_Dezplazaminetos(game);  //vuelve a llamar all metodo 
                 }
 
@@ -357,54 +369,84 @@ public class Juego
                 break;
         
             }
-
+            //Arriba 
             else if ( info.Key == ConsoleKey.W)
             {
                 var result = ficha.move.Movimiento(ficha,Direcciones.Direction.Up);
                 System.Console.WriteLine("Arriba");
                 if(result)// si es verdadera elmina un movimiento 
                 count -=1;
-                Game.maze.Print();
+                Console.Clear();
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                System.Console.WriteLine();
+                Game.maze.Print();
+                
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
+                    Turno.Cambio_Turno();
                     break ;
                 }
+                if(Game.winner.Item1)
+                {
+                    break;
+                }
             }
-
+            //Abajo
             else if( info.Key == ConsoleKey.S)
             {
                 var result =ficha.move.Movimiento(ficha,Direcciones.Direction.Down);
                 System.Console.WriteLine("Abajo");
                 if(result)
                 count-=1;
-                Game.maze.Print();
+                Console.Clear();
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                System.Console.WriteLine();
+                Game.maze.Print();
+                
+                
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
+                    Turno.Cambio_Turno();
                     break ;
                 }
+                if(Game.winner.Item1)
+                {
+                    break;
+                }
             }
+
+            //Izquierda
             else if( info.Key == ConsoleKey.A)
             {
                 var result =ficha.move.Movimiento(ficha,Direcciones.Direction.Left);
                 System.Console.WriteLine("Izquierda");
                 if(result)
                 count-=1;
-                Game.maze.Print();
+                Console.Clear();
+
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                System.Console.WriteLine();
+                Game.maze.Print();
+                
+                
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
+                    Turno.Cambio_Turno();
                     break ;
+                }
+                if(Game.winner.Item1)
+                {
+                    break;
                 }
                 
             }
+            //Derecha
             else if ( info.Key == ConsoleKey.D)
             {
                 var result = ficha.move.Movimiento(ficha,Direcciones.Direction.Right);
@@ -412,17 +454,28 @@ public class Juego
 
                 if(result)
                 count -=1;
-                Game.maze.Print();
+                Console.Clear();
+
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
+                System.Console.WriteLine();
+                Game.maze.Print();
+                
 
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
+                    Turno.Cambio_Turno();
                     break ;
+                }
+                if(Game.winner.Item1)
+                {
+                    break;
                 }
             }
         }
+    
+    
     }
     
 

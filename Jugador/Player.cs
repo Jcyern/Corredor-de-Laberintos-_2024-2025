@@ -6,6 +6,7 @@ using Base_Datos;
 using System.Data;
 using System.Diagnostics;
 using Faccion;
+using Gammepay;
 
 
 namespace F1
@@ -17,6 +18,8 @@ namespace F1
         public Faction? faction;
 
         public List<Ficha> fichas = new List<Ficha>();
+
+        //fichas de la base de datos // hay q cargarlas 
         private List<Ficha> total_fichas = new List<Ficha>();
 
 
@@ -25,6 +28,9 @@ namespace F1
         {
             Usuario = name;
             this.faction = faction;
+
+            //agrega el jugador a la lista de jugadores 
+            Game.jugadores.Add(this);
 
         }
 
@@ -52,7 +58,10 @@ namespace F1
         private void LoadFichas()
         {
             if (faction != null)
-                total_fichas = SQlite.instancia.GetFichas(faction.id);
+                {   
+                    total_fichas.Clear();
+                    total_fichas = SQlite.instancia.GetFichas(faction.id);
+                }
             else
                 throw new Exception(" aun no se ha escogido faccion");
         }

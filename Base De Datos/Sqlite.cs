@@ -22,26 +22,54 @@ namespace Base_Datos
 
         public void CreateTable()
         {
+
+            string sqlCheckTable = "SELECT name FROM sqlite_master WHERE type='table' AND name='MiTabla'";
+
+
+            
+
+
+
+
             using (var conection = new SqliteConnection(conection_string))
             {
                 conection.Open();
-
-                //crear una tabla sino existe 
-                string sql = @" CREATE TABLE IF NOT EXISTS MiTabla (
-                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                Nombre TEXT,
-                Velocidad INTEGER,
-                Enfriamiento INTEGER,
-                Faccion INTEGER
-                )";
-
-                //comando coge la el comando q se ejecuara y la coneccion con la base de datos 
-                using (var command = new SqliteCommand(sql, conection))
+                using (var command = new SqliteCommand(sqlCheckTable, conection))
                 {
-                    command.ExecuteNonQuery();
+                    var result = command.ExecuteScalar();
+            
+                    if (result != null)
+                    {
+                        Debug.Print("La tabla MiTabla ya existe.");
+                        System.Console.WriteLine("La tabla MiTabla ya existe ");
+                    }
+
+                    else
+                    {
+                        
+                        //crear una tabla sino existe 
+                        string sql = @" CREATE TABLE IF NOT EXISTS MiTabla (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Nombre TEXT,
+                        Velocidad INTEGER,
+                        Enfriamiento INTEGER,
+                        Faccion INTEGER
+                        )";
+
+                        //comando coge la el comando q se ejecuara y la coneccion con la base de datos 
+                        using (var createcommand = new SqliteCommand(sql, conection))
+                        {
+                            createcommand.ExecuteNonQuery();
+                            Debug.Print(" se creo tabla correctamente ");
+                            System.Console.WriteLine("Se creo la tabla corretamente ");
+                            
+                            
+                        }
+
+                        //Insertar los elementos en  la tabla 
+                        Insert_Elements();
+                    }
                 }
-                Debug.Print(" se creo tabla correctamente ");
-                
                 conection.Close();
             }
 
@@ -109,7 +137,7 @@ namespace Base_Datos
                 conection.Close();
             }
 
-            //Debug.Print(" se creo una lista de la faccion pasada");
+            Debug.Print(" se creo una lista de la faccion pasada");
 
             return fichas;
         }
@@ -117,7 +145,7 @@ namespace Base_Datos
 
 
 
-        public void Insert_Elements()
+        private void Insert_Elements()
         {
 
 

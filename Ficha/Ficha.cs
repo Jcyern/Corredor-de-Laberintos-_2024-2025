@@ -1,4 +1,5 @@
 using System;
+using System.Buffers;
 using Direcciones;
 using Faccion;
 
@@ -14,6 +15,8 @@ namespace FICHA
         public int Velocidad;
         public int Enfriamiento;
         public string Hability;
+
+        public int Owner;
 
 
         public (int,int)position{get;set;}
