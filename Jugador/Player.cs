@@ -5,6 +5,7 @@ using Spectre.Console;
 using Base_Datos;
 using System.Data;
 using System.Diagnostics;
+using Faccion;
 
 
 namespace F1

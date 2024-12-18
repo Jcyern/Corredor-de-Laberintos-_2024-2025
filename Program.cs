@@ -12,6 +12,7 @@ using System.Security.Cryptography;
 using System.Xml.XPath;
 using Gammepay;
 using System.Net;
+using Faccion;
 
 public class Program
 {
