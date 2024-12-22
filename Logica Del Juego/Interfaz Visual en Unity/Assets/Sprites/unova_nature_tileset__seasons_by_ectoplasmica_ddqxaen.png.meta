@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 90e23f26bb6a574b49f28060ea2a5ef2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 256
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c4abf0cb5139d6f960d6fd6b5a0378
+      internalID: -2094810015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 177
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32263a5332edffada251181c495e0a1
+      internalID: -1723238454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 177
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffb2c1f2873e61b8bd9a73226466db4
+      internalID: 1246922935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 177
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc77f0fa8879d1f6e865b789754c6706
+      internalID: 2013654165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 177
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e6314bf5e01373197eab57d41c833a
+      internalID: 452619421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 177
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcc07c81f86c833eb58aa19fec0df4f
+      internalID: 612960982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 177
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad871eef71c4a7ea39fac3b6f6c4ab77
+      internalID: 1195269445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 177
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedc86284433e0ef1ab50c07268bcb5d
+      internalID: -656471199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 177
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a83f711addb46e94a4ef0cef2e204cd
+      internalID: 832040667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 256
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27a2143816432f8c9fbc9c16bbd071c
+      internalID: -1329444165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772af06bfebc75f79993ec061e590b4
+      internalID: 849903276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1697af82392eae2868bdaf1ae832bf
+      internalID: 568057265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_12
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86546ac937e1e431bc9c22135e4d95f
+      internalID: -968811239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846a5ad1ae25646278f8df05d9cbd0f4
+      internalID: -1828161500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4caaf7fc81f6b62972657d1308d95f
+      internalID: 1264313638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406483cdc24928fc9b45a89a175df00b
+      internalID: -1955868548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21da91ea90f61e57094d33e8abc39504
+      internalID: -540617327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e987b4329d2ccad58ac0d2d4b955814c
+      internalID: -370304220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_0: -2094810015
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_1: -1723238454
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_10: 849903276
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_11: 568057265
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_12: -968811239
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_13: -1828161500
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_14: 1264313638
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_15: -1955868548
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_16: -540617327
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_17: -370304220
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_2: 1246922935
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_3: 2013654165
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_4: 452619421
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_5: 612960982
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_6: 1195269445
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_7: -656471199
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_8: 832040667
+      unova_nature_tileset__seasons_by_ectoplasmica_ddqxaen_9: -1329444165
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
