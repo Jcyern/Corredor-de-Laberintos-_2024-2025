@@ -64,9 +64,9 @@ public class Laberinto
 
 
     //builder 
-    public Laberinto(int n)
+    public Laberinto(int x, int y)
     {
-        maze = new Casilla[n, n];
+        maze = new Casilla[x, y];
         this.obstacles = new HashSet<(int, int)>();
 
         //inicializando la casillas 
@@ -120,7 +120,7 @@ public class Laberinto
 
 
         //creando los bordes del maze de obstaculos
-        for (int i = 0; i < maze.GetLength(0); i++)
+        for (int i = 0; i < maze.GetLength(1); i++)
         {
 
             if (maze[0, i].Pos != (0, 1))
@@ -130,20 +130,31 @@ public class Laberinto
             }
 
 
-            maze[i, 0].IsPared = true;  // La primera columna 
-            obstacles.Add((i, 0));
-
+            
             //si es desigual de la salida
-            if (maze[maze.GetLength(0) - 1, i].Pos != (maze.GetLength(0) - 1, maze.GetLength(0) - 2))
+            if (maze[maze.GetLength(0) - 1, i].Pos != (maze.GetLength(0) - 1, maze.GetLength(1) - 2))
             {
                 maze[maze.GetLength(0) - 1, i].IsPared = true;  // La ultima fila 
                 obstacles.Add((maze.GetLength(0) - 1, i));
             }
-            maze[i, maze.GetLength(0) - 1].IsPared = true;   //La ultima columna
-            obstacles.Add((i, maze.GetLength(0) - 1));
+
+
+        }
+        //para lo q tenga q ver con el conteo de las filas 
+        for ( int i = 0 ; i < maze.GetLength(0);  i ++)
+        {
+            maze[i, 0].IsPared = true;  // La primera columna 
+            obstacles.Add((i, 0));
+
+
+            maze[i, maze.GetLength(1) - 1].IsPared = true;   //La ultima columna
+            obstacles.Add((i, maze.GetLength(1) - 1));
             Debug.Print(" obstaculos " + obstacles.Count);
 
         }
+
+
+
         Debug.Print("after for " + obstacles.Count);
 
         //hora de crear random , crea obstaculos random por el tablero  
@@ -157,7 +168,7 @@ public class Laberinto
 
     private void RandomObstacles()
     {
-        int cant = maze.GetLength(0) * 2;
+        int cant = maze.GetLength(1) * 2;
         Debug.Print(cant.ToString());
 
         while (cant != 0)
@@ -184,7 +195,7 @@ public class Laberinto
     
     public bool IsValid_Maze()
     {
-        var visit = new bool[maze.GetLength(0), maze.GetLength(0)];
+        var visit = new bool[maze.GetLength(0), maze.GetLength(1)];
 
         foreach (var item in obstacles)
         {

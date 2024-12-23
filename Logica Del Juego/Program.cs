@@ -22,7 +22,7 @@ public class Program
     {
         Create_base();
         Juego game = new();
-        game.Bienvenido();
+        //game.Bienvenido();
 
 
         //Prueba de moviemiento 
@@ -32,7 +32,10 @@ public class Program
         // game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
         // game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
 
-        // Generar_Maze(10);
+        Generar_Maze(20,27);
+
+        Game.maze.Print();
+
         // var tablero = Game.maze;
 
         // //inicializando  fichas en la pos 0,1
@@ -54,7 +57,7 @@ public class Program
         
     }
 
-private static  void Generar_Maze(int n)
+private static  void Generar_Maze(int fila , int columna )
     {
         //Generando laberintos validos aleatorios
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
@@ -62,11 +65,11 @@ private static  void Generar_Maze(int n)
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
         System.Console.WriteLine();
 
-        Laberinto maze =new Laberinto(n);
+        Laberinto maze =new Laberinto(fila,columna );
 
         while (maze.IsValid_Maze() == false)
         {
-            maze = new Laberinto(10);
+            maze = new Laberinto(fila,columna );
         }
 
 
@@ -133,7 +136,7 @@ public class Juego
         Fichas();
 
         Console.Clear();
-        Generar_Maze(10);
+        Generar_Maze(20,28);
 
         
         Empezar_Dezplazaminetos(this);
@@ -242,7 +245,7 @@ public class Juego
     
     
     #region  Generador
-    private void Generar_Maze(int n)
+    private void Generar_Maze(int fila , int columna )
     {
         Console.Clear();
         //Generando laberintos validos aleatorios
@@ -251,11 +254,11 @@ public class Juego
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
         System.Console.WriteLine();
 
-        Laberinto maze = new Laberinto(n);
+        Laberinto maze = new Laberinto(fila , columna );
 
         while (maze.IsValid_Maze() == false)
         {
-            maze = new Laberinto(10);
+            maze = new Laberinto(fila,columna);
         }
 
 
