@@ -7,6 +7,7 @@ using System.Security.Principal;
 using System.Text.RegularExpressions;
 using FICHA;
 using Spectre.Console;
+using Case;
 
 namespace Maze_Generator;
 
@@ -168,7 +169,7 @@ public class Laberinto
 
     private void RandomObstacles()
     {
-        int cant = maze.GetLength(1) * 2;
+        int cant = maze.GetLength(1) * 6;
         Debug.Print(cant.ToString());
 
         while (cant != 0)
@@ -176,7 +177,7 @@ public class Laberinto
             Random random = new Random();
             // para q no ponga obtaculos en los bordes q se supone que ya tienen obstaculos
             var row = random.Next(1, maze.GetLength(0) - 1);
-            var column = random.Next(1, maze.GetLength(0) - 1);
+            var column = random.Next(1, maze.GetLength(1) - 1);
 
             //random obstacle 
 
@@ -226,7 +227,7 @@ public class Laberinto
             for (int i = 0; i < visit.GetLength(0); i++)
             {
 
-                for (int j = 0; j < visit.GetLength(0); j++)
+                for (int j = 0; j < visit.GetLength(1); j++)
                 {
                     if (!visit[i, j])
                     {
@@ -280,7 +281,7 @@ public class Laberinto
             direct.Add((Pos.Item1 - 1, Pos.Item2));
         }
         //dereha 
-        if (Pos.Item2 + 1 < maze.GetLength(0) && !maze[Pos.Item1, Pos.Item2 + 1].IsPared)
+        if (Pos.Item2 + 1 < maze.GetLength(1) && !maze[Pos.Item1, Pos.Item2 + 1].IsPared)
         {
             direct.Add((Pos.Item1, Pos.Item2 + 1));
         }
@@ -302,34 +303,3 @@ public class Laberinto
 
 }
 
-#region  Casilla
-
-//Constructor de como representar una casilla en el tablero 
-public class Casilla
-{
-    (int, int) Position;
-    public bool IsPared { get; set; }
-
-    //Propiedades de accedo a Columna y Fila 
-    public int Fila => Position.Item1;
-    public int Columna => Position.Item2;
-    public (int, int) Pos => Position;
-
-
-
-    public Casilla(int i, int j)
-    {
-        Position = (i, j);
-
-        IsPared = false;
-    }
-
-
-
-    //Fichas q se encuentra en esa casilla 
-    public List<Ficha> j1 = new ();
-    public List<Ficha> j2 = new ();
-
-
-}
-    #endregion

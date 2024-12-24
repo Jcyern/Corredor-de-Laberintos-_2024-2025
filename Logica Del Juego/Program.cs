@@ -32,7 +32,7 @@ public class Program
         // game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
         // game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
 
-        Generar_Maze(20,27);
+        Generar_Maze(23,34);
 
         Game.maze.Print();
 

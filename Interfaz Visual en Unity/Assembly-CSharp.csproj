@@ -64,10 +64,26 @@
     <Analyzer Include="/home/juanca/Ubuntu Unity/Hub/Editor/2022.3.18f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Table.cs" />
-    <Compile Include="Assets/Scripts/Movement/PlayerMovement.cs" />
-    <Compile Include="Assets/Scripts/Movement/TitleCollider.cs" />
+    <Compile Include="Assets/Scripts/Logic/Estructura_de_Laberinto/Directions.cs" />
+    <Compile Include="Assets/Scripts/Logic/Estructura_de_Laberinto/Game.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Player/Movement/Diccionario.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Player/PlayerDisplay.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Tablero/CasillaDisplay.cs" />
+    <Compile Include="Assets/Scripts/Logic/Jugador/Player.cs" />
+    <Compile Include="Assets/Scripts/Logic/Estructura_de_Laberinto/Turno.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Tablero/TableroInterface.cs" />
+    <Compile Include="Assets/Scripts/Logic/Base De Datos/Sqlite.cs" />
+    <Compile Include="Assets/Scripts/Logic/Ficha/Faction.cs" />
+    <Compile Include="Assets/Scripts/Logic/Ficha/Ficha.cs" />
+    <Compile Include="Assets/Scripts/Logic/Estructura_de_Laberinto/Laberinto.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Player/Movement/PlayerMovement.cs" />
+    <Compile Include="Assets/Scripts/Logic/Estructura_de_Laberinto/Casilla.cs" />
+    <Compile Include="Assets/Scripts/Interfaz/Player/Movement/TitleCollider.cs" />
     <Compile Include="Assets/pos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/Scripts/Logic/Base De Datos/Plugins/sqlite3.dll" />
+    <None Include="Assets/Scripts/Logic/Base De Datos/Plugins/Mono.Data.Sqlite.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -404,6 +420,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets/Scripts/Logic/Base De Datos/Plugins/Mono.Data.Sqlite.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
