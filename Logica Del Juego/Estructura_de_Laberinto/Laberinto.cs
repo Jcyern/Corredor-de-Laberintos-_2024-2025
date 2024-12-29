@@ -217,29 +217,23 @@ public class Laberinto
     // Metodo para saber cuando un laberinto es invalido , en este caso cuando se le crean islas
     // osea queda una casilla en true sin acceso rodeada de false 
 
-    private bool IsInvalid(bool[,] visit, (int, int) actual, Queue<(int, int)> cola)
+    private bool IsInvalid(bool[,] visit, (int, int) actual, Queue<(int, int)> cola , int distance = 0)
     {
         if (cola.Count == 0)
         {
             //cola vacia , termino el recorrido
-
-
+            //hace un recorrido final a a matriz haber si todas las pos de las mascara estan en tru , entonces seria valida 
             for (int i = 0; i < visit.GetLength(0); i++)
             {
 
                 for (int j = 0; j < visit.GetLength(1); j++)
                 {
-                    if (!visit[i, j])
+                    if (!visit[i, j])  // si hay una pos no visitada returna false 
                     {
-                        Valido = false;
-
-
                         return false;
-
                     }
                 }
             }
-            Valido = true;
             return true;
 
         }
@@ -248,18 +242,23 @@ public class Laberinto
         else
         {
             actual = cola.Dequeue(); //extrae el elemento actual de la cola
-            visit[actual.Item1, actual.Item2] = true;
+            visit[actual.Item1, actual.Item2] = true; // poner el elemeto en visitados 
             Debug.Print("actual es :" + actual.Item1 + actual.Item2);
 
             // utilizamos un array direccional  para ver q rango de mov tiene para moverse 
-            var lab = Direccion(actual);
+            var lab = Direccion(actual); 
+            //lab contiene una lista de las posibles direcciones 
 
             foreach (var item in lab)
             {
                 if (!cola.Contains(item))
                 {  //sino se encuentra  en la cola y el elemento no se ecuentra visitado (agregalo a la cola) 
-                    if (visit[item.Item1, item.Item2] == false)
-                        cola.Enqueue(item);
+                    if (visit[item.Item1, item.Item2] == false) // y  comprobar q sino esta en la cola puede ser q este visitado en las 
+                        {
+                            
+                            cola.Enqueue(item);
+
+                        }
                 }
             }
             return IsInvalid(visit, actual, cola);

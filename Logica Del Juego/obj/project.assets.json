@@ -371,11 +371,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /Logica Del Juego/Game_Logic.csproj",
+      "projectUniqueName": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj",
       "projectName": "Game_Logic",
-      "projectPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /Logica Del Juego/Game_Logic.csproj",
+      "projectPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj",
       "packagesPath": "/home/juanca/.nuget/packages/",
-      "outputPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /Logica Del Juego/obj/",
+      "outputPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/juanca/.nuget/NuGet/NuGet.Config"

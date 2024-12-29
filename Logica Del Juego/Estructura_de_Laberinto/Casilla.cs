@@ -8,6 +8,8 @@ namespace Case
 public class Casilla
 {
     (int, int) Position;
+
+    public int distance { get;set;} 
     public bool IsPared { get; set; }
 
     //Propiedades de accedo a Columna y Fila 

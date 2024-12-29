@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TIOvwHEEQEoAM5IHMrC8JpFDXN2eMUPEs9UV9072Ci55uiXhyVGMBxxoKy0dL4MiTFZYzd2tZ8cWYwana5q7zw==",
+  "dgSpecHash": "45G/cbuBHwTdoXn6J/n8M3vQBMnFlK1LEBza/0GLeEbFqS+8NEaA6KhD0o9Ac90Q6mJl1C4Bbxz7oP7RUbEzdw==",
   "success": true,
-  "projectFilePath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_Logic /Logica Del Juego/Game_Logic.csproj",
+  "projectFilePath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj",
   "expectedPackageFiles": [
     "/home/juanca/.nuget/packages/microsoft.data.sqlite/9.0.0/microsoft.data.sqlite.9.0.0.nupkg.sha512",
     "/home/juanca/.nuget/packages/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg.sha512",

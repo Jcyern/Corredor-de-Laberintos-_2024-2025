@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj": {}
+    "/home/juanca/Escritorio/A Start /A Start.csproj": {}
   },
   "projects": {
-    "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj": {
+    "/home/juanca/Escritorio/A Start /A Start.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj",
-        "projectName": "Game_Logic",
-        "projectPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/Game_Logic.csproj",
+        "projectUniqueName": "/home/juanca/Escritorio/A Start /A Start.csproj",
+        "projectName": "A Start",
+        "projectPath": "/home/juanca/Escritorio/A Start /A Start.csproj",
         "packagesPath": "/home/juanca/.nuget/packages/",
-        "outputPath": "/home/juanca/Documentos/Maze Runner 2024-2025/Game_/Logica Del Juego/obj/",
+        "outputPath": "/home/juanca/Escritorio/A Start /obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/juanca/.nuget/NuGet/NuGet.Config"
@@ -37,16 +37,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Spectre.Console": {
-              "target": "Package",
-              "version": "[0.49.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
