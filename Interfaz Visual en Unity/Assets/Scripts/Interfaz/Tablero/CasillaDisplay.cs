@@ -4,6 +4,10 @@ using UnityEngine;
 using Case;
 using UnityEditor.Callbacks;
 using Labenterface;
+using FICHA;
+using System;
+using Gammepay;
+using SELECCION;
 
 public class CasillaDisplay : MonoBehaviour
 {   
@@ -13,6 +17,8 @@ public class CasillaDisplay : MonoBehaviour
     public int x;
     public int y;
     public Casilla casilla ;
+
+    
 
 
 
@@ -24,7 +30,7 @@ public class CasillaDisplay : MonoBehaviour
 
 
 
-    public  CasillaDisplay(Casilla casilla)
+    public  void LoadCasillaDisplay(Casilla casilla)
     {
         x =casilla.Fila;
         y=casilla.Columna;
@@ -32,6 +38,7 @@ public class CasillaDisplay : MonoBehaviour
         this.casilla = casilla;
     }
 
+#region  Logica Trigger
     void OnTriggerEnter2D ( Collider2D  objeto )
     {
         if(this.casilla.salida == true)
@@ -39,8 +46,6 @@ public class CasillaDisplay : MonoBehaviour
             Debug.Log("Hay un player en la salida ");
             Debug.Log("You win");
 
-
-    
                 var rb = objeto.GetComponent<Rigidbody2D>();
                 var list = TableroInterface.casillas_de_vicotria;
                 for( int i = 0 ; i< list.Count ; i ++)
@@ -62,7 +67,41 @@ public class CasillaDisplay : MonoBehaviour
                 }
             
         }
-    }
+
+
+        else 
+        {   if(casilla.inicio == false)
+            {   
+                Debug.Log("Hay un objeto en la casilla ");
+                if( objeto.CompareTag("Player"))
+                {   
+                    if(objeto.GetComponent<PlayerMovement>().velocidad>0)
+                    {   
+                        Debug.Log("Hay un player en la casilla ");
+                        objeto.GetComponent<PlayerMovement>().velocidad -=1;
+                    }
+                    else if ( objeto.GetComponent<PlayerMovement>().velocidad == 0)
+                    {
+                        Debug.Log ( " el objeto no se puede mover la velocidad esta en cero ");
+                        objeto.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+                    
+                        Debug.Log(" Activar cambio de turno ");
+                        GameObject.Find("Laberinto").GetComponent<Seleccion>().ActivarPlayer();
+
+                    }
+                }
+            }
+            else 
+            { 
+                Debug.Log(" Esta en la casilla inicio");
+            }
+        }
+            }
+
+#endregion
+
+
+#region  Collision
 
     void OnCollisionEnter2D(Collision2D collision )
     {
@@ -83,6 +122,8 @@ public class CasillaDisplay : MonoBehaviour
             }
         }
     }
+
+#endregion
 
 
     public void Build()

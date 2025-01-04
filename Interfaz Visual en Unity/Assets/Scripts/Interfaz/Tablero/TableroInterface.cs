@@ -40,7 +40,7 @@ public class TableroInterface : MonoBehaviour
             for (int j = 0 ; j<fila.transform.childCount ; j ++)
             {
                 //Asociamos las casillas y llamamos Build para activar imagenes y respectivos Collider
-                    fila.transform.GetChild(j).GetComponent<CasillaDisplay>().casilla = Laberinto[i,j];  // asociamos casillas por cuestion de comodidad
+                    fila.transform.GetChild(j).GetComponent<CasillaDisplay>().LoadCasillaDisplay( Laberinto[i,j]);  // asociamos casillas por cuestion de comodidad
                     fila.transform.GetChild(j).GetComponent<CasillaDisplay>().Build();
             }
         }

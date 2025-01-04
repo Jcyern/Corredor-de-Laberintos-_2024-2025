@@ -9,7 +9,8 @@ public class Casilla
 {
     (int, int) Position;
     public bool IsPared { get; set; }
-
+    
+    public bool inicio;
     public bool salida ;
 
     //Propiedades de accedo a Columna y Fila 

@@ -22,17 +22,19 @@ namespace F1
         public List<Ficha> fichas = new List<Ficha>();
 
         //fichas de la base de datos // hay q cargarlas 
-        private List<Ficha> total_fichas = new List<Ficha>();
+        public  List<Ficha> total_fichas = new List<Ficha>();
 
 
 
-        public Player(string name, Faction faction)
+
+
+        public Player(string name, Faction faction = null)
         {
             Usuario = name;
             this.faction = faction;
 
             //agrega el jugador a la lista de jugadores 
-            Game.jugadores.Add(this);
+           // Game.jugadores.Add(this);
 
         }
 

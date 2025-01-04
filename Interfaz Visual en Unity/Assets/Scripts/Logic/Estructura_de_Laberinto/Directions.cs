@@ -117,7 +117,7 @@ namespace Direcciones
                 if(   result.Item1.Item1 ==maze.GetLength(0) - 1 && result.Item1.Item2 == maze.GetLength(0) - 2)
                 {
                     System.Console.WriteLine("va a verificar si es victoria ");
-                    Game.VerifyVictory(Turno.jugador);
+                    //Game.VerifyVictory(Turno.jugador);
                 }
                 
                 else

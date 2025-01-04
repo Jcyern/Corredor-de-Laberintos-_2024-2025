@@ -5,9 +5,41 @@ using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 using DiccionarioPo;
 using Gammepay;
+using FICHA;
 using System.Runtime.ConstrainedExecution;
 public class PlayerMovement : MonoBehaviour
 {
+    //Componentes fichas
+    Ficha components ;
+    //visible en el board para identificar las cosas 
+    public string Name ;
+    public int  velocidad;
+    public int  enfriamiento ;
+
+    public bool IsSelected;
+
+
+    public void  LoadFicha( Ficha ficha  )
+    {
+        components = ficha ;
+        Name = ficha.Name ;
+        velocidad = ficha.Velocidad ;
+        enfriamiento = ficha.Enfriamiento ;
+
+        //cambiarle el nombre al gameobject por comodidad 
+        gameObject.name = ficha.Name;
+
+    }
+
+
+    
+
+    void Start( )
+    {
+        
+        rb = GetComponent<Rigidbody2D>();
+    }
+    
     //Este script se encargara del movimiento del jugador  
     
     [SerializeField] int velocity =5;
@@ -16,33 +48,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Tilemap tilemap;
     public TileBase wall ;
-
-    //posicion de la salida final
-
-
-    void Awake()
-    {
-        //se le asigna al componente q se encuentra en el objeto 
-        rb = GetComponent<Rigidbody2D>();
-        
-
-    }
-    void Start()
-    {
-        rb.position = new Vector2(23,-9);
-    }
-
-    void Update()
-    {
-        if(Game.final_pos !=(0,0)  && rb.position == new Vector2(Game.final_pos.Item1,Game.final_pos.Item2 ))
-        {
-            Debug.Log("Llego a la metaaa    !!!!!!!!!!!!!!!!");
-        }
-    }
-
-
-
-
 
     private void OnMovement(InputValue value)  //se activara cuando se activen uno de los  botones referencias para el movimiento ( W,A,S,D)
     {
@@ -65,27 +70,6 @@ public class PlayerMovement : MonoBehaviour
         
     
     }
-
-    // private void OnCollisionEnter2D (Collision2D collision)
-    // {
-    //     //Itera sobre los puntos de contacto de la colision 
-    //     foreach ( ContactPoint2D point in collision.contacts)
-    //     {
-    //         { Vector3Int cellPosition = tilemap.WorldToCell(point.point);
-    //         TileBase tile = tilemap.GetTile(cellPosition);
-
-    //         if( tile == wall)
-    //         {
-    //             Debug.Log("HIT WALL");
-
-    //             rb.velocity = Vector2.zero; //Detener velocidad 
-
-    //             //collisionSound.Play(); // Reproducir el sonido de colisión
-    //         }
-    //     }
-        
-
-    // }
     
 }
 

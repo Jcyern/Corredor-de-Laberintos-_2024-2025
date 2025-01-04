@@ -125,8 +125,10 @@ public class Laberinto
         //creando los bordes del maze de obstaculos
         for (int i = 0; i < maze.GetLength(1); i++)
         {
+            //poniendo en true el incio 
+            maze[0,1].inicio = true ;
 
-            if (maze[0, i].Pos != (0, 1))
+            if (maze[0, i].inicio != true )
             {//para q no ponga en true la entrada
                 maze[0, i].IsPared = true;   // La Primera Fila 
                 obstacles.Add((0, i));

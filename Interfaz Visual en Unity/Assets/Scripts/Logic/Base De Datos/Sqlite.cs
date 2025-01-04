@@ -154,44 +154,33 @@ namespace Base_Datos
             List<Ficha> fichas = new List<Ficha>
         {
             //Gryffindor
-            new Ficha(1,"Albus_Dumbledore",3,2,1),
-            new Ficha(1,"Animago",2,1,1),
-            new Ficha(1,"Auror",1,0,1),
-            new Ficha(1,"Espada_de_GG",4,1,1),
-            new Ficha(1,"Fenix",2,0,1),
-            new Ficha(1,"Minerva_McGonagall",5,2,1),
-            new Ficha(1,"Ron_Weasley",2,0,1),
-            new Ficha(1,"Rubeus_Hagrid",3,1,1),
+            new Ficha(1,"Albus Dumbledore",3,2,1),
+            new Ficha(1,"Harry Potter",2,1,1),
+            new Ficha(1,"Hermione",3,2,1),
+            new Ficha(1,"Ron Weasley",4,1,1),
             new Ficha(1,"Sirius_Black",3,2,1),
+
+
              //Slytherin
-            new Ficha(2,"Acromantula",3,1,2),
-            new Ficha(2,"Baron_Sanguinario",4,2,2),
-            new Ficha(2,"Basilisco",3,1,2),
-            new Ficha(2,"Bellatrix_Lestrange",2,0,2),
-            new Ficha(2,"Bruja",2,1,2),
-            new Ficha(2,"Dementor",3,1,2),
-            new Ficha(2,"Draco_Malfoy",4,2,2),
-            new Ficha(2,"Tom_Riddle_Diarie",3,1,2),
+            new Ficha(2,"Draco_Malfoy",4,2,2),     
+            new Ficha(2,"Bellatrix_Lestrange",2,0,2),   
             new Ficha(2,"Estudiante_Astuto",2,1,2),
-            new Ficha(2,"Merodeador",4,2,2),
-            new Ficha(2,"Mortifago",3,1,2),
-            new Ficha(2,"Tom_Riddle",2,1,2),
-            new Ficha(2,"Uniforme_de_Slytherin",3,1,2),
+            new Ficha(2,"Bruja",2,1,2),
+            new Ficha(2,"Baron_Sanguinario",4,2,2),
+
+
              //Ravenclaw
             new Ficha(3,"Borracho_de_Matalobos",3,1,3),
-            new Ficha(3,"Giratiempo",4,2,3),
             new Ficha(3,"Glacius",3,1,3),
             new Ficha(3,"Kelpie",2,1,3),
-            new Ficha(3,"Leon",2,0,3),
-            new Ficha(3,"Vendedor_de_Varitas",3,1,3),
+            new Ficha(3,"Leo",2,0,3),
+            new Ficha(4,"Gigante",3,1,4),
 
              //Hufflepuff
             new Ficha(4,"Boggart",3,2,4),
-            new Ficha(4,"Caballero_de_Raven",3,1,4),
-            new Ficha(4,"Colacuerno_Hungaro",3,1,4),
-            new Ficha(4,"Elfo_Domestico",2,1,4),
+            new Ficha(4,"Caballero",3,1,4),
+            new Ficha(4,"Elfo",2,1,4),
             new Ficha(4,"Fluffy",2,1,4),
-            new Ficha(4,"Gigante",3,1,4),
             new Ficha(4,"Gytrash",2,0,4)
 
         };
