@@ -5,7 +5,7 @@ using Faccion;
 using System.Diagnostics;
 namespace Turnos
 {
-    public class Turno 
+    public class Turno
     {
         public  static Player jugador = new Player(" null",new Faction(0));
 

@@ -6,7 +6,7 @@ namespace Gammepay
 {
     public class Game
     {
-        public  static Stopwatch  reloj = new Stopwatch();
+        
         public static  Laberinto maze ;
 
         public static (bool,string) winner = (false,"") ;
