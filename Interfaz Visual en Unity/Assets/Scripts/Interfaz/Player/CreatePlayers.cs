@@ -12,7 +12,7 @@ public class CreatePlayers : MonoBehaviour
 
     void Start()
     {
-        CreatePlayer(new Ficha(2,"Draco_Malfoy",4,2,2));
+        //CreatePlayer(new Ficha(2,"Draco_Malfoy",4,2,2));
     }
 
 

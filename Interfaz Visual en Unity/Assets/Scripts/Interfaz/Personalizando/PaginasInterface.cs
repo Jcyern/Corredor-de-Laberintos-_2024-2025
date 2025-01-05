@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class PaginasInterface : MonoBehaviour
 {
-    public static Paginas paginas ;
+    public  Paginas paginas ;
     
     public GameObject left ;
     public GameObject right  ;
+
+    public GameObject terminar ;
 
     public GameObject[] fichasdisplay = new GameObject[3];
 
@@ -48,10 +50,9 @@ public class PaginasInterface : MonoBehaviour
     public void Next()
     {
         if ( paginas == null) throw new System.Exception("Las paginas estan nulas ");
-        
-        paginas.Next();
 
-        
+        //activando el metodo next de paginas 
+        paginas.Next();
         
         for (int i = 0; i < fichasdisplay.Length; i++)
         {   if(i<paginas.actual.Count)

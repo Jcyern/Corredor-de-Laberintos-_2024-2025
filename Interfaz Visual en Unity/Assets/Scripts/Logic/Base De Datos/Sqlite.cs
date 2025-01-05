@@ -154,10 +154,10 @@ namespace Base_Datos
             List<Ficha> fichas = new List<Ficha>
         {
             //Gryffindor
-            new Ficha(1,"Albus Dumbledore",3,2,1),
-            new Ficha(1,"Harry Potter",2,1,1),
+            new Ficha(1,"Albus_Dumbledore",3,2,1),
+            new Ficha(1,"Harry_Potter",2,1,1),
             new Ficha(1,"Hermione",3,2,1),
-            new Ficha(1,"Ron Weasley",4,1,1),
+            new Ficha(1,"Ron_Weasley",4,1,1),
             new Ficha(1,"Sirius_Black",3,2,1),
 
 
@@ -169,14 +169,14 @@ namespace Base_Datos
             new Ficha(2,"Baron_Sanguinario",4,2,2),
 
 
-             //Ravenclaw
+             //Hufflepuff
             new Ficha(3,"Borracho_de_Matalobos",3,1,3),
             new Ficha(3,"Glacius",3,1,3),
             new Ficha(3,"Kelpie",2,1,3),
             new Ficha(3,"Leo",2,0,3),
-            new Ficha(4,"Gigante",3,1,4),
+            new Ficha(3,"Gigante",3,1,3),
 
-             //Hufflepuff
+             //Ravenclaw
             new Ficha(4,"Boggart",3,2,4),
             new Ficha(4,"Caballero",3,1,4),
             new Ficha(4,"Elfo",2,1,4),
