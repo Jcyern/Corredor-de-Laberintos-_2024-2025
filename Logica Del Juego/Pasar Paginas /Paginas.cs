@@ -1,11 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using FICHA;
-using Unity.Mathematics;
-using UnityEditor.Experimental.GraphView;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 namespace Page
 {
 

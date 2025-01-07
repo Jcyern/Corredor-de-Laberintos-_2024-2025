@@ -3,7 +3,8 @@
 using System.Diagnostics;
 using FICHA;
 using Gammepay;
-using Spectre.Console;
+using System;
+
 using Turnos;
 
 namespace Direcciones
@@ -103,7 +104,7 @@ namespace Direcciones
         {
             //Acceder al Maze para cambiar la pos en el tablero 
 
-            var maze = Game.maze;
+            var maze = Game.Maze;
 
             var temp =(ficha.position.Item1,ficha.position.Item2);
             Debug.Print($"Ficha elminada en {ficha.position.Item1},{ficha.position.Item2} --- {ficha.Name}");
@@ -116,7 +117,7 @@ namespace Direcciones
                 if(   result.Item1.Item1 ==maze.GetLength(0) - 1 && result.Item1.Item2 == maze.GetLength(0) - 2)
                 {
                     System.Console.WriteLine("va a verificar si es victoria ");
-                    Game.VerifyVictory(Turno.jugador);
+                    //Game.VerifyVictory(Turno.jugador);
                 }
                 
                 else
@@ -149,9 +150,9 @@ namespace Direcciones
                 {
                     for(int i = 1; i <= move.Item2; i++)
                     {
-                        if(pos.Item2+ i>=0 && pos.Item2+i<Game.maze.GetLength(1))
+                        if(pos.Item2+ i>=0 && pos.Item2+i<Game.Maze.GetLength(1))
                         { //si queda dentro de los limites 
-                            if (Game.maze[pos.Item1,pos.Item2+i].IsPared)
+                            if (Game.Maze[pos.Item1,pos.Item2+i].IsPared)
                             {
                                 return false ;
                             }
@@ -169,9 +170,9 @@ namespace Direcciones
                 {
                     for (int i = -1; i >= move.Item2 ; i--)
                     {
-                        if( pos.Item2+ i >= 0 && pos.Item2+i < Game.maze.GetLength(1))
+                        if( pos.Item2+ i >= 0 && pos.Item2+i < Game.Maze.GetLength(1))
                         {
-                            if(Game.maze[pos.Item1 , pos.Item2+i].IsPared)
+                            if(Game.Maze[pos.Item1 , pos.Item2+i].IsPared)
                             {
                                 //si hay  pared 
                                 return false ;
@@ -194,9 +195,9 @@ namespace Direcciones
                 {
                     for (int i = 1; i <= move.Item1; i++)
                     {
-                        if(pos.Item1+1>=0 && pos.Item1<Game.maze.GetLength(0))
+                        if(pos.Item1+1>=0 && pos.Item1<Game.Maze.GetLength(0))
                         {
-                            if ( Game.maze[pos.Item1+i,pos.Item2].IsPared)
+                            if ( Game.Maze[pos.Item1+i,pos.Item2].IsPared)
                             {
                                 System.Console.WriteLine("Hay Pared ");
                                 System.Console.WriteLine("Not Valid ");
@@ -217,9 +218,9 @@ namespace Direcciones
                 {
                     for (int i = -1 ; i >= move.Item1 ; i--)
                     {
-                        if(pos.Item1+i>=0 && pos.Item1< Game.maze.GetLength(0))
+                        if(pos.Item1+i>=0 && pos.Item1< Game.Maze.GetLength(0))
                         {
-                            if( Game.maze[pos.Item1+i, pos.Item2].IsPared)
+                            if( Game.Maze[pos.Item1+i, pos.Item2].IsPared)
                             {
                                 System.Console.WriteLine("Hay Pared ");
                                 System.Console.WriteLine("Not Valid ");

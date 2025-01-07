@@ -12,7 +12,7 @@ public class RandomMove : Trampa
     public override (int, int) Activate()
     {
         //Coger una pos al azar del tablero q no tenga pared y lo cambia para esa position
-        var tablero = Game.maze;
+        var tablero = Game.Maze;
 
         if( tablero == null)
         {

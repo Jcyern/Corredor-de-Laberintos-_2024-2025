@@ -184,7 +184,7 @@ public class Juego
         }
 
 
-        Game.maze = maze;
+        Game.Maze = maze;
 
         System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
         System.Console.WriteLine();
@@ -204,7 +204,7 @@ public class Juego
     #region  Movimientos
     public void Empezar_Dezplazaminetos(Juego game )
         {
-            Game.maze.Print();
+            Game.Maze.Print();
             System.Console.WriteLine("Presiona Q para seleccionar una ficha para mover");
             System.Console.WriteLine("Escriba Esc para salir ");
             System.Console.WriteLine();
@@ -304,13 +304,13 @@ public class Juego
                 Console.Clear();
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
                 System.Console.WriteLine();
-                Game.maze.Print();
+                Game.Maze.Print();
                 
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
-                    Turno.Cambio_Turno();
+                  //  Turno.Cambio_Turno();
                     break ;
                 }
                 if(Game.winner.Item1)
@@ -328,14 +328,14 @@ public class Juego
                 Console.Clear();
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
                 System.Console.WriteLine();
-                Game.maze.Print();
+                Game.Maze.Print();
                 
                 
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
-                    Turno.Cambio_Turno();
+                   // Turno.Cambio_Turno();
                     break ;
                 }
                 if(Game.winner.Item1)
@@ -355,14 +355,14 @@ public class Juego
 
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
                 System.Console.WriteLine();
-                Game.maze.Print();
+                Game.Maze.Print();
                 
                 
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
-                    Turno.Cambio_Turno();
+                    //Turno.Cambio_Turno();
                     break ;
                 }
                 if(Game.winner.Item1)
@@ -383,14 +383,14 @@ public class Juego
 
                 AnsiConsole.Markup($"Te quedan [red]{count}[/] movimientos  ");
                 System.Console.WriteLine();
-                Game.maze.Print();
+                Game.Maze.Print();
                 
 
                 if( count == 0)
                 {   
                     System.Console.WriteLine();
                     System.Console.WriteLine("Se acabaron los movimientos ");
-                    Turno.Cambio_Turno();
+                    //Turno.Cambio_Turno();
                     break ;
                 }
                 if(Game.winner.Item1)

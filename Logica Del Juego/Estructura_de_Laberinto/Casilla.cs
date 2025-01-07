@@ -1,4 +1,4 @@
-using System.Collections;
+using System.Collections.Generic;
 using FICHA;
 namespace Case
 {
@@ -8,9 +8,10 @@ namespace Case
 public class Casilla
 {
     (int, int) Position;
-
-    public int distance { get;set;} 
     public bool IsPared { get; set; }
+    
+    public bool inicio;
+    public bool salida ;
 
     //Propiedades de accedo a Columna y Fila 
     public int Fila => Position.Item1;
@@ -24,6 +25,8 @@ public class Casilla
         Position = (i, j);
 
         IsPared = false;
+
+        salida = false ;
     }
 
 
@@ -35,4 +38,6 @@ public class Casilla
 
 }
     #endregion
+
+
 }

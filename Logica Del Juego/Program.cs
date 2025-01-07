@@ -35,7 +35,7 @@ public class Program
 
         Generar_Maze(23,34);
 
-        Game.maze.Print();
+        Game.Maze.Print();
 
         // var tablero = Game.maze;
 
@@ -74,7 +74,7 @@ private static  void Generar_Maze(int fila , int columna )
         }
 
 
-        Game.maze = maze;
+        Game.Maze = maze;
 
         System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
         System.Console.WriteLine();
