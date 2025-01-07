@@ -113,6 +113,12 @@ void Start()
         }
         Flechas.GetComponent<PaginasInterface>().paginas = new Paginas(jugador.total_fichas);
 
+        //activar el cmabio de paginas , Y SE ASOCIAN LAS FICHAS 
+        Flechas.GetComponent<PaginasInterface>().Next();
+
+        //ahora hace falta asociarlo 
+
+
 
 
         var dic = GameObject.Find("Canvas").GetComponent<Datos>().jugadores;

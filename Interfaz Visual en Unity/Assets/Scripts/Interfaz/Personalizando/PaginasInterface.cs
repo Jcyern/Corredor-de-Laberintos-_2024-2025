@@ -17,7 +17,7 @@ public class PaginasInterface : MonoBehaviour
 
     void Start()
     {
-        Next();
+        //Next();
         left.SetActive(false);
     }
     public void Back( )
