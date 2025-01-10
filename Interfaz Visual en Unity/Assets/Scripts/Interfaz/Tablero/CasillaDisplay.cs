@@ -9,6 +9,7 @@ using System;
 using Gammepay;
 using SELECCION;
 using Game_Logic.Trampas;
+using F1;
 
 public class CasillaDisplay : MonoBehaviour
 {   
@@ -25,12 +26,6 @@ public class CasillaDisplay : MonoBehaviour
 
 
 
-    void Start( )
-    {
-        this.GetComponent<Collider2D>().isTrigger = false ;
-    }
-
-
 
 
     public  void LoadCasillaDisplay(Casilla casilla)
@@ -39,6 +34,12 @@ public class CasillaDisplay : MonoBehaviour
         y=casilla.Columna;
 
         this.casilla = casilla;
+
+        if(this.casilla.IsPared == false)
+        {   
+            //sino es una pared pon para q se pueda pasar por encima de el 
+            gameObject.GetComponent<Collider2D>().isTrigger = true;
+        }
     }
 
 #region  Logica Trigger
@@ -48,7 +49,7 @@ public class CasillaDisplay : MonoBehaviour
         {
             Debug.Log("Hay un player en la salida ");
             Debug.Log("You win");
-
+            objeto.gameObject.SetActive(true);
                 var rb = objeto.GetComponent<Rigidbody2D>();
                 var list = TableroInterface.casillas_de_vicotria;
                 for( int i = 0 ; i< list.Count ; i ++)
@@ -83,13 +84,15 @@ public class CasillaDisplay : MonoBehaviour
                         Debug.Log("Hay un player en la casilla ");
                         objeto.GetComponent<PlayerMovement>().velocidad -=1;
                     }
-                    else if ( objeto.GetComponent<PlayerMovement>().velocidad == 0)
+                    else if ( objeto.GetComponent<PlayerMovement>().velocidad == 0 && objeto.GetComponent<PlayerMovement>().is_active)
                     {
                         Debug.Log ( " el objeto no se puede mover la velocidad esta en cero ");
-                        objeto.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
-                    
+                        objeto.GetComponent<PlayerMovement>().Desactivar();
+                        
+                        
                         Debug.Log(" Activar cambio de turno ");
-                        GameObject.Find("Canvas").GetComponent<TurnoInterface>().ActivarPlayer();
+
+                        GameObject.Find("Canvas").GetComponent<TurnoInterface>().Camibio_de_Turno();
 
                     }
                 }
@@ -139,10 +142,10 @@ public class CasillaDisplay : MonoBehaviour
                 SpriteRender_.sprite = pared;
                 
             }
-            else if (casilla.trampa != null)
-            {
-                SpriteRender_.sprite = trampa;
-            }
+            // else if (casilla.trampa != null)
+            // {
+            //     SpriteRender_.sprite = trampa;
+            // }
 
             else 
             {

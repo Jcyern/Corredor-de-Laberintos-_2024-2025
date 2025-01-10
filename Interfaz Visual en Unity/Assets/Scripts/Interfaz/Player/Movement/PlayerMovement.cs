@@ -9,14 +9,20 @@ using FICHA;
 using System.Runtime.ConstrainedExecution;
 public class PlayerMovement : MonoBehaviour
 {
+    public InputAction movection;
     //Componentes fichas
-    Ficha components ;
+    public Ficha components ;
     //visible en el board para identificar las cosas 
     public string Name ;
     public int  velocidad;
     public int  enfriamiento ;
 
     public bool IsSelected;
+
+    public bool Casilla_Origen= true ;
+
+
+    public bool is_active ;
 
 
     public void  LoadFicha( Ficha ficha  )
@@ -34,32 +40,34 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-    void Start( )
+    void Awake( )
     {
         
         rb = GetComponent<Rigidbody2D>();
+        movection = GetComponent<PlayerInput>().actions.FindAction("Movement");
+        velocidad = components.Velocidad;
+        Debug.Log(components.Velocidad);
     }
     
     //Este script se encargara del movimiento del jugador  
     
-    [SerializeField] int velocity =5;
+    public int velocity =5;
     private Vector2 movement ;
     private Rigidbody2D rb;
 
-    public Tilemap tilemap;
-    public TileBase wall ;
-
     private void OnMovement(InputValue value)  //se activara cuando se activen uno de los  botones referencias para el movimiento ( W,A,S,D)
     {
-        if(IsSelected)
-        {   
-            //Se pasa un input value para saber en q direccion y en q eje se esta presionando 
-            movement = value.Get<Vector2>();  // le asigna el valor del vector
-        }
+        
+
+            
+        
+                movement = value.Get<Vector2>(); // le asigna el valor del vector
+    
+        
     }
 
     
-    private void FixedUpdate()
+    public  void FixedUpdate()
     {
         //se le pasa el valor del movimiento al rigidbody  
         // El metodo MovePosition se encarga de mover el rigidbody a una posicion dada,
@@ -72,6 +80,35 @@ public class PlayerMovement : MonoBehaviour
         
     
     }
+
+
+    public void Activar()
+    {
+        movement = Vector2.zero;
+        is_active = true ;
+        velocidad = components.Velocidad;
+        gameObject.GetComponent<Collider2D>().isTrigger = false ;
+        gameObject.SetActive(true);
+
+    }
+
+    public void Desactivar()
+    {
+        movement = Vector2.zero;
+        is_active = false ;
+        gameObject.SetActive(false);
+        gameObject.GetComponent<Collider2D>().isTrigger = false ;
+    }
+
+
+
+
+
+
+
+
+
+    
     
 }
 

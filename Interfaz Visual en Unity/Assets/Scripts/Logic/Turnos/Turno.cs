@@ -32,7 +32,7 @@ namespace Turnos
                 player=1;
             }
 
-            actual_player = jugadores[1];
+            actual_player = jugadores[player];
         }
 
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Gammepay;
 using Labenterface;
+using Turnos;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -65,17 +66,25 @@ public class Terminar : MonoBehaviour
             for (  int i = 1 ; i <=diccionaro_players.Count; i++)
             {
                 //crear las respectivas fichas en la interface 
+                GameObject GOfichas = new GameObject("Jugador_"+i.ToString());
+                GOfichas.transform.parent = GameObject.Find("Jugadores").transform;
                 foreach (var ficha in diccionaro_players[i].fichas)
                 {
-                    jugadores.CreatePlayer(ficha);
+                    jugadores.CreatePlayer(ficha,GOfichas.transform);
                     Debug.Log($"se creo el gamobject ficha  {ficha.Name}");
                 }
             }
 
-            
+
+            //cargar el menu de seleccion de las  fichas 
+
+            var GO_Turno = GameObject.Find("Canvas").GetComponent<TurnoInterface>();
+            GO_Turno.LoadMenuSeleccion(GO_Turno.actual.fichas);
 
 
-            
+
+
+
 
 
 

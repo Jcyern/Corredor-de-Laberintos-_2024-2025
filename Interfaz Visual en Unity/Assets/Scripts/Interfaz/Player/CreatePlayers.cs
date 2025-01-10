@@ -6,19 +6,18 @@ using UnityEngine;
 public class CreatePlayers : MonoBehaviour
 {
     public GameObject prefab;
-    public  Transform parent ;
 
     
 
 
-    public void CreatePlayer(Ficha ficha )
+    public void CreatePlayer(Ficha ficha , Transform padre  )
     {   
     Debug.Log($"{prefab.transform.position.x}, {prefab.transform.position.y}, {prefab.transform.position.z}");
        // Debug.Log($"{position.x}, {position.y}, {position.z}");
 
         //Quaternion.identify es la rotacion por defecto , se mantiene sin rotar
 
-        GameObject nuevoPlayer = Instantiate(prefab,prefab.transform.position,Quaternion.identity,parent);
+        GameObject nuevoPlayer = Instantiate(prefab,prefab.transform.position,Quaternion.identity,padre);
 
         
         nuevoPlayer.GetComponent<PlayerMovement>().LoadFicha(ficha);
@@ -27,7 +26,7 @@ public class CreatePlayers : MonoBehaviour
 
         //encender el objeto 
 
-        nuevoPlayer.SetActive(true);
+        nuevoPlayer.SetActive(false);
 
         
         

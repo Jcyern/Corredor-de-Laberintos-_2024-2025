@@ -154,34 +154,34 @@ namespace Base_Datos
             List<Ficha> fichas = new List<Ficha>
         {
             //Gryffindor
-            new Ficha(1,"Albus_Dumbledore",3,2,1),
-            new Ficha(1,"Harry_Potter",2,1,1),
-            new Ficha(1,"Hermione",3,2,1),
-            new Ficha(1,"Ron_Weasley",4,1,1),
-            new Ficha(1,"Sirius_Black",3,2,1),
+            new Ficha(1,"Albus_Dumbledore",6,2,1),
+            new Ficha(1,"Harry_Potter",4,1,1),
+            new Ficha(1,"Hermione",5,2,1),
+            new Ficha(1,"Ron_Weasley",5,1,1),
+            new Ficha(1,"Sirius_Black",7,2,1),
 
 
              //Slytherin
             new Ficha(2,"Draco_Malfoy",4,2,2),     
-            new Ficha(2,"Bellatrix_Lestrange",2,0,2),   
-            new Ficha(2,"Estudiante_Astuto",2,1,2),
-            new Ficha(2,"Bruja",2,1,2),
-            new Ficha(2,"Baron_Sanguinario",4,2,2),
+            new Ficha(2,"Bellatrix_Lestrange",4,0,2),   
+            new Ficha(2,"Estudiante_Astuto",6,1,2),
+            new Ficha(2,"Bruja",7,1,2),
+            new Ficha(2,"Baron_Sanguinario",5,2,2),
 
 
              //Hufflepuff
-            new Ficha(3,"Borracho_de_Matalobos",3,1,3),
-            new Ficha(3,"Glacius",3,1,3),
-            new Ficha(3,"Kelpie",2,1,3),
-            new Ficha(3,"Leo",2,0,3),
-            new Ficha(3,"Gigante",3,1,3),
+            new Ficha(3,"Borracho_de_Matalobos",8,1,3),
+            new Ficha(3,"Glacius",5,1,3),
+            new Ficha(3,"Kelpie",5,1,3),
+            new Ficha(3,"Leo",4,0,3),
+            new Ficha(3,"Gigante",6,1,3),
 
              //Ravenclaw
-            new Ficha(4,"Boggart",3,2,4),
-            new Ficha(4,"Caballero",3,1,4),
-            new Ficha(4,"Elfo",2,1,4),
-            new Ficha(4,"Fluffy",2,1,4),
-            new Ficha(4,"Gytrash",2,0,4)
+            new Ficha(4,"Boggart",5,2,4),
+            new Ficha(4,"Caballero",4,1,4),
+            new Ficha(4,"Elfo",6,1,4),
+            new Ficha(4,"Fluffy",8,1,4),
+            new Ficha(4,"Gytrash",5,0,4)
 
         };
 
