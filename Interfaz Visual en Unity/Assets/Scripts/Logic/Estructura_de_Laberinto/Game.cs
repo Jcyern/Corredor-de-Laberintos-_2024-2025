@@ -68,11 +68,19 @@ namespace Gammepay
             Maze = new Laberinto(fila,columna);
         }
 
+        System.Console.WriteLine("Ya se creo uno correcto , poniendo trampas ");
 
 
         System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
         System.Console.WriteLine();
         Console.Clear();
+
+
+        Maze.CreateTramps();
+        System.Console.WriteLine("Se crearon correctamente los obstaculos ");
+
+
+
 
         return Maze;
     }

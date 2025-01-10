@@ -3,6 +3,7 @@ using FICHA;
 using F1;
 using System.Collections.Generic;
 using System;
+using System.Runtime.CompilerServices;
 namespace Gammepay
 {
     public class Game
@@ -68,10 +69,17 @@ namespace Gammepay
             Maze = new Laberinto(fila,columna);
         }
 
+        System.Console.WriteLine("Ya se creo uno correcto , poniendo trampas ");
 
 
         System.Console.WriteLine("/////////////////Laberinto is Ready ////////////////////////");
         System.Console.WriteLine();
+
+        Maze.CreateTramps();
+        System.Console.WriteLine("Se crearon correctamente los obstaculos ");
+
+
+
         Console.Clear();
 
         return Maze;

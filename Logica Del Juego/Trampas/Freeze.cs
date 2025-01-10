@@ -9,6 +9,7 @@ public class Freeze : Trampa
     public Freeze((int, int) pos) : base(pos)
     {
         position = pos;
+        Type = TypeTramps.Freeze;
     }
 
     public override (int, int) Activate()

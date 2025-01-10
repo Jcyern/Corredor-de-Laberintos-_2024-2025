@@ -51,9 +51,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnMovement(InputValue value)  //se activara cuando se activen uno de los  botones referencias para el movimiento ( W,A,S,D)
     {
-        //Se pasa un input value para saber en q direccion y en q eje se esta presionando 
-
-        movement = value.Get<Vector2>();  // le asigna el valor del vector
+        if(IsSelected)
+        {   
+            //Se pasa un input value para saber en q direccion y en q eje se esta presionando 
+            movement = value.Get<Vector2>();  // le asigna el valor del vector
+        }
     }
 
     

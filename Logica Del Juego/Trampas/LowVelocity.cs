@@ -8,6 +8,7 @@ public class LowVelocity : Trampa
     public LowVelocity((int, int) pos) : base(pos)
     {
         position = pos;
+        Type = TypeTramps.LowVelocity;
     }
 
     public override (int, int) Activate()

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using FICHA;
+using Game_Logic.Trampas;
 namespace Case
 {
     #region  Casilla
@@ -12,6 +14,8 @@ public class Casilla
     
     public bool inicio;
     public bool salida ;
+
+    public Trampa? trampa;
 
     //Propiedades de accedo a Columna y Fila 
     public int Fila => Position.Item1;
@@ -27,6 +31,8 @@ public class Casilla
         IsPared = false;
 
         salida = false ;
+
+        trampa = null;
     }
 
 

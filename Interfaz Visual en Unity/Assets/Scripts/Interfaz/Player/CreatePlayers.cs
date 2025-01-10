@@ -10,11 +10,6 @@ public class CreatePlayers : MonoBehaviour
 
     
 
-    void Start()
-    {
-        //CreatePlayer(new Ficha(2,"Draco_Malfoy",4,2,2));
-    }
-
 
     public void CreatePlayer(Ficha ficha )
     {   
@@ -23,10 +18,16 @@ public class CreatePlayers : MonoBehaviour
 
         //Quaternion.identify es la rotacion por defecto , se mantiene sin rotar
 
-        GameObject nuevoObjeto = Instantiate(prefab,prefab.transform.position,Quaternion.identity,parent);
+        GameObject nuevoPlayer = Instantiate(prefab,prefab.transform.position,Quaternion.identity,parent);
+
         
-        nuevoObjeto.GetComponent<PlayerMovement>().LoadFicha(ficha);
-        nuevoObjeto.SetActive(true);
+        nuevoPlayer.GetComponent<PlayerMovement>().LoadFicha(ficha);
+        nuevoPlayer.GetComponent<Collider2D>().isTrigger = true ;
+        nuevoPlayer.GetComponent<SpriteRenderer>().sprite = GameObject.Find("Canvas").GetComponent<ImagenesCharacters>().imagenes[ficha.Faction.id][ficha.Name];
+
+        //encender el objeto 
+
+        nuevoPlayer.SetActive(true);
 
         
         

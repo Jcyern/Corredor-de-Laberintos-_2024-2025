@@ -13,16 +13,10 @@ public class UserInterface : MonoBehaviour
 {
     public TMP_InputField nombre ;
 
-
-    public GameObject cuadricula_nombre ;
-
-    public GameObject cuadricula_faccion;
-
-    public GameObject cuadricula_personajes;
-
-    public GameObject cuadricula_players;
+    public  GameObject Canvas;
 
     public GameObject Flechas ;
+
 
 
 
@@ -42,7 +36,8 @@ void Start()
 {   Debug.Log("Creando base de datos");
     SQlite.instancia.CreateTable();
     Debug.Log("///////// Is ready //////");
-
+    
+        Canvas =   GameObject.Find("Canvas");
     
 }
 
@@ -65,11 +60,11 @@ void Start()
         var IsAlreadySelected = GameObject.Find("Canvas").GetComponent<Datos>().jugadores.Count>0;
 
         if(IsAlreadySelected == false )
-        Escena.Change(cuadricula_nombre,cuadricula_players);
+        Canvas.GetComponent<Escena>().Cantidad_Juagadores();
 
         else
         {
-            Escena.Change(cuadricula_nombre,cuadricula_faccion);
+            Canvas.GetComponent<Escena>().LoadFaccion();
         }
     }
 
@@ -90,7 +85,7 @@ void Start()
         Debug.Log(GameObject.Find("Canvas").GetComponent<Datos>().max_players);
 
 
-        Escena.Change(cuadricula_players,cuadricula_faccion);
+        Canvas.GetComponent<Escena>().LoadFaccion(true);
     }
 
     #endregion
@@ -99,7 +94,7 @@ void Start()
 
 
 
-    #region  Selleccionar Faccion
+    #region  Seleccionar Faccion
     public void Select_Faccion(int n)
     {
         jugador.Select_Faccion(n);
@@ -154,7 +149,7 @@ void Start()
         
         
 
-        Escena.Change(cuadricula_faccion, cuadricula_personajes);
+        Canvas.GetComponent<Escena>().Load_Select_Personajes();
         imagen.sprite = fondo[num];
 
         

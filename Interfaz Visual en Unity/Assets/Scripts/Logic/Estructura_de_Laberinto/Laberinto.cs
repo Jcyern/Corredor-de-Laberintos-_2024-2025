@@ -9,6 +9,8 @@ using System.Text.RegularExpressions;
 using FICHA;
 using Case;
 
+using Game_Logic.Trampas;
+
 
 namespace Maze_Generator
 {
@@ -20,6 +22,15 @@ public class Laberinto
     public Casilla[,] maze;
 
     public bool Valido;
+
+
+    private TypeTramps[] types = new TypeTramps[]
+        {
+            TypeTramps.Freeze,
+            TypeTramps.RandomMove,
+            TypeTramps.LowVelocity
+        };
+
 
     public int GetLength(int n)
     {
@@ -94,7 +105,12 @@ public class Laberinto
         {
             for (int j = 0; j < maze.GetLength(1); j++)
             {
-                if(maze[i,j].j1.Count>0)
+                if(maze[i,j].trampa != null)
+                {
+                    string trampa = maze[i,j].trampa.Type.ToString();
+                    Console.Write(trampa[0]);
+                }
+                else  if(maze[i,j].j1.Count>0)
                 {
                     Console.WriteLine($"{maze[i,j].j1[0].Name[0] }\t");
                 }
@@ -194,6 +210,68 @@ public class Laberinto
 
 
 #endregion
+
+
+#region  Trampas
+    public void CreateTramps()
+    {
+
+        Random rnd = new Random();
+
+        int cant  = maze.GetLength(1);
+
+
+        int fila = 0;
+        int columna = 0;
+
+        while( cant >0)
+        {   
+            fila = rnd.Next(0,maze.GetLength(0));
+            columna =  rnd.Next(0,maze.GetLength(1));Debug.Print(cant.ToString());
+
+            if(maze[fila,columna].IsPared == false && maze[fila,columna].salida == false && maze[fila,columna].inicio == false  && maze[fila,columna].trampa == null)
+            {
+                
+                //sino es la  entrada , ni la salida y no hay  pared en la casilla , 
+                // entonces se puede colocar una trampa 
+                
+                maze[fila,columna].trampa = RandomTramp(maze[fila,columna]);
+                Debug.Print($"tramp {maze[fila,columna].trampa.Type}");
+                
+
+                cant --;
+            }
+        }
+    }
+
+
+    private Trampa RandomTramp( Casilla casilla)
+    {
+        Random random = new Random();
+        var i = random.Next(0,types.Length);
+        
+        var result = types[i];
+        
+        switch ( result)
+        {
+            case TypeTramps.Freeze:
+            return new Freeze(casilla.Pos);
+
+            case TypeTramps.RandomMove:
+            return new RandomMove(casilla.Pos);
+
+            case TypeTramps.LowVelocity:
+            return new LowVelocity(casilla.Pos);
+
+            default:
+            throw new Exception("El Enum de typos de trampas no es ninguno de las creadas ");
+        }
+    }
+
+#endregion
+
+
+
 
 
 #region   Validacion

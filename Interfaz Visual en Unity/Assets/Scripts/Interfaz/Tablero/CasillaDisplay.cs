@@ -8,12 +8,15 @@ using FICHA;
 using System;
 using Gammepay;
 using SELECCION;
+using Game_Logic.Trampas;
 
 public class CasillaDisplay : MonoBehaviour
 {   
     public Sprite pared;
 
     public Sprite camino;
+
+    public Sprite trampa ;
     public int x;
     public int y;
     public Casilla casilla ;
@@ -86,7 +89,7 @@ public class CasillaDisplay : MonoBehaviour
                         objeto.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
                     
                         Debug.Log(" Activar cambio de turno ");
-                        GameObject.Find("Laberinto").GetComponent<Seleccion>().ActivarPlayer();
+                        GameObject.Find("Canvas").GetComponent<TurnoInterface>().ActivarPlayer();
 
                     }
                 }
@@ -126,7 +129,7 @@ public class CasillaDisplay : MonoBehaviour
 #endregion
 
 
-    public void Build()
+    public void LoadImages()
     {
         var SpriteRender_ = GetComponent<SpriteRenderer>();
         if(casilla != null)
@@ -135,6 +138,10 @@ public class CasillaDisplay : MonoBehaviour
             {
                 SpriteRender_.sprite = pared;
                 
+            }
+            else if (casilla.trampa != null)
+            {
+                SpriteRender_.sprite = trampa;
             }
 
             else 
