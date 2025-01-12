@@ -6,6 +6,6 @@ using System;
 
 public class Datos : MonoBehaviour
 { 
-    public  int max_players= 0;
-    public Dictionary<int ,Player> jugadores = new Dictionary<int, Player>(); 
+    public static  int max_players= 0;
+    public static  Dictionary<int ,Player> jugadores = new Dictionary<int, Player>(); 
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using F1;
 using FICHA;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class CreatePlayers : MonoBehaviour
     
 
 
-    public void CreatePlayer(Ficha ficha , Transform padre  )
+    public void CreatePlayer((Ficha ficha,int player, int pos) dupla , Transform padre  )
     {   
     Debug.Log($"{prefab.transform.position.x}, {prefab.transform.position.y}, {prefab.transform.position.z}");
        // Debug.Log($"{position.x}, {position.y}, {position.z}");
@@ -19,11 +20,10 @@ public class CreatePlayers : MonoBehaviour
 
         GameObject nuevoPlayer = Instantiate(prefab,prefab.transform.position,Quaternion.identity,padre);
 
-        
-        nuevoPlayer.GetComponent<PlayerMovement>().LoadFicha(ficha);
+        dupla.ficha.Colocacion = dupla.pos;
+        nuevoPlayer.GetComponent<PlayerMovement>().LoadFicha(dupla);
         nuevoPlayer.GetComponent<Collider2D>().isTrigger = true ;
-        nuevoPlayer.GetComponent<SpriteRenderer>().sprite = GameObject.Find("Canvas").GetComponent<ImagenesCharacters>().imagenes[ficha.Faction.id][ficha.Name];
-
+        nuevoPlayer.GetComponent<SpriteRenderer>().sprite = GameObject.Find("Canvas").GetComponent<ImagenesCharacters>().imagenes[dupla.ficha.Faction.id][dupla.ficha.Name];
         //encender el objeto 
 
         nuevoPlayer.SetActive(false);

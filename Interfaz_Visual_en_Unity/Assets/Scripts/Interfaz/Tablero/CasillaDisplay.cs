@@ -26,7 +26,7 @@ public class CasillaDisplay : MonoBehaviour
 
 
 
-
+    
 
     public  void LoadCasillaDisplay(Casilla casilla)
     {
@@ -48,16 +48,24 @@ public class CasillaDisplay : MonoBehaviour
         if(this.casilla.salida == true)
         {
             Debug.Log("Hay un player en la salida ");
+            //parar el timer 
+            var  reloj = GameObject.Find("Canvas").GetComponent<Reloj>();
+            reloj.Stop();//parar el reloj pq la ficha llego a su fin
+            
             Debug.Log("You win");
             objeto.gameObject.SetActive(true);
                 var rb = objeto.GetComponent<Rigidbody2D>();
-                var list = TableroInterface.casillas_de_vicotria;
+                var player = objeto.GetComponent<PlayerMovement>();
+                var list = TableroInterface.casillas_de_vicotria[player.Owner];
+                Menu_Seleccion.arrays[player.Owner][player.components.Colocacion]= true; //diciendo en true para q esa ficha no pueda seguir participando 
                 for( int i = 0 ; i< list.Count ; i ++)
                 {
                     if(list[i].Item2== false )
                     {   
                         var pos = list[i].Item1;
                         rb.position = list[i].Item1;
+                        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                        player.Win = true ;
                         list[i]= new (pos,true);
                         
                         objeto.GetComponent<Collider2D>().isTrigger = true ;
@@ -74,28 +82,9 @@ public class CasillaDisplay : MonoBehaviour
 
 
         else 
-        {   if(casilla.inicio == false)
+        {   if(casilla.inicio == false && casilla.IsPared ==false)
             {   
-                Debug.Log("Hay un objeto en la casilla ");
-                if( objeto.CompareTag("Player"))
-                {   
-                    if(objeto.GetComponent<PlayerMovement>().velocidad>0)
-                    {   
-                        Debug.Log("Hay un player en la casilla ");
-                        objeto.GetComponent<PlayerMovement>().velocidad -=1;
-                    }
-                    else if ( objeto.GetComponent<PlayerMovement>().velocidad == 0 && objeto.GetComponent<PlayerMovement>().is_active)
-                    {
-                        Debug.Log ( " el objeto no se puede mover la velocidad esta en cero ");
-                        objeto.GetComponent<PlayerMovement>().Desactivar();
-                        
-                        
-                        Debug.Log(" Activar cambio de turno ");
-
-                        GameObject.Find("Canvas").GetComponent<TurnoInterface>().Camibio_de_Turno();
-
-                    }
-                }
+                
             }
             else 
             { 

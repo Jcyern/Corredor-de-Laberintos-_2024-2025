@@ -32,7 +32,7 @@ public class barra : MonoBehaviour
 
     public void DeleteFicha()
     {
-        var dic =GameObject.Find("Canvas").GetComponent<Datos>().jugadores;
+        var dic =Datos.jugadores;
         
         dic[dic.Count].fichas.Remove(ficha);
 

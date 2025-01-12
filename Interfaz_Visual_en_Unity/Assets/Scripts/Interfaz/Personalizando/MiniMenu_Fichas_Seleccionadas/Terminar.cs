@@ -25,7 +25,7 @@ public class Terminar : MonoBehaviour
         var GO =GameObject.Find("Canvas").GetComponent<Datos>();
         
         //si la condicion es verdader pasar a la siguiente fase 
-        if(GO.jugadores.Count == GO.max_players  )
+        if(Datos.jugadores.Count == Datos.max_players  )
         {
             
             gameObject.SetActive(false);
@@ -39,7 +39,7 @@ public class Terminar : MonoBehaviour
             var canvas =  GameObject.Find("Canvas");
             
             //cargar turno 
-            canvas.GetComponent<TurnoInterface>().LoadTurno(canvas.GetComponent<Datos>().jugadores);
+            TurnoInterface.LoadTurno(Datos.jugadores);
 
             //cargar tablero 
 
@@ -61,33 +61,25 @@ public class Terminar : MonoBehaviour
 
             //como esta encendida  el laberinto se puede buscar el Gameobject jugadores que estaba apagado 
 
-            var diccionaro_players = GameObject.Find("Canvas").GetComponent<Datos>().jugadores;
+            var diccionaro_players = Datos.jugadores;
             var jugadores = GameObject.Find("Jugadores").GetComponent<CreatePlayers>();
             for (  int i = 1 ; i <=diccionaro_players.Count; i++)
             {
                 //crear las respectivas fichas en la interface 
                 GameObject GOfichas = new GameObject("Jugador_"+i.ToString());
                 GOfichas.transform.parent = GameObject.Find("Jugadores").transform;
+                int count = 0;
                 foreach (var ficha in diccionaro_players[i].fichas)
                 {
-                    jugadores.CreatePlayer(ficha,GOfichas.transform);
+                    //Se va a crear unn ficha , ademas se pasa en q pos se encuentra en la lista para asi , ayudar a la hora de q llegue al final 
+                    jugadores.CreatePlayer((ficha,diccionaro_players[i].Numero, count ),GOfichas.transform);
                     Debug.Log($"se creo el gamobject ficha  {ficha.Name}");
+                    count +=1;
                 }
             }
 
 
-            //cargar el menu de seleccion de las  fichas 
-
-            var GO_Turno = GameObject.Find("Canvas").GetComponent<TurnoInterface>();
-            GO_Turno.LoadMenuSeleccion(GO_Turno.actual.fichas);
-
-
-
-
-
-
-
-
+            
 
             //desactivar el fondo de carga 
             Fondo_de_Carga.SetActive(false);

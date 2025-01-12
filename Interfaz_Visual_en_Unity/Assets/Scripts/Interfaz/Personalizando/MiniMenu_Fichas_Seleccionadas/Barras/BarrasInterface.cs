@@ -11,7 +11,7 @@ public class BarrasInterface : MonoBehaviour
 
     public  void CargarInfo()
     {
-        var  players = GameObject.Find("Canvas").GetComponent<Datos>().jugadores;
+        var  players = Datos.jugadores;
 
         var list =players[players.Count].fichas;
 

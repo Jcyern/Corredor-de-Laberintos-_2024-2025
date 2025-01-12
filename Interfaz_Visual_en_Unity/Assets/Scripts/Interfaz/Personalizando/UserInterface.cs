@@ -38,6 +38,12 @@ void Start()
     Debug.Log("///////// Is ready //////");
     
         Canvas =   GameObject.Find("Canvas");
+
+
+
+        //Limpiando diccionario de jugadores
+        Datos.jugadores.Clear();
+        
     
 }
 
@@ -57,7 +63,7 @@ void Start()
         Cancel();
 
 
-        var IsAlreadySelected = GameObject.Find("Canvas").GetComponent<Datos>().jugadores.Count>0;
+        var IsAlreadySelected = Datos.jugadores.Count>0;
 
         if(IsAlreadySelected == false )
         Canvas.GetComponent<Escena>().Cantidad_Juagadores();
@@ -80,9 +86,9 @@ void Start()
     public void  CantPLayers (int n)
     {
         
-        GameObject.Find("Canvas").GetComponent<Datos>().max_players =  n;
+        Datos.max_players =  n;
 
-        Debug.Log(GameObject.Find("Canvas").GetComponent<Datos>().max_players);
+        Debug.Log(Datos.max_players);
 
 
         Canvas.GetComponent<Escena>().LoadFaccion(true);
@@ -116,7 +122,8 @@ void Start()
 
 
 
-        var dic = GameObject.Find("Canvas").GetComponent<Datos>().jugadores;
+        var dic = Datos.jugadores;
+        jugador.Numero = dic.Count+1;
         dic[dic.Count+1]= jugador;
 
 
