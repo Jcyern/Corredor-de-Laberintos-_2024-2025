@@ -104,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezeAll; //congelar el rigidbody
         movement = Vector2.zero;
         is_active = false ;
+        if(!Win )//sino ha ganado 
         gameObject.SetActive(false);
         gameObject.GetComponent<Collider2D>().isTrigger = false ;
     }

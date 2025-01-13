@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Escena : MonoBehaviour
@@ -18,6 +19,8 @@ public class Escena : MonoBehaviour
 
 
     public  GameObject Laberinto ;
+
+    public GameObject Winner;
 
 
     public void  Change ( GameObject apagar, GameObject encender)
@@ -59,5 +62,13 @@ public class Escena : MonoBehaviour
     public void LoadLaberinto ()
     {
         Change (Personalizando,Laberinto);
+    }
+
+
+    public  void WinnerScene()
+    {
+        if(Winner == null)throw new System.Exception("El GameObject de Winner no esta asoociado ");
+
+        Change(Laberinto,Winner);
     }
 }

@@ -24,6 +24,8 @@ namespace F1
         //fichas de la base de datos // hay q cargarlas 
         public  List<Ficha> total_fichas = new List<Ficha>();
 
+        public  int Numero;
+
 
 
 

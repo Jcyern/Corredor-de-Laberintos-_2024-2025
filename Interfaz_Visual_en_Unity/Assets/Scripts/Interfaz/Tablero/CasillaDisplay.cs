@@ -60,23 +60,27 @@ public class CasillaDisplay : MonoBehaviour
                 Menu_Seleccion.arrays[player.Owner][player.components.Colocacion]= true; //diciendo en true para q esa ficha no pueda seguir participando 
                 for( int i = 0 ; i< list.Count ; i ++)
                 {
-                    if(list[i].Item2== false )
+                    if(list[i].Item2== false )//si la pos para poner el objeto no esta ocupada por otra ficha 
                     {   
+
                         var pos = list[i].Item1;
                         rb.position = list[i].Item1;
                         rb.constraints = RigidbodyConstraints2D.FreezeAll;
                         player.Win = true ;
                         list[i]= new (pos,true);
                         
-                        objeto.GetComponent<Collider2D>().isTrigger = true ;
+                        objeto.GetComponent<Collider2D>().isTrigger = true ; //incesario pero por si las moscas 
                         
 
                         //para congelar el rigidbody en una las pos en la que esta 
                         objeto.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
                     
                         break ;
+                        //cuando encuetre uno disponible , rompelo
                     }
                 }
+
+                //verificar si todas las fichas estan en la meta y es un ganador 
             
         }
 

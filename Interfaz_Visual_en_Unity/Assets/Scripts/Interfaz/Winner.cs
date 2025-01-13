@@ -9,7 +9,7 @@ public class Winner : MonoBehaviour
     public Player ganador;
 
 
-    public bool IsWinner(List<GameObject> fichas )
+    private  bool IsWinner(List<GameObject> fichas )
     {
         
         foreach ( var  item  in fichas)
@@ -32,6 +32,11 @@ public class Winner : MonoBehaviour
             ganador = TurnoInterface.turno.actual_player;
 
             Debug.Log("Hay un ganador ");
+            //apagaar la escena del laberinto y encender la de la victoria 
+
+            //poner un cambio de escena 
+
+            
         }
     }
 }
