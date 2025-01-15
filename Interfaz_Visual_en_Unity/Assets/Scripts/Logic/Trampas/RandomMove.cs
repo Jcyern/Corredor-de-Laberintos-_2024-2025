@@ -45,7 +45,7 @@ public class RandomMove : Trampa
                 randColumn = random.Next(0,tablero.GetLength(1));
             }
             this.Activated= true ;
-            return ((randFila,randColumn));
+            return (randFila,randColumn);
         
         }
     }

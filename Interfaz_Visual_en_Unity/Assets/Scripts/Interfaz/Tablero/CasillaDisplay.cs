@@ -10,6 +10,7 @@ using Gammepay;
 using SELECCION;
 using Game_Logic.Trampas;
 using F1;
+using Unity.VisualScripting;
 
 public class CasillaDisplay : MonoBehaviour
 {   
@@ -17,12 +18,12 @@ public class CasillaDisplay : MonoBehaviour
 
     public Sprite camino;
 
-    public Sprite trampa ;
+    public Sprite trampa_sprite ;
     public int x;
     public int y;
     public Casilla casilla ;
 
-    
+    public TrampaInterface trampa;
 
 
 
@@ -40,11 +41,23 @@ public class CasillaDisplay : MonoBehaviour
             //sino es una pared pon para q se pueda pasar por encima de el 
             gameObject.GetComponent<Collider2D>().isTrigger = true;
         }
+
+        if(casilla.trampa != null)
+        {
+            //si existe trampa 
+            trampa = new TrampaInterface(casilla.trampa);
+        }
+
+    
     }
 
 #region  Logica Trigger
     void OnTriggerEnter2D ( Collider2D  objeto )
     {
+        var rb = objeto.GetComponent<Rigidbody2D>();
+        var player = objeto.GetComponent<PlayerMovement>();
+
+        //si la casilla es la salida
         if(this.casilla.salida == true)
         {
             Debug.Log("Hay un player en la salida ");
@@ -53,11 +66,14 @@ public class CasillaDisplay : MonoBehaviour
             reloj.Stop();//parar el reloj pq la ficha llego a su fin
             
             Debug.Log("You win");
+            //activar la ficha
             objeto.gameObject.SetActive(true);
-                var rb = objeto.GetComponent<Rigidbody2D>();
-                var player = objeto.GetComponent<PlayerMovement>();
-                var list = TableroInterface.casillas_de_vicotria[player.Owner];
+            
+
+                var list = TableroInterface.casillas_de_vicotria[player.Owner]; //buscar la lista de las posibles casillas de las victoria q corresponda al id del jugador 
                 Menu_Seleccion.arrays[player.Owner][player.components.Colocacion]= true; //diciendo en true para q esa ficha no pueda seguir participando 
+
+                //recorremos la lista 
                 for( int i = 0 ; i< list.Count ; i ++)
                 {
                     if(list[i].Item2== false )//si la pos para poner el objeto no esta ocupada por otra ficha 
@@ -81,18 +97,34 @@ public class CasillaDisplay : MonoBehaviour
                 }
 
                 //verificar si todas las fichas estan en la meta y es un ganador 
+                Winner.Wins(objeto.GetComponent<PlayerMovement>().Owner);
             
         }
 
 
         else 
-        {   if(casilla.inicio == false && casilla.IsPared ==false)
+        {   if(casilla.trampa != null)
             {   
+                //se para el tiempo del jugador 
+                var reloj =GameObject.Find("Canvas").GetComponent<Reloj>();
+                reloj.Pausar();
+                Debug.Log($"Nos encontramos sobre una trampa del tipo {trampa.trampa.Type}");
+
+                Debug.Log("activar trampa ");
+                {  
+                    //asociar trampa creada 
+                    player.tramp = trampa;
+                    
+                    //asoiale ell gamobject ficha para someterla a los efectos 
+                    player.tramp.ficha = objeto.gameObject;
+                    //cargar components 
+                    player.tramp.LoadComponents();
+                    player.tramp.Activate();
+                    
+                }
+                //se reanuda el tiempo del jugador 
+                reloj.Reanudar();
                 
-            }
-            else 
-            { 
-                Debug.Log(" Esta en la casilla inicio");
             }
         }
             }
@@ -135,10 +167,10 @@ public class CasillaDisplay : MonoBehaviour
                 SpriteRender_.sprite = pared;
                 
             }
-            // else if (casilla.trampa != null)
-            // {
-            //     SpriteRender_.sprite = trampa;
-            // }
+            else if (casilla.trampa != null)
+            {
+                SpriteRender_.sprite = trampa_sprite;
+            }
 
             else 
             {

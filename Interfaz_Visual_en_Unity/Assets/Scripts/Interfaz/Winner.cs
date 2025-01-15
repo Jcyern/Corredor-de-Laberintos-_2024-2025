@@ -9,10 +9,10 @@ public class Winner : MonoBehaviour
     public Player ganador;
 
 
-    private  bool IsWinner(List<GameObject> fichas )
+    private static  bool IsWinner( int player )
     {
         
-        foreach ( var  item  in fichas)
+        foreach ( Transform  item  in GameObject.Find("Jugador_"+player).transform)
         {   
             if(item.GetComponent<PlayerMovement>().Win == false)
             {
@@ -25,17 +25,19 @@ public class Winner : MonoBehaviour
     }
 
 
-    public  void Wins(List<GameObject> fichas, int player )
+    public  static void Wins( int player )
     {
-        if(IsWinner(fichas))
+        
+        if(IsWinner(player))
         {
-            ganador = TurnoInterface.turno.actual_player;
+            Player ganador = TurnoInterface.turno.actual_player;
 
             Debug.Log("Hay un ganador ");
             //apagaar la escena del laberinto y encender la de la victoria 
 
             //poner un cambio de escena 
-
+            GameObject.Find("Canvas").GetComponent<Escena>().WinnerScene();
+            Final.The_Winner_Is(ganador);
             
         }
     }

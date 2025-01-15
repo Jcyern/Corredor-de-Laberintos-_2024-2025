@@ -13,7 +13,8 @@ public class PlayerMovement : MonoBehaviour
     //Componentes fichas
     public Ficha components ;
     //visible en el board para identificar las cosas 
-
+    
+    public TrampaInterface tramp ;
     public int  Owner ;
     public int  pos;
 

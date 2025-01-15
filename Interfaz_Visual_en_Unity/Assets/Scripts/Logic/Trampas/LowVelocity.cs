@@ -1,6 +1,7 @@
 
 
 using System;
+using System.Diagnostics;
 using Game_Logic.Trampas;
 using Gammepay;
 
@@ -17,7 +18,7 @@ public class LowVelocity : Trampa
         if( ficha!= null)
         {
         
-            ficha.Velocidad-= 2 ;
+            return(2,ficha.Velocidad);
 
         
 
@@ -25,13 +26,10 @@ public class LowVelocity : Trampa
         else{
             throw new Exception ( "La ficha esta en null");
         }
-
-        return ((0,0));
     }
 
     public override void Desactivate()
     {
-        if(ficha != null)
-        ficha.Velocidad+=2;
+        
     }
 }

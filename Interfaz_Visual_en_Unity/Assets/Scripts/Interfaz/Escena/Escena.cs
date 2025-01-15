@@ -65,7 +65,7 @@ public class Escena : MonoBehaviour
     }
 
 
-    public  void WinnerScene()
+    public   void WinnerScene()
     {
         if(Winner == null)throw new System.Exception("El GameObject de Winner no esta asoociado ");
 
