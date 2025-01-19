@@ -1,17 +1,30 @@
 
+using System.IO.Compression;
+using Base_Datos;
 using FICHA;
 
 namespace Game_Logic.Trampas
 {
     public abstract class Trampa 
     {
-        public Ficha? ficha ;
+        public Ficha Target {get;set;}
+
+        public Ficha copy ;
         public TypeTramps Type ;
+        public bool Activated ;
         public (int,int) position;
 
-        public abstract (int,int) Activate ();
+        public abstract Ficha Activate ();
         
-        public abstract void Desactivate();
+        public abstract Ficha Desactivate();
+
+        public void Objetivo (Ficha ficha)
+        {
+            Target = ficha;
+            copy = new Ficha(SQlite.instancia.GetFicha(ficha.id));
+            if(copy== null)
+            throw new System.Exception("La coppia es null revisa los metodos ");
+        }
 
 
 
@@ -19,12 +32,13 @@ namespace Game_Logic.Trampas
 
         //builder
 
-        public Trampa((int,int)pos)
-        {
+        public Trampa((int,int)pos )
+        {   
             position = pos;
             Type= TypeTramps.None;
-
         }
+
+        
     }
 
 

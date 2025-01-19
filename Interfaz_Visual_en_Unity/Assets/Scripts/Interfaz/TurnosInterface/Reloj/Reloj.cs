@@ -61,16 +61,19 @@ public class Reloj : MonoBehaviour
 
                 }
             }
-
+            
+            var pm =Ficha.GetComponent<PlayerMovement>();
             //cuando se acabe hacer el cambio de turno 
-            Ficha.GetComponent<PlayerMovement>().Desactivar();
-            if(Ficha.GetComponent<PlayerMovement>().tramp !=null)
+            if(pm.tramp !=null)
             {
-                Debug.Log("desactivando trmapa ");
-                Ficha.GetComponent<PlayerMovement>().tramp.Desactivate();
+                //desactivando trampa
+                pm.tramp.Desactivate();
+                Debug.Log("se desactivo la trampa");
                 //quitando la trampa almacenada
-                Ficha.GetComponent<PlayerMovement>().tramp = null;
+                pm.tramp = null;
             }
+            //desactivar al player 
+            pm.Desactivar(); 
             TurnoInterface.Camibio_de_Turno();
             crono.text ="0";
             end = false ;

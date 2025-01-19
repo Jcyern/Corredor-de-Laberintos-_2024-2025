@@ -58,6 +58,7 @@ void Start()
 
     public void Guardar()
     {
+        Mouse.Audio_Click();
         jugador= new Player(nombre.text);
 
         Cancel();
@@ -72,11 +73,14 @@ void Start()
         {
             Canvas.GetComponent<Escena>().LoadFaccion();
         }
+
+        
     }
 
 
     public void Cancel()
     {
+        Mouse.Audio_Click();
         nombre.text = "";
     }
 
@@ -85,7 +89,7 @@ void Start()
     #region  Cantidad de Jugadores
     public void  CantPLayers (int n)
     {
-        
+        Mouse.Audio_Click();
         Datos.max_players =  n;
 
         Debug.Log(Datos.max_players);
@@ -103,7 +107,9 @@ void Start()
     #region  Seleccionar Faccion
     public void Select_Faccion(int n)
     {
+        Mouse.Audio_Click();
         jugador.Select_Faccion(n);
+
 
         Debug.Log($"La faccion escogida es {jugador.faction.name}");
 

@@ -13,7 +13,7 @@ public class CreatePlayers : MonoBehaviour
 
     public void CreatePlayer((Ficha ficha,int player, int pos) dupla , Transform padre  )
     {   
-    Debug.Log($"{prefab.transform.position.x}, {prefab.transform.position.y}, {prefab.transform.position.z}");
+        Debug.Log($"{prefab.transform.position.x}, {prefab.transform.position.y}, {prefab.transform.position.z}");
        // Debug.Log($"{position.x}, {position.y}, {position.z}");
 
         //Quaternion.identify es la rotacion por defecto , se mantiene sin rotar

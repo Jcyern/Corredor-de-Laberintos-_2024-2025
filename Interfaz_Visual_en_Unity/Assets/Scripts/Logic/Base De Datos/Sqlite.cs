@@ -93,7 +93,7 @@ namespace Base_Datos
                         command.Parameters.AddWithValue("@Nombre", item.Name);
                         command.Parameters.AddWithValue("@Velocidad", item.Velocidad);
                         command.Parameters.AddWithValue("@Enfriamiento", item.Enfriamiento);
-                        command.Parameters.AddWithValue("@Faccion", item.id);
+                        command.Parameters.AddWithValue("@Faccion", item.Faction);
 
 
                         command.ExecuteNonQuery();
@@ -143,6 +143,36 @@ namespace Base_Datos
             return fichas;
         }
 
+        public Ficha GetFicha(int id)
+        {
+            Ficha ficha = null;
+
+
+            string sql = "SELECT * FROM MiTabla WHERE Id = " + id + "";
+
+
+            using (var conection = new SqliteConnection(conection_string))
+            {
+                conection.Open();
+
+                using (var command = new SqliteCommand(sql, conection))
+                {
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            ficha= new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString() ?? "", Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"]));
+
+                        }
+                    }
+                }
+
+                conection.Close();
+            }
+
+            return ficha;
+        }
+
 
 
 
@@ -152,38 +182,38 @@ namespace Base_Datos
 
             //Lista de fichas 
             List<Ficha> fichas = new List<Ficha>
-        {
-            //Gryffindor
-            new Ficha(1,"Albus_Dumbledore",6,2,1),
-            new Ficha(1,"Harry_Potter",4,1,1),
-            new Ficha(1,"Hermione",5,2,1),
-            new Ficha(1,"Ron_Weasley",5,1,1),
-            new Ficha(1,"Sirius_Black",7,2,1),
+            {
+                //Gryffindor
+                new(1,"Albus_Dumbledore",6,2,1),
+                new(2,"Harry_Potter",4,1,1),
+                new(3,"Hermione",5,2,1),
+                new(4,"Ron_Weasley",5,1,1),
+                new(5,"Sirius_Black",7,2,1),
 
 
-             //Slytherin
-            new Ficha(2,"Draco_Malfoy",4,2,2),     
-            new Ficha(2,"Bellatrix_Lestrange",4,0,2),   
-            new Ficha(2,"Estudiante_Astuto",6,1,2),
-            new Ficha(2,"Bruja",7,1,2),
-            new Ficha(2,"Baron_Sanguinario",5,2,2),
+                //Slytherin
+                new(6,"Draco_Malfoy",4,2,2),     
+                new(7,"Bellatrix_Lestrange",4,0,2),   
+                new(8,"Estudiante_Astuto",6,1,2),
+                new(9,"Bruja",7,1,2),
+                new(10,"Baron_Sanguinario",5,2,2),
 
 
-             //Hufflepuff
-            new Ficha(3,"Borracho_de_Matalobos",8,1,3),
-            new Ficha(3,"Glacius",5,1,3),
-            new Ficha(3,"Kelpie",5,1,3),
-            new Ficha(3,"Leo",4,0,3),
-            new Ficha(3,"Gigante",6,1,3),
+                //Hufflepuff
+                new(11,"Borracho_de_Matalobos",8,1,3),
+                new(12,"Glacius",5,1,3),
+                new(13,"Kelpie",5,1,3),
+                new(14,"Leo",4,0,3),
+                new(15,"Gigante",6,1,3),
 
-             //Ravenclaw
-            new Ficha(4,"Boggart",5,2,4),
-            new Ficha(4,"Caballero",4,1,4),
-            new Ficha(4,"Elfo",6,1,4),
-            new Ficha(4,"Fluffy",8,1,4),
-            new Ficha(4,"Gytrash",5,0,4)
+                //Ravenclaw
+                new(16,"Boggart",5,2,4),
+                new(17,"Caballero",4,1,4),
+                new(18,"Elfo",6,1,4),
+                new(19,"Fluffy",8,1,4),
+                new(20,"Gytrash",5,0,4)
 
-        };
+            };
 
 
             instancia.Insert(fichas);

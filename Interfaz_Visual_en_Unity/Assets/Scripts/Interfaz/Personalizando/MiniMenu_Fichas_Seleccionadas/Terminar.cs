@@ -14,10 +14,13 @@ public class Terminar : MonoBehaviour
     // Start is called before the first frame update
     public void Finish()
     {
+        Mouse.Audio_Click();
         //primero q nada activar la flecha derecha y desctivar la izquierda
         FlechaIzq.SetActive(false);
         FlechaDer.SetActive(true);
+        
 
+        gameObject.SetActive(false);
         //revisa si todo el mundo escogio sus fichas y se puede comenzar el juego 
 
 
@@ -28,7 +31,7 @@ public class Terminar : MonoBehaviour
         if(Datos.jugadores.Count == Datos.max_players  )
         {
             
-            gameObject.SetActive(false);
+
             
             //activa el fondo de carga
             Fondo_de_Carga.SetActive(true );

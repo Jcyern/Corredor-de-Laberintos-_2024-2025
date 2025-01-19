@@ -21,7 +21,8 @@ public class PaginasInterface : MonoBehaviour
         left.SetActive(false);
     }
     public void Back( )
-    {
+    {   
+        Mouse.Audio_Click();
         if ( paginas == null) throw new System.Exception("Las paginas estan nulas ");
 
         paginas.Back();
@@ -49,6 +50,7 @@ public class PaginasInterface : MonoBehaviour
 
     public void Next()
     {
+        Mouse.Audio_Click();
         if ( paginas == null) throw new System.Exception("Las paginas estan nulas ");
 
         //activando el metodo next de paginas 

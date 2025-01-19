@@ -3,6 +3,7 @@
 using System;
 using FICHA;
 using Game_Logic.Trampas;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class TrampaInterface 
@@ -16,94 +17,111 @@ public class TrampaInterface
     public TrampaInterface (Trampa trampa)
     {
         this.trampa = trampa;
-
     }
-    public void LoadComponents()
-    {
+    public  void LoadComponents(GameObject ficha )
+    {   
+        this.ficha = ficha;
         rb = ficha.GetComponent<Rigidbody2D>();
         pm = ficha.GetComponent<PlayerMovement>();
     }
 
-    public void Activate ()
+
+    public void Activate (GameObject Ficha)
     {
-        trampa.ficha = ficha.GetComponent<PlayerMovement>().components;
-        //asocia la ficha q callo en la trampa
+        LoadComponents(Ficha);
+        //cargando el objetivo
+        trampa.Objetivo(pm.components);
+        var ficha = trampa .Activate();
 
-        if(trampa.Type ==  TypeTramps.Freeze)
+        switch (trampa.Type)
         {
-            //Se reduce la vlocidad de la ficha 
-            Debug.Log("se redujo la velocidad a 0 Freeze Type");
-            velocity = trampa.Activate();
-            if(velocity!=(0,0))
-            pm.velocity = velocity.Item1;
-            else{
-                Debug.Log("La trampa Freeze ya se ha activado, Cant Acctivate Again");
-            }
+            case TypeTramps.Freeze:
+            
+                //Se reduce la vlocidad de la ficha 
+                Debug.Log("se redujo la velocidad a 0 Freeze Type");
+                
+                if(ficha != null)
+                {
+                    pm.velocity = ficha .Velocidad;
 
-        }
+                }else
+                {
+                    Debug.Log("La trampa Freeze ya se ha activado, Cant Acctivate Again");
+                }
+            break;
 
-        else if( trampa.Type == TypeTramps.LowVelocity)
-        {
-            Debug.Log("reducir en 2 la velocidad");
-            velocity =trampa.Activate();
+            case TypeTramps.LowVelocity:
+                if(ficha == null)
+                {
+                    Debug.Log("Ya se activo la trampa una vez");
+                }
+                else
+                    {
+                        pm.velocity = ficha.Velocidad;
 
-            pm.velocity -=velocity.Item1;
+                    }
+            break;
 
-        }
 
-        else if (trampa.Type == TypeTramps.RandomMove)
-        {
-            Debug.Log("MOver a la ficha a casilla random");
-            var pos = trampa.Activate();
-            Debug.Log($"casilla : {pos.Item1},{pos.Item2}");
-            if(pos != (0,0))
-            {
-                Transform fila = GameObject.Find("Fila_"+pos.Item1).transform;
-                var casilla = fila.GetChild(pos.Item2);
+            case TypeTramps.RandomMove:
+                
+                Debug.Log("MOver a la ficha a casilla random");
                 
 
-                var Game_player = GameObject.Find(trampa.ficha.Name
-                );
-                
-                Game_player.transform.position = casilla.position;
-            }
-            else{
-                Debug.Log("no Se activa pq el random move se activo una vez");
-            }
+                if(ficha != null)
+                {
+                    Debug.Log($"casilla : {ficha.position.Item1},{ficha.position.Item2}");
+                    Transform fila = GameObject.Find("Fila_"+ficha.position.Item1).transform;
+                    var casilla = fila.GetChild(ficha.position.Item2);
+
+                    this.ficha.transform.position = casilla.position;
+                }
+                else{
+                    Debug.Log("NO se activa , ya se activo una vez");
+                }
+
+            break;
+
+            default:
+            throw new Exception("Trampano reconocida ");
         }
+        
+
+        
 
 
     }
 
     public void Desactivate()
     {
-        if(trampa.Type == TypeTramps.Freeze)
+        //desactivar la trampa .
+        var ficha =trampa.Desactivate();
+        if(ficha == null)
+        throw new Exception("la ficha en desactivate es nula");
+        switch (trampa.Type)
         {
+            case TypeTramps.Freeze  :
+                Debug.Log("Desactiate freeze");
+                Debug.Log("Volver a poner la velocidad normal");
+                
+                pm.velocity= ficha.Velocidad;
+                pm.components.Velocidad= ficha.Velocidad;
+            break;
+            case TypeTramps.LowVelocity:
+                Debug.Log(" Desativar Low velocity Tramp");
+                pm.velocity = ficha.Velocidad;
+                pm.components.Velocidad = ficha.Velocidad;
+                break;
 
-            Debug.Log("Desactiate freeze");
-            Debug.Log("Volver a poner la velocidad normal");
-            trampa.Desactivate();
-            pm.velocity= pm.components.Velocidad;
+            case TypeTramps.RandomMove:
+            Debug.Log("Desactivar Random Move ");
+            break;
+
+
+            default:
+            throw new Exception("NO se reconoce el tipo de trampa ");
         }
-
-        else if( trampa.Type == TypeTramps.LowVelocity)
-        {
-            Debug.Log("LOw velocity Tramp");
-            Debug.Log("Se reduce la velocidad");
-            trampa.Desactivate();
-            Debug.Log("se volvio a la velocidad inicial");
-
-            //volver a poner la velocidad inicial
-
-            pm.velocity = pm.components.Velocidad;
-        }
-        else if ( trampa.Type == TypeTramps.RandomMove)
-        {
-            Debug.Log("Trampa de Randon Move");
-
-            trampa.Desactivate();
-        }
-
         
+
     }
 }

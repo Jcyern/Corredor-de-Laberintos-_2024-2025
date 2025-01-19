@@ -23,6 +23,7 @@ public class Ficha_Select : MonoBehaviour
 
     public void Click()
     {
+        Mouse.Audio_Click();
         string i =TurnoInterface.turno.player.ToString();
 
         var Go = GameObject.Find("Jugador_"+i);

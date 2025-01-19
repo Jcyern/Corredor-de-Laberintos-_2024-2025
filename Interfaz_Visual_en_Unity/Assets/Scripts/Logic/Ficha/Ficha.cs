@@ -38,5 +38,16 @@ namespace FICHA
             position = (0,1);
 
         }
+
+        public Ficha (Ficha ficha )
+        {
+            id = ficha.id;
+            Name = ficha.Name;
+            Velocidad = ficha.Velocidad;
+            Enfriamiento = ficha.Enfriamiento;
+            Faction =ficha.Faction;
+            Hability = ficha.Hability;
+            position = ficha.position;
+        }
     }
 }

@@ -17,13 +17,15 @@ public class CasillaDisplay : MonoBehaviour
     public Sprite pared;
 
     public Sprite camino;
-
-    public Sprite trampa_sprite ;
+    public Sprite trampa_freeze;
+    public Sprite trampa_Low_velocity;
+    public Sprite trampa_Move_random;
     public int x;
     public int y;
     public Casilla casilla ;
 
     public TrampaInterface trampa;
+    
 
 
 
@@ -103,25 +105,21 @@ public class CasillaDisplay : MonoBehaviour
 
 
         else 
-        {   if(casilla.trampa != null)
+        {   if(casilla.trampa != null) //si hay trampa 
             {   
                 //se para el tiempo del jugador 
                 var reloj =GameObject.Find("Canvas").GetComponent<Reloj>();
                 reloj.Pausar();
-                Debug.Log($"Nos encontramos sobre una trampa del tipo {trampa.trampa.Type}");
+                Debug.Log($"trampa del tipo {trampa.trampa.Type}");
 
                 Debug.Log("activar trampa ");
-                {  
+                
                     //asociar trampa creada 
                     player.tramp = trampa;
                     
-                    //asoiale ell gamobject ficha para someterla a los efectos 
-                    player.tramp.ficha = objeto.gameObject;
-                    //cargar components 
-                    player.tramp.LoadComponents();
-                    player.tramp.Activate();
+                    player.tramp.Activate(objeto.gameObject);
                     
-                }
+                Debug.Log("Ya se activo la trampa");
                 //se reanuda el tiempo del jugador 
                 reloj.Reanudar();
                 
@@ -168,8 +166,19 @@ public class CasillaDisplay : MonoBehaviour
                 
             }
             else if (casilla.trampa != null)
-            {
-                SpriteRender_.sprite = trampa_sprite;
+            {   
+                switch(casilla.trampa.Type)
+                {
+                    case TypeTramps.Freeze:
+                    SpriteRender_.sprite = trampa_freeze;
+                    break;
+                    case TypeTramps.RandomMove:
+                    SpriteRender_.sprite = trampa_Move_random;
+                    break;
+                    case TypeTramps.LowVelocity:
+                    SpriteRender_.sprite = trampa_Low_velocity;
+                    break;
+                }
             }
 
             else 

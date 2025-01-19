@@ -47,7 +47,7 @@ namespace F1
             Debug.Print(faction.name.ToString());
 
             System.Console.WriteLine($"La Faction escogida es {faction.id} ");
-
+            
             //Cargando las fichas disponibles de esa faccion , q se encuentran en la base de datos 
             LoadFichas();
         }

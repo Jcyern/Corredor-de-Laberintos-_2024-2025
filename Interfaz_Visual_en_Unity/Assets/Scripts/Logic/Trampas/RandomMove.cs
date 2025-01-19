@@ -1,33 +1,30 @@
 
 using System;
 using System.Diagnostics;
+using FICHA;
 using Game_Logic.Trampas;
 using Gammepay;
 
 public class RandomMove : Trampa
 {   
-    bool Activated;
-    public RandomMove((int, int) pos) : base(pos)
-    {
+
+    public RandomMove((int,int)pos) : base(pos)
+    {   
         position = pos;
         Type = TypeTramps.RandomMove;
     }
 
-    public override (int, int) Activate()
+    public override Ficha Activate()
     {
         if(Activated == true  )
         {
-
-        
             Debug.Print("Ya se activo la trampa una vez ");
-            return  (0,0);
-    
+            return  null;
         }
         else
         {
-                //Coger una pos al azar del tablero q no tenga pared y lo cambia para esa position
+            //Coger una pos al azar del tablero q no tenga pared y lo cambia para esa position
             var tablero = Game.Maze;
-
             if( tablero == null)
             {
                 throw new Exception(" Tablero de Game es nulo , crea el maze ");
@@ -44,14 +41,16 @@ public class RandomMove : Trampa
                 randFila= random.Next(0,tablero.GetLength(0));
                 randColumn = random.Next(0,tablero.GetLength(1));
             }
-            this.Activated= true ;
-            return (randFila,randColumn);
+            Activated= true ;
+            Target.position = (randFila,randColumn);
+            
+            return Target ;
         
         }
     }
 
-    public override void Desactivate()
+    public override Ficha Desactivate()
     {
-        //no hace  nada 
+        return copy;
     }
 } 

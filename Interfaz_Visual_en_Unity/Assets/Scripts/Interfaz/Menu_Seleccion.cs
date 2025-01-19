@@ -31,10 +31,10 @@ public class Menu_Seleccion : MonoBehaviour
             files.Add(item.gameObject); //asociar los gameobject fichas 
             Debug.Log(item.name);
         }
-        Debug.Log("cantidad de fichas "+files.Count );
+        
 
 
-            Debug.Log("llamando al menu seleccion");
+            //llamando al menu de seleccion
             LoadMenuSeleccion(TurnoInterface.turno.actual_player.fichas);
 
 
@@ -58,19 +58,16 @@ public class Menu_Seleccion : MonoBehaviour
             }
         }
         //asociar las imagenes de las fichas de cada jugador 
-        Debug.Log("cap de fichas "+fichas.Count);
         
         for ( int i = 0 ; i <files.Count ; i ++)
         {
             if(i < fichas.Count && arrays[TurnoInterface.turno.player][fichas[i].Colocacion] == false)
-            {   Debug.Log($"encendiendo {files[i].name}");
+            {   
                 files[i].SetActive(true);
                 files[i].GetComponent<Ficha_Select>().Load(fichas[i]);
                 
             }
-            else{
-                Debug.Log("No encendio");
-            }
+            
 
             
         }

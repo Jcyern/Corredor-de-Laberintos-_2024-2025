@@ -41,6 +41,7 @@ public class CardInfo : MonoBehaviour
 
     public void Choose ()  //se selecciona la ficha 
     {
+        Mouse.Audio_Click(); 
         var dic =Datos.jugadores;
         
         if(dic[dic.Count].fichas.Count <5)

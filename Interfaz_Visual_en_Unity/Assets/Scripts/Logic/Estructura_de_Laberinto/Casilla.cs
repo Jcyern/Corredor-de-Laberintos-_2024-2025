@@ -14,7 +14,7 @@ public class Casilla
     public bool inicio;
     public bool salida ;
 
-    public Trampa? trampa;
+    public Trampa trampa;
 
     //Propiedades de accedo a Columna y Fila 
     public int Fila => Position.Item1;

@@ -17,15 +17,16 @@ public class PlayerMovement : MonoBehaviour
     public TrampaInterface tramp ;
     public int  Owner ;
     public int  pos;
-
     public bool IsSelected;
-
     public bool Casilla_Origen= true ;
-
-    public int segundos  = 5 ;
+    public   int segundos  = 15 ;
 
     public bool Win;
     public bool is_active ;
+
+    public int velocity ;
+    private Vector2 movement ;
+    private Rigidbody2D rb;
 
     //Propiedades
 
@@ -47,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         components = dupla.ficha ;
         Owner = dupla.number;
         pos= dupla.pos;
+        velocity = components.Velocidad;
 
         //cambiarle el nombre al gameobject por comodidad 
         gameObject.name = dupla.ficha.Name;
@@ -58,20 +60,11 @@ public class PlayerMovement : MonoBehaviour
     
     //Este script se encargara del movimiento del jugador  
     
-    public int velocity =5;
-    private Vector2 movement ;
-    private Rigidbody2D rb;
 
     private void OnMovement(InputValue value)  
     {
-        
-            
-
-            
                 if(is_active)
-                movement = value.Get<Vector2>(); // le asigna el valor del vector
-    
-        
+                movement = value.Get<Vector2>(); // le asigna el valor del vector    
     }
 
     
@@ -85,10 +78,7 @@ public class PlayerMovement : MonoBehaviour
         // y que el objeto se mueva a una velocidad constante en cualquier maquina
         if(is_active)
         rb.MovePosition(rb.position + movement*Time.deltaTime* velocity );
-        
-    
     }
-
 
     public void Activar()
     {
@@ -97,7 +87,6 @@ public class PlayerMovement : MonoBehaviour
         is_active = true ;
         gameObject.GetComponent<Collider2D>().isTrigger = false ;
         gameObject.SetActive(true);
-
     }
 
     public void Desactivar()
@@ -109,17 +98,6 @@ public class PlayerMovement : MonoBehaviour
         gameObject.SetActive(false);
         gameObject.GetComponent<Collider2D>().isTrigger = false ;
     }
-
-
-
-
-
-
-
-
-
-    
-    
 }
 
 

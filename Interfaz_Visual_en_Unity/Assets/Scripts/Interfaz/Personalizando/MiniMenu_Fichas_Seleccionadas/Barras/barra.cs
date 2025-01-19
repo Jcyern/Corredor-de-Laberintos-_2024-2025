@@ -32,6 +32,7 @@ public class barra : MonoBehaviour
 
     public void DeleteFicha()
     {
+        Mouse.Audio_Click();
         var dic =Datos.jugadores;
         
         dic[dic.Count].fichas.Remove(ficha);
