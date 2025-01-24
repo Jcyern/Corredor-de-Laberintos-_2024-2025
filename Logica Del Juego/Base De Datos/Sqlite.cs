@@ -1,8 +1,7 @@
-using System;
 using System.Diagnostics;
-using Microsoft.Data.Sqlite;
-using Microsoft.VisualBasic;
 using FICHA;
+using Microsoft.Data.Sqlite;
+using EnumHab;
 
 // we agregate the package:   dotnet add package Microsoft.Data.Sqlite
 namespace Base_Datos
@@ -53,7 +52,8 @@ namespace Base_Datos
                         Nombre TEXT,
                         Velocidad INTEGER,
                         Enfriamiento INTEGER,
-                        Faccion INTEGER
+                        Faccion INTEGER,
+                        Seconds INTEGER
                         )";
 
                         //comando coge la el comando q se ejecuara y la coneccion con la base de datos 
@@ -92,7 +92,7 @@ namespace Base_Datos
                         command.Parameters.AddWithValue("@Nombre", item.Name);
                         command.Parameters.AddWithValue("@Velocidad", item.Velocidad);
                         command.Parameters.AddWithValue("@Enfriamiento", item.Enfriamiento);
-                        command.Parameters.AddWithValue("@Faccion", item.id);
+                        command.Parameters.AddWithValue("@Faccion", item.Faction);
 
 
                         command.ExecuteNonQuery();
@@ -127,7 +127,7 @@ namespace Base_Datos
                         {
 
 
-                            fichas.Add(new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString() ?? "", Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"])));
+                            fichas.Add(new Ficha(Convert.ToInt32(reader["Id"]), reader["Nombre"].ToString() ?? "", Convert.ToInt32(reader["Velocidad"]), Convert.ToInt32(reader["Enfriamiento"]), Convert.ToInt32(reader["Faccion"]), Convert.ToInt32(reader["Seconds"]), (EnumHability)Enum.Parse(typeof(EnumHability),reader["Hability"].ToString()?? "")));
 
                     
                         }
@@ -142,6 +142,47 @@ namespace Base_Datos
             return fichas;
         }
 
+        public Ficha GetFicha(int id)
+        {
+            Ficha ficha = null;
+
+
+            string sql = "SELECT * FROM MiTabla WHERE Id = " + id + "";
+
+
+            using (var conection = new SqliteConnection(conection_string))
+            {
+                conection.Open();
+
+                using (var command = new SqliteCommand(sql, conection))
+                {
+                    
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var ID = Convert.ToInt32(reader["Id"]);
+                            var Name = reader["Nombre"].ToString() ?? "";
+                            var Velocity = Convert.ToInt32(reader["Velocidad"]);
+                            var Enfriamiento =  Convert.ToInt32(reader["Enfriamiento"]);
+                            var Faccion =  Convert.ToInt32(reader["Faccion"]);
+                            var Seconds = Convert.ToInt32(reader["Seconds"]);
+                            string hab = reader["Hability"].ToString()?? " ";
+                            EnumHability Hability = (EnumHability)Enum.Parse(typeof(EnumHability),hab);
+
+                            ficha = new Ficha(ID,Name,Velocity,Enfriamiento,Faccion, Seconds,Hability);
+
+
+                        }
+                    }
+                }
+
+                conection.Close();
+            }
+
+            return ficha;
+        }
+
 
 
 
@@ -151,49 +192,38 @@ namespace Base_Datos
 
             //Lista de fichas 
             List<Ficha> fichas = new List<Ficha>
-        {
-            //Gryffindor
-            new Ficha(1,"Albus_Dumbledore",3,2,1),
-            new Ficha(1,"Animago",2,1,1),
-            new Ficha(1,"Auror",1,0,1),
-            new Ficha(1,"Espada_de_GG",4,1,1),
-            new Ficha(1,"Fenix",2,0,1),
-            new Ficha(1,"Minerva_McGonagall",5,2,1),
-            new Ficha(1,"Ron_Weasley",2,0,1),
-            new Ficha(1,"Rubeus_Hagrid",3,1,1),
-            new Ficha(1,"Sirius_Black",3,2,1),
-             //Slytherin
-            new Ficha(2,"Acromantula",3,1,2),
-            new Ficha(2,"Baron_Sanguinario",4,2,2),
-            new Ficha(2,"Basilisco",3,1,2),
-            new Ficha(2,"Bellatrix_Lestrange",2,0,2),
-            new Ficha(2,"Bruja",2,1,2),
-            new Ficha(2,"Dementor",3,1,2),
-            new Ficha(2,"Draco_Malfoy",4,2,2),
-            new Ficha(2,"Tom_Riddle_Diarie",3,1,2),
-            new Ficha(2,"Estudiante_Astuto",2,1,2),
-            new Ficha(2,"Merodeador",4,2,2),
-            new Ficha(2,"Mortifago",3,1,2),
-            new Ficha(2,"Tom_Riddle",2,1,2),
-            new Ficha(2,"Uniforme_de_Slytherin",3,1,2),
-             //Ravenclaw
-            new Ficha(3,"Borracho_de_Matalobos",3,1,3),
-            new Ficha(3,"Giratiempo",4,2,3),
-            new Ficha(3,"Glacius",3,1,3),
-            new Ficha(3,"Kelpie",2,1,3),
-            new Ficha(3,"Leon",2,0,3),
-            new Ficha(3,"Vendedor_de_Varitas",3,1,3),
+            {
+                //Gryffindor
+                new(1,"Albus_Dumbledore",6,2,1,7, EnumHability.MoreTime),
+                new(2,"Harry_Potter",4,1,1,8,EnumHability.AntiTramps),
+                new(3,"Hermione",5,2,1,9,EnumHability.Aumentar_Velocity),
+                new(4,"Ron_Weasley",5,1,1,6,EnumHability.Aumentar_Velocity),
+                new(5,"Sirius_Black",7,2,1,7,EnumHability.MoreTime),
 
-             //Hufflepuff
-            new Ficha(4,"Boggart",3,2,4),
-            new Ficha(4,"Caballero_de_Raven",3,1,4),
-            new Ficha(4,"Colacuerno_Hungaro",3,1,4),
-            new Ficha(4,"Elfo_Domestico",2,1,4),
-            new Ficha(4,"Fluffy",2,1,4),
-            new Ficha(4,"Gigante",3,1,4),
-            new Ficha(4,"Gytrash",2,0,4)
 
-        };
+                //Slytherin
+                new(6,"Draco_Malfoy",4,2,2,7, EnumHability.Aumentar_Velocity),     
+                new(7,"Bellatrix_Lestrange",4,0,2,5,EnumHability.Aumentar_Velocity),   
+                new(8,"Estudiante_Astuto",6,1,2,7,EnumHability.AntiTramps),
+                new(9,"Bruja",7,1,2,8,EnumHability.MoreTime),
+                new(10,"Baron_Sanguinario",5,2,2,7,EnumHability.AntiTramps),
+
+
+                //Hufflepuff
+                new(11,"Borracho_de_Matalobos",8,1,3,8,EnumHability.AntiTramps),
+                new(12,"Glacius",5,1,3,6,EnumHability.AntiTramps),
+                new(13,"Kelpie",5,1,3,6,EnumHability.MoreTime),
+                new(14,"Leo",4,0,3,9,EnumHability.Aumentar_Velocity),
+                new(15,"Gigante",6,1,3,10,EnumHability.AntiTramps),
+
+                //Ravenclaw
+                new(16,"Boggart",5,2,4,7,EnumHability.Aumentar_Velocity),
+                new(17,"Caballero",4,1,4,9,EnumHability.Aumentar_Velocity),
+                new(18,"Elfo",6,1,4,8,EnumHability.MoreTime),
+                new(19,"Fluffy",8,1,4,5,EnumHability.AntiTramps),
+                new(20,"Gytrash",5,0,4,7,EnumHability.AntiTramps)
+
+            };
 
 
             instancia.Insert(fichas);

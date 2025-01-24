@@ -11,7 +11,7 @@ public class Hability
     public Ficha ficha;
     public Ficha copy ;
 
-    public Hability ( Ficha ficha  )
+    public Hability ( Ficha ficha )
     {
         this.ficha= ficha ;
         copy = new Ficha(ficha);
