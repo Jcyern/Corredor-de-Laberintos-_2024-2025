@@ -15,8 +15,10 @@ namespace FICHA
         public int Velocidad;
         public int Enfriamiento;
         public string Hability;
+        public int Colocacion;
 
-        public int Owner;
+        public int Seconds;
+
 
 
         public (int,int)position{get;set;}
@@ -26,7 +28,7 @@ namespace FICHA
 
 
         //builder 
-        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction)
+        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction , int Seconds)
         {
 
             this.id = id;
@@ -36,7 +38,20 @@ namespace FICHA
             this.Faction = new Faction(Faction);
             this.Hability = "";
             position = (0,1);
+            this.Seconds = Seconds;
 
+        }
+
+        public Ficha (Ficha ficha )
+        {
+            id = ficha.id;
+            Name = ficha.Name;
+            Velocidad = ficha.Velocidad;
+            Enfriamiento = ficha.Enfriamiento;
+            Faction =ficha.Faction;
+            Hability = ficha.Hability;
+            position = ficha.position;
+            Seconds = ficha.Seconds;
         }
     }
 }
