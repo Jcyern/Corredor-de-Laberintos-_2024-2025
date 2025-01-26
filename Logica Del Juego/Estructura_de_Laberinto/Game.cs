@@ -55,7 +55,6 @@ namespace Gammepay
     #region  Generate Maze
     public  static Laberinto Generar_Maze(int fila , int columna )
     {
-        Console.Clear();
         //Generando laberintos validos aleatorios
         System.Console.WriteLine("///////////////////////////////////////////////////////////");
         System.Console.WriteLine("/////////////////////Generando laberinto //////////////////");
@@ -80,7 +79,6 @@ namespace Gammepay
 
 
 
-        Console.Clear();
 
         return Maze;
     }

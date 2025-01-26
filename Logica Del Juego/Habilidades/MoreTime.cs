@@ -7,7 +7,7 @@ public class MoreTime : Hability
 {
     public MoreTime(Ficha ficha) : base(ficha)
     {
-        Name = "MoreTime";
+        Name = EnumHab.EnumHability.MoreTime;
     }
 
 

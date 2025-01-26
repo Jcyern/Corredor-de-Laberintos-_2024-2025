@@ -23,7 +23,7 @@ public class Program
     {
         Create_base();
         Juego game = new();
-        //game.Bienvenido();
+        game.Bienvenido();
 
 
         //Prueba de moviemiento 
@@ -33,9 +33,9 @@ public class Program
         // game.jugador.fichas.Add(    new Ficha(1,"Animago",2,1,1));
         // game.jugador.fichas.Add(  new Ficha(1,"Auror",1,2,1));
 
-        Game.Generar_Maze(10,10);
+        //Game.Generar_Maze(10,10);
 
-        Game.Maze.Print();
+        //Game.Maze.Print();
 
         // var tablero = Game.maze;
 

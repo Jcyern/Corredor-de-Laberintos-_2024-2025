@@ -1,6 +1,7 @@
 using System;
 using System.Buffers;
 using Direcciones;
+using EnumHab;
 using Faccion;
 
 
@@ -14,7 +15,7 @@ namespace FICHA
         public Faction Faction;
         public int Velocidad;
         public int Enfriamiento;
-        public string Hability;
+        public Hability Hability;
         public int Colocacion;
 
         public int Seconds;
@@ -26,9 +27,25 @@ namespace FICHA
         public Moves move = new Moves();
 
 
+        public Hability CreateHab(Ficha ficha , EnumHability habilidad)
+        {
+            switch(habilidad)
+            {
+                case EnumHability.Aumentar_Velocity:
+                return new Aumentar_velocity(ficha);
 
+                case EnumHability.AntiTramps:
+                return new  AntiTramp(ficha);
+
+                case EnumHability.MoreTime:
+                return new MoreTime(ficha);
+                
+                default:
+                throw new Exception( "HABILIDAD NO RECONOCIDA ");
+            }
+        }
         //builder 
-        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction , int Seconds)
+        public Ficha(int id, string Name, int Velocidad, int Enfriamiennto, int Faction , int Seconds, EnumHability Hability)
         {
 
             this.id = id;
@@ -36,9 +53,9 @@ namespace FICHA
             this.Velocidad = Velocidad;
             this.Enfriamiento = Enfriamiennto;
             this.Faction = new Faction(Faction);
-            this.Hability = "";
             position = (0,1);
             this.Seconds = Seconds;
+            this.Hability =  CreateHab(this, Hability);
 
         }
 
@@ -49,9 +66,9 @@ namespace FICHA
             Velocidad = ficha.Velocidad;
             Enfriamiento = ficha.Enfriamiento;
             Faction =ficha.Faction;
-            Hability = ficha.Hability;
             position = ficha.position;
             Seconds = ficha.Seconds;
+            Hability = ficha.Hability;
         }
     }
 }

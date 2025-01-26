@@ -53,7 +53,8 @@ namespace Base_Datos
                         Velocidad INTEGER,
                         Enfriamiento INTEGER,
                         Faccion INTEGER,
-                        Seconds INTEGER
+                        Seconds INTEGER,
+                        Hability TEXT
                         )";
 
                         //comando coge la el comando q se ejecuara y la coneccion con la base de datos 
@@ -82,17 +83,20 @@ namespace Base_Datos
             {
                 conection.Open();
 
-                string sql = " INSERT INTO MiTabla (Nombre,Velocidad,Enfriamiento,Faccion) VALUES (@Nombre,@Velocidad, @Enfriamiento, @Faccion)";
+                string sql = " INSERT INTO MiTabla (Nombre,Velocidad,Enfriamiento,Faccion,Seconds,Hability) VALUES (@Nombre,@Velocidad, @Enfriamiento, @Faccion, @Seconds, @Hability)";
 
                 using (var command = new SqliteCommand(sql, conection))
                 {
                     foreach (var item in fichas)
                     {//Insertando los elementos , lo q hace q en el parametro nombre en la tabla asignale el valor q se le esta pasando
+                    System.Console.WriteLine($"Insertirng _ {item.Name} __ Hab : {item.Hability.Nombre}");
                         command.Parameters.Clear();
                         command.Parameters.AddWithValue("@Nombre", item.Name);
                         command.Parameters.AddWithValue("@Velocidad", item.Velocidad);
                         command.Parameters.AddWithValue("@Enfriamiento", item.Enfriamiento);
-                        command.Parameters.AddWithValue("@Faccion", item.Faction);
+                        command.Parameters.AddWithValue("@Faccion", item.Faction.id);
+                        command.Parameters.AddWithValue("@Seconds",item.Seconds);
+                        command.Parameters.AddWithValue("@Hability",item.Hability.Nombre);
 
 
                         command.ExecuteNonQuery();
@@ -144,7 +148,7 @@ namespace Base_Datos
 
         public Ficha GetFicha(int id)
         {
-            Ficha ficha = null;
+            Ficha? ficha = null;
 
 
             string sql = "SELECT * FROM MiTabla WHERE Id = " + id + "";
@@ -179,8 +183,10 @@ namespace Base_Datos
 
                 conection.Close();
             }
-
+            if(ficha != null)
             return ficha;
+            else
+            throw new Exception("No se cargaron los datos de la ficha");
         }
 
 
@@ -232,7 +238,7 @@ namespace Base_Datos
             int count = 0;
             foreach (var item in fichas)
             {
-                System.Console.WriteLine($" ficha :  id: {count}  {item.Name}, {item.Faction},  {item.Velocidad} ");
+                System.Console.WriteLine($" ficha :  id: {count}  Nombre {item.Name}, Facccion{item.Faction.name}, Velocidad j{item.Velocidad}, Seconds{item.Seconds} , Hability {item.Hability.Name}, Enfriamiento {item.Enfriamiento}");
 
                 count++;
             }
