@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: ce4bf9d2429ba934882d3684407ab23b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dc09306383fdfcd83915645d7ef639
+      internalID: -383283462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11831611651b3020952e3aed8623860
+      internalID: 547192453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 96
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924521c87d8ca747da7757f60838dd07
+      internalID: 884267659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2207e67c36eecc8ada2e807feefb49
+      internalID: -1200813050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc53b766f6a74cca71ae9d0729942b
+      internalID: -1703546458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 96
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86c5f7694493e07e88bf39fb8f6b170
+      internalID: 1859667026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 97
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058131ec70c9e32a689b3c6a22df87a7
+      internalID: -1835445525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 101
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abbffc2994c77a789b45c1cfef29ec7
+      internalID: 1278029423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 102
+        width: 41
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4419a1da27bdd896090cbf287311857b
+      internalID: -80108687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92621bec6c220e9caa681459c5ce7e2e
+      internalID: 486982053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e1025a73eee1d68a745f4f6e0dda92
+      internalID: -335293854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b12adc88490f2612a0cdb843b300df0
+      internalID: 1460204843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 64
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a446a525002415c38bd2f4a99986d051
+      internalID: 1200859235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 86
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64624f49a9733022f8ef0c1cecf07ffb
+      internalID: -404047295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 84
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068c40a8d518081b4a720777b7fdef07
+      internalID: 1422690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_15
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 69
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce551cda76aa296cb5e59f92f4f6191
+      internalID: -1111123240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_16
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 69
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a238f6ed846a35399f8236020273dc
+      internalID: -1747981957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91d39bba8e921adab200def0ab029a8
+      internalID: 1449199566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 32
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4428afacf91001e4b41dbf9823c8658
+      internalID: -972487735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4851c0b60ee222a84a59b4df66879fe3
+      internalID: -338407674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ae2553c679c9eaea7dddf0bb4a21af
+      internalID: -1749705111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_21
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 24
+        width: 53
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5312b856d8cfd2148b0853f8ee500c9
+      internalID: 381443349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fea0e45ac54598b7bb74ab85338dc51
+      internalID: 50798412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_23
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a187b04444ed2a654ae637ef43e8ed78
+      internalID: -1236918202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_24
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dfa0896c04a18dfa11b7dbad787aec
+      internalID: -375857834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_25
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a698101e60f9b049e9a0e68dd516c9
+      internalID: -779543821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bleach_sprites_by_doubleleggy_d6kv9wk_26
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 7
+        width: 70
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ec1f6d9527aa52686be6f1ee7a7798
+      internalID: -2128749711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bleach_sprites_by_doubleleggy_d6kv9wk_0: -383283462
+      bleach_sprites_by_doubleleggy_d6kv9wk_1: 547192453
+      bleach_sprites_by_doubleleggy_d6kv9wk_10: -335293854
+      bleach_sprites_by_doubleleggy_d6kv9wk_11: 1460204843
+      bleach_sprites_by_doubleleggy_d6kv9wk_12: 1200859235
+      bleach_sprites_by_doubleleggy_d6kv9wk_13: -404047295
+      bleach_sprites_by_doubleleggy_d6kv9wk_14: 1422690
+      bleach_sprites_by_doubleleggy_d6kv9wk_15: -1111123240
+      bleach_sprites_by_doubleleggy_d6kv9wk_16: -1747981957
+      bleach_sprites_by_doubleleggy_d6kv9wk_17: 1449199566
+      bleach_sprites_by_doubleleggy_d6kv9wk_18: -972487735
+      bleach_sprites_by_doubleleggy_d6kv9wk_19: -338407674
+      bleach_sprites_by_doubleleggy_d6kv9wk_2: 884267659
+      bleach_sprites_by_doubleleggy_d6kv9wk_20: -1749705111
+      bleach_sprites_by_doubleleggy_d6kv9wk_21: 381443349
+      bleach_sprites_by_doubleleggy_d6kv9wk_22: 50798412
+      bleach_sprites_by_doubleleggy_d6kv9wk_23: -1236918202
+      bleach_sprites_by_doubleleggy_d6kv9wk_24: -375857834
+      bleach_sprites_by_doubleleggy_d6kv9wk_25: -779543821
+      bleach_sprites_by_doubleleggy_d6kv9wk_26: -2128749711
+      bleach_sprites_by_doubleleggy_d6kv9wk_3: -1200813050
+      bleach_sprites_by_doubleleggy_d6kv9wk_4: -1703546458
+      bleach_sprites_by_doubleleggy_d6kv9wk_5: 1859667026
+      bleach_sprites_by_doubleleggy_d6kv9wk_6: -1835445525
+      bleach_sprites_by_doubleleggy_d6kv9wk_7: 1278029423
+      bleach_sprites_by_doubleleggy_d6kv9wk_8: -80108687
+      bleach_sprites_by_doubleleggy_d6kv9wk_9: 486982053
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

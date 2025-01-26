@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 5116257535349368424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63, y: 28, z: -4}
-  m_LocalScale: {x: 1.9549522, y: 2.0041144, z: 1}
+  m_LocalPosition: {x: -63.104, y: 28.067, z: -4}
+  m_LocalScale: {x: 1.9745017, y: 2.0308352, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 819795511
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 675257609, guid: 18dedf59cbf2563699d23d57d01a3dbd, type: 3}
+  m_Sprite: {fileID: 1166417626, guid: 18dedf59cbf2563699d23d57d01a3dbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00056913495}
+  m_Offset: {x: 0.008470148, y: 0.00056910515}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.0011382}
+  m_Size: {x: 0.8814309, y: 1.0011382}
   m_EdgeRadius: 0
 --- !u!114 &6850002725358205491
 MonoBehaviour:
@@ -145,7 +145,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pared: {fileID: 675257609, guid: 18dedf59cbf2563699d23d57d01a3dbd, type: 3}
-  camino: {fileID: 1166417626, guid: 18dedf59cbf2563699d23d57d01a3dbd, type: 3}
+  camino: {fileID: 683977753, guid: 18dedf59cbf2563699d23d57d01a3dbd, type: 3}
+  trampa_freeze: {fileID: 21300000, guid: 707bcb4a48117d7b2b2819c2778f286f, type: 3}
+  trampa_Low_velocity: {fileID: 21300000, guid: 4f29705296345a01988e253df2feed24, type: 3}
+  trampa_Move_random: {fileID: 21300000, guid: 9a437357c632f055f8a1a91e5de8f54b, type: 3}
   x: 0
   y: 0
 --- !u!82 &5615967236703454029
@@ -168,7 +171,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.75919724
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

@@ -1,3 +1,4 @@
+using EnumHab;
 using FICHA;
 public class Hability 
 {
@@ -6,10 +7,12 @@ public class Hability
 
     public bool Activated ;
     
-    public string Name ;
+    public   EnumHability Name ;
 
     public Ficha ficha;
     public Ficha copy ;
+
+    public string Nombre => Name.ToString();
 
     public Hability ( Ficha ficha  )
     {
@@ -17,7 +20,7 @@ public class Hability
         copy = new Ficha(ficha);
         variacion =0 ;
         enfriamineto = ficha.Enfriamiento;
-        Name = "";
+        Name = EnumHability.None;
     }
 
 

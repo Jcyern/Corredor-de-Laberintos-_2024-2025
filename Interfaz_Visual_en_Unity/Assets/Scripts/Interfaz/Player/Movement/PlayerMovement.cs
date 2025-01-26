@@ -19,12 +19,11 @@ public class PlayerMovement : MonoBehaviour
     public int  pos;
     public bool IsSelected;
     public bool Casilla_Origen= true ;
-    public   int segundos  = 15 ;
-
+    public   int segundos  ;
     public bool Win;
     public bool is_active ;
 
-    public int velocity ;
+    public   int velocity ;
     private Vector2 movement ;
     private Rigidbody2D rb;
 
@@ -32,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     public int Velocidad => components.Velocidad;
     public int Enfriamineto => components.Enfriamiento;
-    public string Hability => components.Hability;
+    public string Hability => components.Hability.Nombre;
 
 
 
@@ -49,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         Owner = dupla.number;
         pos= dupla.pos;
         velocity = components.Velocidad;
+        segundos = components.Seconds;
 
         //cambiarle el nombre al gameobject por comodidad 
         gameObject.name = dupla.ficha.Name;

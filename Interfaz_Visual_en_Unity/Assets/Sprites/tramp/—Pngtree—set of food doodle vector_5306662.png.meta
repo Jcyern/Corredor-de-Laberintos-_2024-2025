@@ -1,0 +1,2525 @@
+fileFormatVersion: 2
+guid: 4375e3bb52630ab09b536e420431a5bd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 9
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_0"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3985
+        width: 41
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59622ce34e3bfc6d9b0cc8ef3f9305a3
+      internalID: 1382841691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_1"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3985
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a649851467827ebb951766250f234d9
+      internalID: -414214852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_2"
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3983
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956d0a2cec023c8e08b3616f04919a27
+      internalID: 947447491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_3"
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 3800
+        width: 600
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b1f76b3089b47419166c0001b1f9a3
+      internalID: 61888804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_4"
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 3800
+        width: 482
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a923474779734ef639f1b1c5bd8ce9e9
+      internalID: -423405647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_5"
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 3698
+        width: 374
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079dbab4d170db50eb56cd18e0dbc69e
+      internalID: 815090181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_6"
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 3845
+        width: 509
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09991cfb7ce1711eb880e3718fc8eff
+      internalID: 1355404766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_7"
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 4032
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8c90fc117f58157a423562be37e7f9
+      internalID: 52316178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_8"
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 4032
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c13be133d50f0669d3f3fd17ce2b3b
+      internalID: -365412317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_9"
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 4032
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9e36532933897dab17b61f28ade95d
+      internalID: 73003434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_10"
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 3674
+        width: 403
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054499ff29cfb89e8b6a7c3488e2ea06
+      internalID: -9718478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_11"
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 3604
+        width: 442
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d5025535459f3e2bcd57d9abb7ebc8
+      internalID: 202693526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_12"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3783
+        width: 402
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137b12bdacb3352febbf2f1c11b2eeeb
+      internalID: -1758939168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_13"
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 3830
+        width: 403
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb90a8677076430aa05b355f3f424a9
+      internalID: -1481674696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_14"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3248
+        width: 408
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39a056fb4ab5a6c5b810994f0d9321c
+      internalID: -538715517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_15"
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3332
+        width: 403
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45c942bca645d95398a94090749f5d4
+      internalID: -715066569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_16"
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 3230
+        width: 492
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b50c1b08b83d249beb30f9df54e4e2
+      internalID: -1143735678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_17"
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 3259
+        width: 505
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc294ed9a7585b3438b07c1cb6fdafd9
+      internalID: -1762947441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_18"
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 3293
+        width: 409
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e441342a4b804bc2be16223a9e9c697
+      internalID: 1010731269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_19"
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 3716
+        width: 34
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bd4d7d36001081f9a54da115f81570
+      internalID: 1884405249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_20"
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 3710
+        width: 34
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8281c26769c0e366ca0a48edaa794255
+      internalID: 1892152584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_21"
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3706
+        width: 34
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e782fd34f26c315d1a99d6e21c2c58f5
+      internalID: 594103877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_22"
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 3158
+        width: 360
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d83a5e2bd0aceab9f2e2ce51b6ccd9
+      internalID: 419557203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_23"
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 3509
+        width: 500
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e028af46eb4b3aa96820c670db55609f
+      internalID: -136997973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_24"
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 3261
+        width: 600
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1625c5940b91ddecf9a42c9a7e942a26
+      internalID: 1218993673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_25"
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 3275
+        width: 485
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880d6c9c99040ffea8b7fd4570de2442
+      internalID: -235607860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_26"
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2668
+        width: 314
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b3ffbd9fc5666b4966ec91ffa97da2
+      internalID: 1515236057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_27"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2858
+        width: 413
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf36d806cb23dc8e820746ebdc71d07
+      internalID: 377068774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_28"
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 2664
+        width: 366
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cee349c2316bdcd59b56520068ca99f
+      internalID: 2140804320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_29"
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2612
+        width: 665
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244397f2e621ca82d986098976a6667b
+      internalID: 1840304642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_30"
+      rect:
+        serializedVersion: 2
+        x: 2180
+        y: 2732
+        width: 313
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de38b515ac4dc2912b181e20bd6e0568
+      internalID: -678222582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_31"
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 2864
+        width: 608
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719599b0a265c647485ae8a70b2f9eb7
+      internalID: -529493563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_32"
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 2420
+        width: 592
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d497ab85182bcaf87bb13aeeda3579
+      internalID: 205181322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_33"
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 2913
+        width: 391
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa3337e55fd3bfd3aaac61ad3f5a5ba
+      internalID: -1170358091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_34"
+      rect:
+        serializedVersion: 2
+        x: 3788
+        y: 2660
+        width: 368
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696c2c5dc02eac4948f7330588169e92
+      internalID: -2054498402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_35"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2253
+        width: 360
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554ecdae081a5c923a035c2e218e2408
+      internalID: -70187212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_36"
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2386
+        width: 610
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a41bd84933c7980b845f2444a3065d
+      internalID: 1304121535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_37"
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 2154
+        width: 160
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39682deeafe0ab7939052530136368
+      internalID: -236300357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_38"
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 2144
+        width: 97
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7216bc06a5e3fddad98c1cb7f80584c4
+      internalID: -2077557121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_39"
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 2139
+        width: 181
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872c1b77a3f08c32ebcaa365ed248f85
+      internalID: 621411306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_40"
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 2241
+        width: 547
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9e3a1aa639172c6888da14f9cd9dbd
+      internalID: -43665740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_41"
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 2178
+        width: 413
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e681985667d3d2b2dab6be60b0273c31
+      internalID: 1284918498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_42"
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 2333
+        width: 544
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57254ae3a5e102c70b2adc128afd6992
+      internalID: 1373513403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_43"
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 2188
+        width: 457
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5171db5363d0319468ef785010a037a9
+      internalID: -1028465192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_44"
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 2304
+        width: 37
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3aba74b9c60069393c94ca997f86ea
+      internalID: -1393192332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_45"
+      rect:
+        serializedVersion: 2
+        x: 3183
+        y: 2304
+        width: 37
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dd6c4bd8b173123a51483c536e9ba2
+      internalID: 1966005797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_46"
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 2304
+        width: 39
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551c418a9ac46613bac6ea2d540b3c73
+      internalID: 1097656274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_47"
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 2095
+        width: 159
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c3d93611c3da339f3fbb99b5f4d1b
+      internalID: -243930523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_48"
+      rect:
+        serializedVersion: 2
+        x: 3830
+        y: 2087
+        width: 98
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5fca6197d53d2b79ba6f0dd05f996c
+      internalID: -1190434792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_49"
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 2082
+        width: 182
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b24ae7b9a9faff9293553af400ed03f
+      internalID: 1883242727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_50"
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1785
+        width: 393
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5387161587086e5994639e0f48a2029
+      internalID: -525220268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_51"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2109
+        width: 458
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cc5a83590bfe62db9abc3bb5f2c043
+      internalID: -1533548584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_52"
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 2223
+        width: 39
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5697ed223be0ee972b6c6879e2555a2c
+      internalID: 1293702486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_53"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2223
+        width: 38
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e490163170603fa1db6e7ebba08d3035
+      internalID: 1880244746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_54"
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2223
+        width: 38
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5083384264727acf97b22e4915fca30
+      internalID: -1807806055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_55"
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 1842
+        width: 402
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ca947d6b301ce8eb5c205daf6e261b
+      internalID: -748384145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_56"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1840
+        width: 464
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befb3db2495d98daeacd36e6e62b098c
+      internalID: -788296269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_57"
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1706
+        width: 372
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0706a0e705f3ccd9ba00c3de02cd270a
+      internalID: -1980299281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_58"
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1313
+        width: 453
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1265d8bf9bc917bb2dcac72d2990a4
+      internalID: -1280804024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_59"
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1708
+        width: 476
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf11e667bad29a2ef820a88fe80831ef
+      internalID: -1182893270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_60"
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 1659
+        width: 318
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f84f8f1812b935789cbabfcc13ed99
+      internalID: -1313915181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_61"
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1692
+        width: 382
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b2c05c83d811f4ca0915aeb3c89628
+      internalID: 1218711026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_62"
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 1920
+        width: 466
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea6896224b5325eab1639387ed255d4
+      internalID: -1022510861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_63"
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 1649
+        width: 350
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1af78a5e6097751812dff4c47032ba
+      internalID: 705980019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_64"
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 1313
+        width: 476
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bd60ef974a7d16ba67687c0f01c247
+      internalID: -1178355716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_65"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1350
+        width: 483
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48893cbed70110699212d4932b3d608
+      internalID: -1989075708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_66"
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1285
+        width: 401
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88b660ffae71a818b3e1ec14277cb5f
+      internalID: -142893159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_67"
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1606
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32bd033477c932baca37036d8f0662
+      internalID: -985455681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_68"
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 1604
+        width: 38
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0439d4fc583cbaf0fa02012a3fad7938
+      internalID: -885620827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_69"
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 1604
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e83e02026d50177b1973250899a4f6
+      internalID: -1292782415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_70"
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 1252
+        width: 480
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b17e35fa37c0c00b7ee52e224e3e9d
+      internalID: 1980828716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_71"
+      rect:
+        serializedVersion: 2
+        x: 3147
+        y: 1330
+        width: 402
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802f6b2bafe784dd4876838c5984c3e0
+      internalID: -704425341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_72"
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1387
+        width: 558
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eddf1b0fddce359bba973e98c113a27
+      internalID: 310232856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_73"
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1265
+        width: 425
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e276a787f70594ec9db356cf09d41ca
+      internalID: -104439199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_74"
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1222
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57c1981401d7745b8f359f07d343450
+      internalID: -1928287158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_75"
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1222
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fde739c83cb697d82c4afd59f76e0c
+      internalID: 818093998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_76"
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1222
+        width: 38
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe8505af7e455282924a1b73f083f88
+      internalID: -606636370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_77"
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 931
+        width: 600
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31de8010bfd76092b96a3a0842a53449
+      internalID: 1732267391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_78"
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 931
+        width: 482
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd5562d8db0698cfa9fe95528b128bd
+      internalID: -598132645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_79"
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 900
+        width: 374
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53681f32851814b5e9e56b9f16413223
+      internalID: 2002371886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_80"
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 803
+        width: 401
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cfc4d9e85e05ac4b21b5182ee91fba
+      internalID: 754717422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_81"
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 736
+        width: 442
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa26a15189c79c1596b00549d631226
+      internalID: -1542755393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_82"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1022
+        width: 405
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96392b20f798bc0ada33b30ed4647cb8
+      internalID: -1561727730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_83"
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 937
+        width: 509
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785a87d16275401e0b0bd98d04079d96
+      internalID: -1989100395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_84"
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 1110
+        width: 40
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164b551ba087b227f8a52074f997bf5e
+      internalID: -802165189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_85"
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 1108
+        width: 40
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff2119fdf3f3d0da8b16558e3dbf5bb
+      internalID: -1048306568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_86"
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 1108
+        width: 40
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63014bc1ed424488ac9df1b4e17d07f
+      internalID: 1609529134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_87"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 493
+        width: 408
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e449437202f22a690fa6ffe4c34736
+      internalID: 1704889114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_88"
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 908
+        width: 405
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f21605f86a33fe20a591b6843f55e44
+      internalID: -688070065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_89"
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 11
+        width: 419
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc61b181d6262630aba23c3d2f40425
+      internalID: 917007917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_90"
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 434
+        width: 372
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4575c985832eb8f528b2b46f1cb2226a
+      internalID: 1975315639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_91"
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 436
+        width: 476
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeeebc1b25542c169e7893b70733540
+      internalID: -296231380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_92"
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 386
+        width: 318
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2237fed3fb0c1dd970cd1ae67faac3
+      internalID: -1477482717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_93"
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 418
+        width: 382
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e18ba49b9755e918362ffd6dee884b
+      internalID: -1393046946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_94"
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 754
+        width: 35
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa8e4e3c34a3eb0aa223474a8a8e44b
+      internalID: -1043977339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_95"
+      rect:
+        serializedVersion: 2
+        x: 3010
+        y: 748
+        width: 35
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97ed1ef72e79c8e6a543c6be2399167
+      internalID: -276275973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_96"
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 744
+        width: 35
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bb92762f9c2b4c7ba40f864642ac2d
+      internalID: 882270923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_97"
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 414
+        width: 348
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c218f9ec7dbaabbe32f0458bd893c
+      internalID: 1776666707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_98"
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 40
+        width: 453
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c2edda71755cce299a11d364910583
+      internalID: -1724432970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_99"
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 546
+        width: 500
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99701b467f99a02ad99e7e21e2855caa
+      internalID: -1388758523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_100"
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 40
+        width: 579
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f04a64223e790bcab551d9884619d1
+      internalID: -1371024842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_101"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 471
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515ba2b71a7cba473ae305345e7a375d
+      internalID: 748290770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_102"
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 276
+        width: 41
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3422fdbf6546361dfb9f0031578340b5
+      internalID: -1668335953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_103"
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 276
+        width: 41
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64cbc957da504391828f9787d5c22df
+      internalID: -1691675647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_104"
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 274
+        width: 41
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb69dcaf7ddfacb65a3f83018408fdbf
+      internalID: 2110487297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_105"
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 44
+        width: 425
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9a13d62f5c92159a3b9568aaeb3818
+      internalID: 54343179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_106"
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 32
+        width: 480
+        height: 451
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c84c116147150e73952885366bb269a
+      internalID: 334186961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_107"
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 52
+        width: 403
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe49bba26e1325c728722880fb41784b
+      internalID: -1773474664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014set of food doodle vector_5306662_108"
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 56
+        width: 557
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22fd6246862d5fa89cbcf6b494625a3
+      internalID: -332920202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_0": 1382841691
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_1": -414214852
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_10": -9718478
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_100": -1371024842
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_101": 748290770
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_102": -1668335953
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_103": -1691675647
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_104": 2110487297
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_105": 54343179
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_106": 334186961
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_107": -1773474664
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_108": -332920202
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_11": 202693526
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_12": -1758939168
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_13": -1481674696
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_14": -538715517
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_15": -715066569
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_16": -1143735678
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_17": -1762947441
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_18": 1010731269
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_19": 1884405249
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_2": 947447491
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_20": 1892152584
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_21": 594103877
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_22": 419557203
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_23": -136997973
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_24": 1218993673
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_25": -235607860
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_26": 1515236057
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_27": 377068774
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_28": 2140804320
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_29": 1840304642
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_3": 61888804
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_30": -678222582
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_31": -529493563
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_32": 205181322
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_33": -1170358091
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_34": -2054498402
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_35": -70187212
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_36": 1304121535
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_37": -236300357
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_38": -2077557121
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_39": 621411306
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_4": -423405647
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_40": -43665740
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_41": 1284918498
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_42": 1373513403
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_43": -1028465192
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_44": -1393192332
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_45": 1966005797
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_46": 1097656274
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_47": -243930523
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_48": -1190434792
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_49": 1883242727
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_5": 815090181
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_50": -525220268
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_51": -1533548584
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_52": 1293702486
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_53": 1880244746
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_54": -1807806055
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_55": -748384145
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_56": -788296269
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_57": -1980299281
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_58": -1280804024
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_59": -1182893270
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_6": 1355404766
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_60": -1313915181
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_61": 1218711026
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_62": -1022510861
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_63": 705980019
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_64": -1178355716
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_65": -1989075708
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_66": -142893159
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_67": -985455681
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_68": -885620827
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_69": -1292782415
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_7": 52316178
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_70": 1980828716
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_71": -704425341
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_72": 310232856
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_73": -104439199
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_74": -1928287158
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_75": 818093998
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_76": -606636370
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_77": 1732267391
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_78": -598132645
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_79": 2002371886
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_8": -365412317
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_80": 754717422
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_81": -1542755393
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_82": -1561727730
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_83": -1989100395
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_84": -802165189
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_85": -1048306568
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_86": 1609529134
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_87": 1704889114
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_88": -688070065
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_89": 917007917
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_9": 73003434
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_90": 1975315639
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_91": -296231380
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_92": -1477482717
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_93": -1393046946
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_94": -1043977339
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_95": -276275973
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_96": 882270923
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_97": 1776666707
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_98": -1724432970
+      "\u2014Pngtree\u2014set of food doodle vector_5306662_99": -1388758523
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

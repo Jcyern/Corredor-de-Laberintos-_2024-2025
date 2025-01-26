@@ -9,50 +9,55 @@ public class TableroInterface : MonoBehaviour
     // Start is called before the first frame update
     
     //Se guardan las filas del tablero 
+    public GameObject Casillas;
     public List<GameObject> Filas = new List<GameObject>();
-    public static Dictionary<int,List<(Vector2Int,bool)>> casillas_de_vicotria ;
+    public static Dictionary<int,List<(Vector3,bool)>> casillas_de_vicotria ;
     
     //Las casillas donde se colocaran las fichas ganadoras , algo asi como un podio 
 
 
     void Diccionario_WinnerPos()
     {
-        Dictionary<int,List<(Vector2Int,bool)> >casillas_vicotoria = new ();
-
+        Dictionary<int,List<(Vector3,bool)> >casillas_vicotoria = new ();
+        var Fila_1 = Casillas.transform.GetChild(0);
+        var Fila_2 = Casillas.transform.GetChild(1);
+        var Fila_3 = Casillas.transform.GetChild(2);
+        var Fila_4 = Casillas.transform.GetChild(3);
         //listas 
         
-        List<(Vector2Int,bool)> j1 = new List<(Vector2Int, bool)>()
+        List<(Vector3,bool)> j1 = new List<(Vector3, bool)>()
         {
-        (new Vector2Int(727,319),false),
-        (new Vector2Int(729,319),false),
-        (new Vector2Int(731,319),false),
-        (new Vector2Int(733,319),false),
-        (new Vector2Int(735,319),false)
+            (Fila_1.transform.GetChild(0).position,false),
+            (Fila_1.transform.GetChild(1).position,false),
+            (Fila_1.transform.GetChild(2).position,false),
+            (Fila_1.transform.GetChild(3).position,false),
+            (Fila_1.transform.GetChild(4).position,false),
+            
         };
 
-        List<(Vector2Int,bool)> j2 = new List<(Vector2Int, bool)>()
+        List<(Vector3,bool)> j2 = new List<(Vector3, bool)>()
         {
-        (new Vector2Int(727,317),false),
-        (new Vector2Int(729,317),false),
-        (new Vector2Int(731,317),false),
-        (new Vector2Int(733,317),false),
-        (new Vector2Int(735,317),false)
+            (Fila_2.transform.GetChild(0).position,false),
+            (Fila_2.transform.GetChild(1).position,false),
+            (Fila_2.transform.GetChild(2).position,false),
+            (Fila_2.transform.GetChild(3).position,false),
+            (Fila_2.transform.GetChild(4).position,false),
         };
-        List<(Vector2Int,bool)> j3 = new List<(Vector2Int, bool)>()
+        List<(Vector3,bool)> j3 = new List<(Vector3, bool)>()
         {
-        (new Vector2Int(727,315),false),
-        (new Vector2Int(729,315),false),
-        (new Vector2Int(731,315),false),
-        (new Vector2Int(733,315),false),
-        (new Vector2Int(735,315),false)
+            (Fila_3.transform.GetChild(0).position,false),
+            (Fila_3.transform.GetChild(1).position,false),
+            (Fila_3.transform.GetChild(2).position,false),
+            (Fila_3.transform.GetChild(3).position,false),
+            (Fila_3.transform.GetChild(4).position,false),
         };
-        List<(Vector2Int,bool)> j4 = new List<(Vector2Int, bool)>()
+        List<(Vector3,bool)> j4 = new List<(Vector3, bool)>()
         {
-        (new Vector2Int(727,313),false),
-        (new Vector2Int(729,313),false),
-        (new Vector2Int(731,313),false),
-        (new Vector2Int(733,313),false),
-        (new Vector2Int(735,313),false)
+            (Fila_4.transform.GetChild(0).position,false),
+            (Fila_4.transform.GetChild(1).position,false),
+            (Fila_4.transform.GetChild(2).position,false),
+            (Fila_4.transform.GetChild(3).position,false),
+            (Fila_4.transform.GetChild(4).position,false),
         };
 
         
@@ -63,7 +68,7 @@ public class TableroInterface : MonoBehaviour
         casillas_vicotoria[4]=j4;
 
 
-        casillas_de_vicotria = casillas_vicotoria;;
+        casillas_de_vicotria = casillas_vicotoria;
     }
     
 

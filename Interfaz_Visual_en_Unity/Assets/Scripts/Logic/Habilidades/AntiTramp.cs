@@ -1,5 +1,5 @@
 
-
+using EnumHab;
 using FICHA;
 
 public class AntiTramp : Hability
@@ -8,7 +8,7 @@ public class AntiTramp : Hability
 
     public AntiTramp(Ficha ficha) : base(ficha)
     {
-        Name = "AntiTramp";
+        Name =EnumHability.AntiTramps;
     }
 
     public override void Activate()

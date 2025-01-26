@@ -1,11 +1,12 @@
 
+using EnumHab;
 using FICHA;
 
 public class Aumentar_velocity : Hability
 {
     public Aumentar_velocity(Ficha ficha) : base(ficha)
     {
-        Name = "Aumentar_Velocity";
+        Name = EnumHability.Aumentar_Velocity;
     }
 
     public override void Activate()

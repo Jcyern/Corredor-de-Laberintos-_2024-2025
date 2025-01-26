@@ -1,0 +1,2151 @@
+fileFormatVersion: 2
+guid: 673dc0430147715f28a2d295853afe7f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c26cb55908faa5deb115c8f2890b7d9
+      internalID: 822921719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92c76b284d1f89a6a3a5197fd2876c3
+      internalID: -1880807488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ecd10921d1e5b8f2b36f6c2a1d6e1c2
+      internalID: -902716275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1827fdb0241a33c558f221b00c5ebb4d
+      internalID: 1328892558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 224
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caec0042fd248f5e2a3380f76ac46947
+      internalID: -325438009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63991c65b87c8017ba975af45cff0998
+      internalID: 1899947287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efc2c3d48e71c4e6992fc08dd08fae8
+      internalID: -1517813217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 27
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63a7db4fc1cd04a18dc57d5a170e2fa
+      internalID: 765867203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4504195f14bdd390ae73306b63baffb
+      internalID: -811292517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 224
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287cd36461efe383f814303cf23d809a
+      internalID: 1155471064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5011a1073090aec59db4771f758a08f
+      internalID: -835895290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de17021f6d66bcb3fa8e5e98195a8652
+      internalID: -346965411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c71537de2628a7b4a00ea11d6b6a817
+      internalID: -120793713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9be7e04777118f2b1e9d997e02a2bb
+      internalID: -1854086810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e621604f4358b33bb0fa3563a9cdff8
+      internalID: 1630151643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98a2e6c229b137379a2e3582cb5fe4e
+      internalID: -1708105671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db99a9735cec8dd8bb322c9fa464d676
+      internalID: -2085967263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 192
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c69d483d43c3fc4bb090729864b5a2
+      internalID: 1578334417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_18
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 192
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dcea56757fa1b4ba5052428a06ab4d
+      internalID: -594984975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_19
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 192
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d9b67c27a675b5ea433575c81abe05
+      internalID: 1615948787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b987fbc54e631b2d8bd925e561e3c8e
+      internalID: 370194206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_21
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 160
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd75e0f9d336fdf28b0218484c13eb37
+      internalID: 517101586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c023ee99ae71fa4fa11af7c5c828454
+      internalID: 191454784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dfa22cd47dfe306bbcd8412e7c7801
+      internalID: 861046618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 160
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02644d5886cbcf8fab8065285c770cca
+      internalID: -1504295761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_25
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 160
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31c20b8fc330069daae124a37fd0fb0
+      internalID: 1005915722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_26
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 160
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cc666976b0f6105abf6baa7c2a0372
+      internalID: 1613986970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_27
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 160
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab517978c120adef1b5aca3e99508214
+      internalID: 1957811682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2fd2e78f5d9c05db37ec6d0f0abc7d
+      internalID: -633437274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 128
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02be166c1008918d4a559ed7986bfa7f
+      internalID: -374022276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 128
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb7e5e35fde35a2eabd22d1dfd33b79
+      internalID: -575095019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 128
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f6dfa509d147febb05484e345c6dae
+      internalID: 1912469839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_32
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 128
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9c1eb5087c63415be43f2d5b5735e8
+      internalID: 1479617673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_33
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 128
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb88abddfd50097e8438c13f1113242
+      internalID: -2100363689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_34
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a01a4bb68d5ed0c79b64c0b97f335c8
+      internalID: 868295823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_35
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79c777697a9775539bdc76c2dc91c3d
+      internalID: 1105972712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3942a00946963edab99e3ce88a11c1
+      internalID: -1544900564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b74823cb4d16a9ea40ed513cb8a148
+      internalID: 115588369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3687355914a93010bb11914e8eadd04b
+      internalID: 1215313241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c339abbe86f57a2b523eb8cf473e15
+      internalID: -882836121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_40
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c260b27b4444fe22983aacbf2ff4a6f
+      internalID: 2033976536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 96
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6513f706cfd9ab898a082664acd4a7b
+      internalID: -1380535508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_42
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 105
+        width: 64
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ff368277241fde28369abcf67c97a5
+      internalID: -1515720816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a37dd6a2f225a019ee16a8dc207be1
+      internalID: -1921343069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_44
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4d46acdc994d15086e244dfe735427
+      internalID: 32864926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_45
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 64
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f8b6e96f7748b60a8e338a6084293f
+      internalID: -1086276141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_46
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 64
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2f3413dd8003973b9917e430a32cf2
+      internalID: -1796709907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_47
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 64
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8393107fea6b8f39c08ca3b2b34e40
+      internalID: 192496858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_48
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0592dcc17b5e518d957e8bf4a4369ed
+      internalID: 274331750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_49
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 89
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b094b68dc6d245f5a778ed786f54b21
+      internalID: -1125079519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_50
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 89
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd437a038b870b3d4be6ddde833222d5
+      internalID: 1842107943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_51
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 85
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85ea245a022f0401b643a20e3e94de4
+      internalID: -1834157814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 89
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc01dd443863b03d963d382a0872f2c
+      internalID: 1629724761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_53
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 89
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a6187021058dcaa84169d6a9305fc3
+      internalID: 236097836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_54
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 89
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f48203751de1e5a98a5f38de288871
+      internalID: -141804464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_55
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 89
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db9ea5685a629dc888bf03ee21d3c0b
+      internalID: 1583163393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_56
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 71
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4b2a1a02acc3ff7b0ef6165d70b8fc
+      internalID: 2000527832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_57
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 67
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f9a3b7bc73e426daf0c3c705a1e1be
+      internalID: -290132756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_58
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8617440fff2975883df4bcb6c9890d
+      internalID: 1289891617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_59
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19006f19781dcfdb9149aa6123f6ce7
+      internalID: 1204967813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_60
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d01f16dafd846d6abffc6f52149dfb
+      internalID: 1550944212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_61
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 32
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93318a656fb1d86ca8ed21f446e67ba3
+      internalID: -1374418755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_62
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 32
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3809c2f1f7c628695015b5654841ad
+      internalID: 1319497095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_63
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c21232791f07439291dde04dabd5ae3
+      internalID: 1404619973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_64
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49253ecd6d1b7777bad9a39529d52594
+      internalID: 2054520223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_65
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 51
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1d3ef85f830d541a22a88cf684fe31
+      internalID: -1890863151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_66
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 51
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de603128ac190c6499822cfdebfa706b
+      internalID: 386465240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_67
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 51
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3f93ca179653eee86197020a7388ba
+      internalID: -758151570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_68
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 51
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f9d48cea9167d88a5a555651baa8f8
+      internalID: 576634464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_69
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 51
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f92a9b204efc161e8568aedd8fa0a40
+      internalID: 1527891743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_70
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 51
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463ff8efb0cf09f02aa6f8299b362539
+      internalID: 1710017988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_71
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 47
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466b7c213906f3a9c83dc037f7933437
+      internalID: 1176885012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_72
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 47
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5d81c5d0d124d3a9d33c82cb171224
+      internalID: 1489855698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_73
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 47
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e33c08d997fb85ff9f2194c06a047d8
+      internalID: 456791570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_74
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 32
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bbe543035b3ce90ae9163d6e9ab6ef
+      internalID: -1768206729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_75
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5636c2f358b35ccb3a42c836d659b00c
+      internalID: -1672572186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_76
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 32
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241f06c9858ece90aba714b02c62d779
+      internalID: -118249758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_77
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f3c0c0f78bcc266be8c52690ff96c1
+      internalID: -2044941778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_78
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54344f174420cf6739b1350f7a32193a
+      internalID: 1079632333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_79
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2bca0788074d6e284673e88b2e194a
+      internalID: -1106464371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_80
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7afb1b431daa4f79aae81ccb4112ae
+      internalID: -843847228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_81
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34ffe6a4a2be640cae7400b46812625
+      internalID: 1619886256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_82
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00845fb88403f7af5b4c9196a405afb2
+      internalID: 838099891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_83
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78ae6a0804209903a17f0ea8ec1e875
+      internalID: 1041378894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_84
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b7cd8235aa4e0a58355b577486bf25
+      internalID: -1803303423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_85
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c3539902ba60c1e9cf6f3c7fd06ca4
+      internalID: 576703162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_86
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6d02a730d26535bb930372f5123ed5
+      internalID: 60326807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_87
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 4
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a09012e8505d3cea30c8569df31212
+      internalID: -453175628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_88
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 4
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4a5184f51278322b5c1162e59e6ee0
+      internalID: 344438237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_89
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 4
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc433be05504a1f382703952ecc5a06
+      internalID: 1941988133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_90
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b280ac50535e778aa2959306eea5f4
+      internalID: -1029544533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_91
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 96
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e2384cec6609a9e911e6a6ddbdfd2f
+      internalID: 383458715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_0: 822921719
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_1: -1880807488
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_10: -835895290
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_11: -346965411
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_12: -120793713
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_13: -1854086810
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_14: 1630151643
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_15: -1708105671
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_16: -2085967263
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_17: 1578334417
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_18: -594984975
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_19: 1615948787
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_2: -902716275
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_20: 370194206
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_21: 517101586
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_22: 191454784
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_23: 861046618
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_24: -1504295761
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_25: 1005915722
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_26: 1613986970
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_27: 1957811682
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_28: -633437274
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_29: -374022276
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_3: 1328892558
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_30: -575095019
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_31: 1912469839
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_32: 1479617673
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_33: -2100363689
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_34: 868295823
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_35: 1105972712
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_36: -1544900564
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_37: 115588369
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_38: 1215313241
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_39: -882836121
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_4: -325438009
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_40: 2033976536
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_41: -1380535508
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_42: -1515720816
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_43: -1921343069
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_44: 32864926
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_45: -1086276141
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_46: -1796709907
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_47: 192496858
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_48: 274331750
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_49: -1125079519
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_5: 1899947287
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_50: 1842107943
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_51: -1834157814
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_52: 1629724761
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_53: 236097836
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_54: -141804464
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_55: 1583163393
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_56: 2000527832
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_57: -290132756
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_58: 1289891617
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_59: 1204967813
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_6: -1517813217
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_60: 1550944212
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_61: -1374418755
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_62: 1319497095
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_63: 1404619973
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_64: 2054520223
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_65: -1890863151
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_66: 386465240
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_67: -758151570
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_68: 576634464
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_69: 1527891743
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_7: 765867203
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_70: 1710017988
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_71: 1176885012
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_72: 1489855698
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_73: 456791570
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_74: -1768206729
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_75: -1672572186
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_76: -118249758
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_77: -2044941778
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_78: 1079632333
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_79: -1106464371
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_8: -811292517
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_80: -843847228
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_81: 1619886256
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_82: 838099891
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_83: 1041378894
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_84: -1803303423
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_85: 576703162
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_86: 60326807
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_87: -453175628
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_88: 344438237
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_89: 1941988133
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_9: 1155471064
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_90: -1029544533
+      re_side_character_sprites_v1_0_by_doubleleggy_d2hz61y_91: 383458715
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

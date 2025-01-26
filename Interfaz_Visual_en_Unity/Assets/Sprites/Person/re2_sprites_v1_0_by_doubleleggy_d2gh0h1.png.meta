@@ -1,0 +1,2283 @@
+fileFormatVersion: 2
+guid: 95d53c36c9b9605f6a6e1a3a1166c5d4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b5e6528f868c9f7a3278f49c640486
+      internalID: 44678569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 128
+        width: 27
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae91af310eb4958f8d2a73f7eb46699
+      internalID: -237259196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 224
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dab10aaf2d754a8db92778a7e675e30
+      internalID: 1309718585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bd594a18668950e8b95b411b58fcc3
+      internalID: -32469789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 128
+        width: 27
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dd9863c3913e0f58582384ff360980
+      internalID: -1736980464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 224
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ec98076f31b489795bf8442e9ab8fc
+      internalID: -1259880787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe69d41f39ff95132a3d74801ffa11a9
+      internalID: 1810482267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 27
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8a67708aa6d29fcac61cfc2cc38b8d
+      internalID: 420103516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c293a6a9373d8f0a6c1bc3813b6f52
+      internalID: 531911305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d283e0685d4c225e79c92175e5b8ce7c
+      internalID: 1956530785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 127
+        width: 26
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc04d03d726323caaaa4100dc76103a
+      internalID: -637835620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 224
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d33233c118bcbe5b52d2e427c1ab6e
+      internalID: -1174177956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a8f5cc9913b2b7485ba0c5b7b656a6
+      internalID: 1183621125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8995a518dccd87b85f7717de678003
+      internalID: -189899855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e842206aa054c2839a03d36fd9f81f58
+      internalID: 409397884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fde0623aaafe386cb739977573dd1e7
+      internalID: -988750202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66f72b4e0eb354dfa15fca6871a9daf
+      internalID: -1969979313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec893e88e0f3d7c4978587ddfe2060e
+      internalID: 1206100578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_18
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 192
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae89c72adf8607af08de6310d9c30c0e
+      internalID: -1261581718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_19
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a35d36ad10f37fde9c5f9964e1aa588
+      internalID: 1819503252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b76b4c0b88504828f4de71a9995ea4
+      internalID: -1275009297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c9dfd3183d5159ebb0df8e2b672be8
+      internalID: 800613675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42da7f5bfb88c467aade646e3734797
+      internalID: -498760696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf27510f658a2a0d789e902cffbfc1a1
+      internalID: -1350869714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8e5c144a810e48eaa9e29077b5014f
+      internalID: -2140575153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_25
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 160
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ebdfa9c90bc5e1392aad36cf687651
+      internalID: -489069140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_26
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 160
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dcf1266c94c39988aa04f2ab999360
+      internalID: -1977676311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_27
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 160
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b960da945179d1ed8195ebc2c53bd10
+      internalID: 2088908026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 128
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a94f581728c62237985ea5d582130d0
+      internalID: -233477508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 128
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8003ffe4aa809be1af1f5c45dbbdd95
+      internalID: -1185289667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 128
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f2d5e2ec547f1468af3e5fc74f4514
+      internalID: 1151242419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_31
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 128
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ea6b68702549d79b4ad4798f55c517
+      internalID: -854589184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_32
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70268a24f34037d948517e7651f7784f
+      internalID: -645823547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_33
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d38e35fcb33960f0835d7fad2eedc06
+      internalID: -974118839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_34
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa18ce16dfaa1a8dab7010d91be22b29
+      internalID: 521529661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_35
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 128
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4265794e2857247816cd7db2a1814d
+      internalID: 1251022577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 97
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfdd42fab101cc1cb9872821d70afc3
+      internalID: -880852922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87c6d0adfece04b9abd070a9f4885c4
+      internalID: 1473937037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_38
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 97
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950c4aa56d49f189fa9b49eb88d93663
+      internalID: 1058542128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 97
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51539ba40b1a46e229e342533aa618f1
+      internalID: 408226704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_40
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 96
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5e31c98ceb1779a94d3b38d7263779
+      internalID: 738687296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_41
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 97
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5707d449acb10de8e8b18d39243e4bf9
+      internalID: -772179841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 96
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916e580688fa58e6dbfc0dd36f596450
+      internalID: 1006696498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_43
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 96
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e0cba4951160903a89212b2324ac38
+      internalID: 1919386625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_44
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 93
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bdfa921db8a1011bedbe63cc1d1e7e
+      internalID: -476501060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_45
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 93
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa242c0b56312447a87563c11ba80b5f
+      internalID: 2019696965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_46
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 93
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29975c754319873369c1a5d9e08eecce
+      internalID: -2072642786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_47
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 89
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce51bb09ef7cdb763bdda4a2c6ecf51b
+      internalID: 1982298489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_48
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 93
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9b309f7331800708ff3dc089c70b34
+      internalID: -2087933055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_49
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 93
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970f997a61ed8379e8e16840a76f214c
+      internalID: 1126459583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_50
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 93
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcc06cad4f79fdf29e7db9c930ef4a9
+      internalID: -956250261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_51
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 93
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2f0e03b80e5d60da148b42b632311c
+      internalID: -1203118464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_52
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17d256f7e0aa2f56853b79b9f15b21e
+      internalID: -1056328810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_53
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 64
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e081a18ea5268b8d94e33beb14cc205
+      internalID: 1008799965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_54
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 64
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350c70dd80526176bb6317312942b452
+      internalID: -932814470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_55
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d7da6c88e35401594191a80feda06f
+      internalID: -1891056679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_56
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 64
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf973eb567dbb626290b4902ea719c08
+      internalID: 1690699470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_57
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 64
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2b5a0cdb72a1ffcac0b8a74f01732b
+      internalID: -209005265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_58
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24719ef5dc4f0e171be7a2350d470995
+      internalID: 642591490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_59
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 64
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab24de4c28f4e837b4d938341115d2e
+      internalID: -401366472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_60
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 75
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af793bd08fb298212bdd7e4ebcd20fea
+      internalID: 778923643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_61
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 71
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a37d6f365940e465b0023ebd0cf3819
+      internalID: -333107494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_62
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad2725cda66be3ad8be4fd8a2d09130
+      internalID: 1386150600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_63
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 32
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa5faff4a599870b9abf0d2d0294b6e
+      internalID: -1658419292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_64
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 32
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec39436b91a62826af1fa874cec9ca3
+      internalID: -1145553658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_65
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 32
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a534d4011b21a7d079a6c2d089a37e97
+      internalID: 258913288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_66
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 32
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61fac30f3488fed5a13ae0ba5ee990f
+      internalID: 1089674117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_67
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 32
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db82c84af699f4eba94fdcf570a29106
+      internalID: -1807951085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f2515a55e5357618f1a0755fe4aeef
+      internalID: -1257271416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_69
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 32
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8d882f44194df08a571280fbf0014a
+      internalID: 1755300973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_70
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee39e01b03dc1bb5bd7398bfa0fadc9
+      internalID: -236341958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_71
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 51
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbdd95c2ccc4489aa67b1bbea6bf00f
+      internalID: -487294293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_72
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 51
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b66bdf7c5af56c8ad63502c6a1088
+      internalID: 1217230696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_73
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 51
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18c1466d097fe1d68f3ab265a2b807e
+      internalID: 1380580432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_74
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 51
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267916f8290bce526adf9169a58e6243
+      internalID: 433710924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_75
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 51
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33bf77b66de757f7aacafeaa538d9da
+      internalID: 1300491680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_76
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 51
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb1137e4e6e54fa99ca097d2e266569
+      internalID: 928684518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_77
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 47
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f45d9fa54e729738f758b23e941ee0
+      internalID: -327786300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_78
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 47
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228bd1d5fe28e5b10ab932b1637698f1
+      internalID: 201166347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_79
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 47
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4015efa4a6b3404799d8b741c6bc531
+      internalID: 1268956327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_80
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 32
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bacb49a39d719cea7d0e84dca8cfeb
+      internalID: -1492096974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_81
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede2d6fc000e4c8b19d07d6f4eb572ca
+      internalID: 633473271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_82
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 32
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b8a9a03dea1c59fb6803bd60e1e5d4
+      internalID: 582448270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_83
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d51439bcece6b07a6b634598c3529e
+      internalID: -2015837721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_84
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687e71079d7627d0e9f641ce1a7c51c2
+      internalID: 1291124368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_85
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e31f3ea71c32d7f9b360231badca0b
+      internalID: 269481618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87064cadb424f89b6ac465abf8079fc6
+      internalID: 2129055442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_87
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca17c5912f899658aec6ae5bf0bc79f
+      internalID: -1860120894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_88
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644e0c458798abec98dc106aada46eab
+      internalID: 916027601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_89
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b6759ef0eccb3f4b8397b5b591143d
+      internalID: 1907912612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7cc11867da5c4928d9de60547ddbdd
+      internalID: -182304827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_91
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b849fabd8ceee30fb4618965f195ba5
+      internalID: -895161346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_92
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 4
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a96a97a2cdda78e5fa8974c3bac9b8ac
+      internalID: -2011728786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_93
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eb12d232f1bae49b67b2e4355d3d8d
+      internalID: 1179496947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_94
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1511228f17b566eeab46febf99f40ddb
+      internalID: 871021847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_95
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 4
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be960955bfd01f98b8069b902aa4a263
+      internalID: -955937055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_96
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 4
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2a320e795fcb1e39c63c3239d48d74
+      internalID: 1974248562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: re2_sprites_v1_0_by_doubleleggy_d2gh0h1_97
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 4
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99331ab703750cb0a33e9485b24fa10
+      internalID: 1025130337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_0: 44678569
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_1: -237259196
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_10: -637835620
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_11: -1174177956
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_12: 1183621125
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_13: -189899855
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_14: 409397884
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_15: -988750202
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_16: -1969979313
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_17: 1206100578
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_18: -1261581718
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_19: 1819503252
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_2: 1309718585
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_20: -1275009297
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_21: 800613675
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_22: -498760696
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_23: -1350869714
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_24: -2140575153
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_25: -489069140
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_26: -1977676311
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_27: 2088908026
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_28: -233477508
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_29: -1185289667
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_3: -32469789
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_30: 1151242419
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_31: -854589184
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_32: -645823547
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_33: -974118839
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_34: 521529661
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_35: 1251022577
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_36: -880852922
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_37: 1473937037
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_38: 1058542128
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_39: 408226704
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_4: -1736980464
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_40: 738687296
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_41: -772179841
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_42: 1006696498
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_43: 1919386625
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_44: -476501060
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_45: 2019696965
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_46: -2072642786
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_47: 1982298489
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_48: -2087933055
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_49: 1126459583
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_5: -1259880787
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_50: -956250261
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_51: -1203118464
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_52: -1056328810
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_53: 1008799965
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_54: -932814470
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_55: -1891056679
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_56: 1690699470
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_57: -209005265
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_58: 642591490
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_59: -401366472
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_6: 1810482267
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_60: 778923643
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_61: -333107494
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_62: 1386150600
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_63: -1658419292
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_64: -1145553658
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_65: 258913288
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_66: 1089674117
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_67: -1807951085
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_68: -1257271416
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_69: 1755300973
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_7: 420103516
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_70: -236341958
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_71: -487294293
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_72: 1217230696
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_73: 1380580432
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_74: 433710924
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_75: 1300491680
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_76: 928684518
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_77: -327786300
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_78: 201166347
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_79: 1268956327
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_8: 531911305
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_80: -1492096974
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_81: 633473271
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_82: 582448270
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_83: -2015837721
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_84: 1291124368
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_85: 269481618
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_86: 2129055442
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_87: -1860120894
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_88: 916027601
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_89: 1907912612
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_9: 1956530785
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_90: -182304827
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_91: -895161346
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_92: -2011728786
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_93: 1179496947
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_94: 871021847
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_95: -955937055
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_96: 1974248562
+      re2_sprites_v1_0_by_doubleleggy_d2gh0h1_97: 1025130337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
