@@ -10,7 +10,8 @@ public class Menu_Seleccion : MonoBehaviour
     public static GameObject menu ;
     Transform Fichas;
     private static List<GameObject>files = new ();
-    public static Dictionary<int,bool[]> arrays ;
+    public static Dictionary<int,bool[]> arrays ; 
+    
 
     
     void Awake()
@@ -61,10 +62,21 @@ public class Menu_Seleccion : MonoBehaviour
         
         for ( int i = 0 ; i <files.Count ; i ++)
         {
-            if(i < fichas.Count && arrays[TurnoInterface.turno.player][fichas[i].Colocacion] == false)
+            if(i < fichas.Count &&  arrays[TurnoInterface.turno.player][fichas[i].Colocacion] == false)
             {   
                 files[i].SetActive(true);
                 files[i].GetComponent<Ficha_Select>().Load(fichas[i]);
+                
+                //si existe la habilidad cargada  
+                if(fichas[i].Hability.variacion== fichas[i].Enfriamiento)
+                {
+                    //cargar la ficha correspondiente a al boton //para la hora de activar 
+                    Debug.Log("Cargando Habilidad");
+                    files[i].transform.GetChild(0).GetComponent<Activate_Hability>().LoadHability(fichas[i],i,  TurnoInterface.turno.player);                    //q se puede poner el boton para activar la habilidad en caso de q el jugador quiera 
+                    files[i].transform.GetChild(0).gameObject.SetActive(true);    //ese child corresponde a la imagen del boton
+                }
+            }
+                
                 
             }
             
@@ -73,7 +85,7 @@ public class Menu_Seleccion : MonoBehaviour
         }
         //activar el menu de seleccion para q esger la ficha a mover 
         
-    }
+    
 
     public  static  void DesactivarMenuseleccionn()
     {  

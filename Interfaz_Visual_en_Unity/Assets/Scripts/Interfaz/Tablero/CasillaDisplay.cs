@@ -11,6 +11,8 @@ using SELECCION;
 using Game_Logic.Trampas;
 using F1;
 using Unity.VisualScripting;
+using EnumHab;
+
 
 public class CasillaDisplay : MonoBehaviour
 {   
@@ -69,8 +71,11 @@ public class CasillaDisplay : MonoBehaviour
             
             Debug.Log("You win");
             //activar la ficha
+            
             objeto.gameObject.SetActive(true);
             
+            //activar q esta en la meta 
+            player.components.Win = true ;
 
                 var list = TableroInterface.casillas_de_vicotria[player.Owner]; //buscar la lista de las posibles casillas de las victoria q corresponda al id del jugador 
                 Menu_Seleccion.arrays[player.Owner][player.components.Colocacion]= true; //diciendo en true para q esa ficha no pueda seguir participando 
@@ -105,24 +110,28 @@ public class CasillaDisplay : MonoBehaviour
 
 
         else 
-        {   if(casilla.trampa != null) //si hay trampa 
-            {   
-                //se para el tiempo del jugador 
-                var reloj =GameObject.Find("Canvas").GetComponent<Reloj>();
-                reloj.Pausar();
-                Debug.Log($"trampa del tipo {trampa.trampa.Type}");
+        {   if(casilla.trampa != null ) //si hay trampa 
+            {   if(player.components.Hability.Name == EnumHability.AntiTramps && player.components.Hability.Activated)
+                {
+                    Debug.Log($" La ficha_ {player.components.Name}  _ habilidad_anti_tramp ");
+                }
+                else
+                {//se para el tiempo del jugador 
+                    var reloj =GameObject.Find("Canvas").GetComponent<Reloj>();
+                    reloj.Pausar();
+                    Debug.Log($"trampa del tipo {trampa.trampa.Type}");
 
-                Debug.Log("activar trampa ");
-                
-                    //asociar trampa creada 
-                    player.tramp = trampa;
+                    Debug.Log("activar trampa ");
                     
-                    player.tramp.Activate(objeto.gameObject);
-                    
-                Debug.Log("Ya se activo la trampa");
-                //se reanuda el tiempo del jugador 
-                reloj.Reanudar();
-                
+                        //asociar trampa creada 
+                        player.tramp = trampa;
+                        
+                        player.tramp.Activate(objeto.gameObject);
+                        
+                    Debug.Log("Ya se activo la trampa");
+                    //se reanuda el tiempo del jugador 
+                    reloj.Reanudar();
+                }
             }
         }
             }

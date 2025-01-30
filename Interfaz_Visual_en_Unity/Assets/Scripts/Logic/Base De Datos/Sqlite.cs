@@ -202,34 +202,34 @@ namespace Base_Datos
             List<Ficha> fichas = new List<Ficha>
             {
                 //Gryffindor
-                new(1,"Albus_Dumbledore",6,2,1,7, EnumHability.MoreTime),
-                new(2,"Harry_Potter",4,1,1,8,EnumHability.AntiTramps),
-                new(3,"Hermione",5,2,1,9,EnumHability.Aumentar_Velocity),
-                new(4,"Ron_Weasley",5,1,1,6,EnumHability.Aumentar_Velocity),
+                new(1,"Albus_Dumbledore",6,5,1,7, EnumHability.MoreTime),
+                new(2,"Harry_Potter",4,7,1,8,EnumHability.AntiTramps),
+                new(3,"Hermione",5,6,1,9,EnumHability.Aumentar_Velocity),
+                new(4,"Ron_Weasley",5,5,1,6,EnumHability.Aumentar_Velocity),
                 new(5,"Sirius_Black",7,2,1,7,EnumHability.MoreTime),
 
 
                 //Slytherin
-                new(6,"Draco_Malfoy",4,2,2,7, EnumHability.Aumentar_Velocity),     
-                new(7,"Bellatrix_Lestrange",4,0,2,5,EnumHability.Aumentar_Velocity),   
-                new(8,"Estudiante_Astuto",6,1,2,7,EnumHability.AntiTramps),
-                new(9,"Bruja",7,1,2,8,EnumHability.MoreTime),
-                new(10,"Baron_Sanguinario",5,2,2,7,EnumHability.AntiTramps),
+                new(6,"Draco_Malfoy",4,5,2,7, EnumHability.Aumentar_Velocity),     
+                new(7,"Bellatrix_Lestrange",4,6,2,5,EnumHability.Aumentar_Velocity),   
+                new(8,"Estudiante_Astuto",6,5,2,7,EnumHability.AntiTramps),
+                new(9,"Bruja",7,4,2,8,EnumHability.MoreTime),
+                new(10,"Baron_Sanguinario",5,3,2,7,EnumHability.AntiTramps),
 
 
                 //Hufflepuff
-                new(11,"Borracho_de_Matalobos",8,1,3,8,EnumHability.AntiTramps),
-                new(12,"Glacius",5,1,3,6,EnumHability.AntiTramps),
-                new(13,"Kelpie",5,1,3,6,EnumHability.MoreTime),
-                new(14,"Leo",4,0,3,9,EnumHability.Aumentar_Velocity),
-                new(15,"Gigante",6,1,3,10,EnumHability.AntiTramps),
+                new(11,"Borracho_de_Matalobos",8,5,3,8,EnumHability.AntiTramps),
+                new(12,"Glacius",5,5,3,6,EnumHability.AntiTramps),
+                new(13,"Kelpie",5,4,3,6,EnumHability.MoreTime),
+                new(14,"Leo",4,6,3,9,EnumHability.Aumentar_Velocity),
+                new(15,"Gigante",6,7,3,10,EnumHability.AntiTramps),
 
                 //Ravenclaw
-                new(16,"Boggart",5,2,4,7,EnumHability.Aumentar_Velocity),
-                new(17,"Caballero",4,1,4,9,EnumHability.Aumentar_Velocity),
-                new(18,"Elfo",6,1,4,8,EnumHability.MoreTime),
-                new(19,"Fluffy",8,1,4,5,EnumHability.AntiTramps),
-                new(20,"Gytrash",5,0,4,7,EnumHability.AntiTramps)
+                new(16,"Boggart",5,6,4,7,EnumHability.Aumentar_Velocity),
+                new(17,"Caballero",5,1,4,9,EnumHability.Aumentar_Velocity),
+                new(18,"Elfo",6,4,4,8,EnumHability.MoreTime),
+                new(19,"Fluffy",8,6,4,5,EnumHability.AntiTramps),
+                new(20,"Gytrash",5,9,4,7,EnumHability.AntiTramps)
 
             };
 

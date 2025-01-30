@@ -8,7 +8,7 @@ public class Mouse : MonoBehaviour
     public GameObject sound ;
     static AudioSource audio ;
 
-    void Start()
+    void Awake()
     {
         audio = sound.GetComponent<AudioSource>();
     }

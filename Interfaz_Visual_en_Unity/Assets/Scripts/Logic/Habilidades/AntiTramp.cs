@@ -4,7 +4,7 @@ using FICHA;
 
 public class AntiTramp : Hability
 { 
-    bool anti_tramp ;
+
 
     public AntiTramp(Ficha ficha) : base(ficha)
     {
@@ -13,22 +13,17 @@ public class AntiTramp : Hability
 
     public override void Activate()
     {
-        if(Activated)
-        anti_tramp = true ;
+        //al pasar por una trampa le permitira esquivarla
+        Activated= true ;
 
-        else{
-            System.Console.WriteLine("aun no se puede activar la trampa");
-        }
+
     }
 
 
     public override void Desactivate()
     {
-        if(Activated)
-        {
-            anti_tramp = false ;
+
             variacion = 0;
             Activated = false ;
-        }
     }
 }

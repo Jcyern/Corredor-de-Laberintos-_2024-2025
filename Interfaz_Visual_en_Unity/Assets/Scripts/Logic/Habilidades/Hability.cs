@@ -17,7 +17,7 @@ public class Hability
     public Hability ( Ficha ficha  )
     {
         this.ficha= ficha ;
-        copy = new Ficha(ficha);
+        copy = new Ficha(ficha); // creando otra instancia para q no se mezcle a la hora de los cambios
         variacion =0 ;
         enfriamineto = ficha.Enfriamiento;
         Name = EnumHability.None;
@@ -32,18 +32,6 @@ public class Hability
     {
     }
 
-
-    public void On()
-    {
-        if( enfriamineto== variacion)
-        {
-            Activated = true ;
-        }
-        else
-        {
-            System.Console.WriteLine($"Variacion {variacion} != Enfriamiento {enfriamineto}");
-        }
-    }
 
     public void Variacion()
     {

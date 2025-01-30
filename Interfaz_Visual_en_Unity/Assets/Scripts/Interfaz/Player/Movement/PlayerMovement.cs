@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
     public bool is_active ;
 
     public   int velocity ;
+    public int enfrimiento ;
+    public int Variacion ;
+    public string Hab ;
     private Vector2 movement ;
     private Rigidbody2D rb;
 
@@ -47,12 +50,26 @@ public class PlayerMovement : MonoBehaviour
         components = dupla.ficha ;
         Owner = dupla.number;
         pos= dupla.pos;
-        velocity = components.Velocidad;
+        //asociando velocidad y segundos 
         segundos = components.Seconds;
+        velocity = components.Velocidad;
+        enfrimiento= components.Enfriamiento;
+        Hab = components.Hability.Nombre;
+        Variacion = components.Hability.variacion;
+
 
         //cambiarle el nombre al gameobject por comodidad 
         gameObject.name = dupla.ficha.Name;
 
+    }
+
+
+    public void Actualizar(Ficha ficha )
+    {   
+        //cambiado las propiedades 
+        components = ficha ;
+        velocity = components.Velocidad;
+        segundos = components.Seconds;
     }
 
 

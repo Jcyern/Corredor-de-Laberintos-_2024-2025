@@ -129,8 +129,12 @@ void Start()
 
 
         var dic = Datos.jugadores;
+        var dic_Players = Datos.Player;
         jugador.Numero = dic.Count+1;
         dic[dic.Count+1]= jugador;
+        
+        
+        
 
 
         Debug.Log("cantidad de jugadores guardados "+dic.Count);

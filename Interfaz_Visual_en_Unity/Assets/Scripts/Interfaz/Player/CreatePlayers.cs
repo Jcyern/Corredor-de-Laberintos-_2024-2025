@@ -27,6 +27,14 @@ public class CreatePlayers : MonoBehaviour
         //encender el objeto 
 
         nuevoPlayer.SetActive(false);
+        //agregrlo al diccionario de datos de GameObject players
+        //Junto con su posicion 
+        // if(Datos.Player[dupla.player]== null)
+        // {
+        //     //activando la lista 
+        //     Datos.Player[dupla.player]= new List<(GameObject playe,int pos)>();
+        // }
+        // Datos.Player[dupla.player].Add((nuevoPlayer,dupla.pos));
 
         
         

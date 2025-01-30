@@ -20,6 +20,8 @@ namespace FICHA
 
         public int Seconds;
 
+        public bool Win = false ;
+
 
 
         public (int,int)position{get;set;}
