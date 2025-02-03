@@ -1,22 +1,6 @@
 
 # Harry Potter Game 
-<style>
-@keyframes parpadeo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-h1 {
-  animation: parpadeo 1s infinite;
-}
-</style>
 ![Imagen de un castillo](/Logica%20Del%20Juego/Images_Informe/Portada.jpeg)
 
 
