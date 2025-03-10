@@ -5,8 +5,8 @@
 
 
 
-## Pasos de  la Intalacion
-1. Descargar el repositorio
+## Pasos de  la Intalacion en linux
+1. Descargar el zip del Repositorio [repositorio](https://github.com/Jcyern/__Archivo_zip.git)
 2. Descomprimirlo
 3. Abrir la Carpeta  Game  
 4. Abrir HarryPotter_Maze.x86_64
